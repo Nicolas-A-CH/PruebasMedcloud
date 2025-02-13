@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Agendacion cita</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1dd99899-ce24-4a2d-9a82-d0c9a41ec5a0</testCaseGuid>
+</TestCaseEntity>

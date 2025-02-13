@@ -1,0 +1,14 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/creacion cita/Page_MedCloud IDL/span_mircoles 12-feb.-2025_ui-button-icon-l_9a5267",
+      "brokenLocator": "//button[@id\u003d\u0027form:carrousel:0:j_idt235\u0027]/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//td[3]/button/span",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    }
+  ]
+}
