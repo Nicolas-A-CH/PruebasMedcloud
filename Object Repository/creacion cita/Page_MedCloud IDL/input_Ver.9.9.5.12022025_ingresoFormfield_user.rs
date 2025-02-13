@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>c21a1877-6e29-43f1-b616-9ec1b591dfe4</webElementGuid>
+      <webElementGuid>3219db92-f92d-4ec3-988b-e859d3a09fa0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ingresoForm:field_user</value>
-      <webElementGuid>4a71a77e-2d1f-4098-9480-235bf194ac16</webElementGuid>
+      <webElementGuid>aeec89bf-fa87-4429-9d64-e8aeff111c85</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>name</name>
       <type>Main</type>
       <value>ingresoForm:field_user</value>
-      <webElementGuid>43fdcd7d-6a84-40c2-94fd-b7e238a091ff</webElementGuid>
+      <webElementGuid>4cae77a5-48ab-4eb7-885d-e7a8e4f30443</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,15 +53,15 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>44306616-e7aa-4084-8e7e-85c12b7ae66c</webElementGuid>
+      <webElementGuid>121ee758-1253-4da5-9ece-253552cbc28a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-hover ui-state-focus</value>
-      <webElementGuid>18ec6770-555e-435a-98c3-3d8f894ec1a0</webElementGuid>
+      <value>ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-error ui-state-hover ui-state-focus</value>
+      <webElementGuid>a7973630-a012-4301-9b51-7ad220177ddf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>aria-required</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>b9b6f5af-21b2-4581-bf91-a829c77c4b3a</webElementGuid>
+      <webElementGuid>68f2b5ac-2ed4-4214-881a-be894b60dbb9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>role</name>
       <type>Main</type>
       <value>textbox</value>
-      <webElementGuid>d0ce5d52-11a5-4d1b-b409-988d694ce24f</webElementGuid>
+      <webElementGuid>04cf0159-095e-4f31-9d96-8b4a7ffbfd78</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>aria-disabled</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>ab754d12-f328-4424-bfb4-0fcc8432c4e0</webElementGuid>
+      <webElementGuid>ee859c7a-2f86-438b-b9b1-53986b77b95f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>aria-readonly</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>153233b0-0f97-4658-9381-f16163c2bffa</webElementGuid>
+      <webElementGuid>87eadc6c-8954-4e98-bff8-95087ead17ff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,7 +101,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ingresoForm:field_user&quot;)</value>
-      <webElementGuid>33d3b325-20be-4119-bb64-d04f3c0fa6d5</webElementGuid>
+      <webElementGuid>99026b2f-c836-4511-b6b6-43dc75453dd3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-invalid</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>452e7b2f-ce8e-49db-97bf-94f478909966</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -109,7 +117,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/creacion cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>2fcc9ec4-aafe-4d86-b2d5-54e85fb4b4ab</webElementGuid>
+      <webElementGuid>a6faaa9c-37d8-48cb-a0f0-947b861988fa</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -117,7 +125,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='ingresoForm:field_user']</value>
-      <webElementGuid>06e15e55-5147-4694-a34e-85ddbd1d100f</webElementGuid>
+      <webElementGuid>68baae77-0bdd-47eb-bc03-4866cf781431</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +133,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='ingresoForm']/div/div/div[2]/span/input</value>
-      <webElementGuid>0a64462a-0c8f-40d1-a033-581391d4b9a3</webElementGuid>
+      <webElementGuid>6deb52f4-6e50-49cd-8b25-2705ad9b8b9c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +141,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span/input</value>
-      <webElementGuid>156a8cf9-5389-4d9e-8507-e7b6ed2f73f0</webElementGuid>
+      <webElementGuid>b25ea7be-1cb9-4a04-b9f2-c3a0145e4268</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,6 +149,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'ingresoForm:field_user' and @name = 'ingresoForm:field_user' and @type = 'text']</value>
-      <webElementGuid>c8d7a087-de40-41ae-81ad-957d8a5aa42a</webElementGuid>
+      <webElementGuid>727d12cb-cf54-45ba-b419-5a122f82116b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

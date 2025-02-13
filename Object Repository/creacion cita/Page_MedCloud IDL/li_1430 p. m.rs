@@ -4,7 +4,6 @@
    <name>li_1430 p. m</name>
    <tag></tag>
    <elementGuidId>13c86781-73cf-4396-b908-7806fc68d151</elementGuidId>
-   <imagePath></imagePath>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -12,11 +11,9 @@
       </entry>
       <entry>
          <key>IMAGE</key>
-         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

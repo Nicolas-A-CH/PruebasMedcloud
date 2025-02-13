@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='tabview:addCuposForm:btnSave']/span[2]</value>
+         <value>//button[@id='inactivarSessionForm:j_idt46']/span</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -18,7 +18,7 @@
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=button[name=&quot; Aceptar&quot;i]</value>
+         <value>internal:role=button[name=&quot;Aceptar&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>046f4b45-2707-4710-ad88-f347d165767c</webElementGuid>
+      <webElementGuid>444ef827-3b58-47f4-b81c-db45658fa4c9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-button-text ui-c</value>
-      <webElementGuid>8a532ba7-0bc2-4a90-ba4d-504908100d85</webElementGuid>
+      <webElementGuid>28a860ae-9968-41c1-8a5b-79dbc1602950</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,15 +45,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Aceptar</value>
-      <webElementGuid>237c6af0-27d5-44e0-86bf-55bd54ef49f9</webElementGuid>
+      <webElementGuid>43ce8608-7a75-4b78-b86b-a117a8ac1925</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tabview:addCuposForm:btnSave&quot;)/span[@class=&quot;ui-button-text ui-c&quot;]</value>
-      <webElementGuid>d6d687af-bbd8-4f0f-871c-bb4420022157</webElementGuid>
+      <value>id(&quot;inactivarSessionForm:j_idt46&quot;)/span[@class=&quot;ui-button-text ui-c&quot;]</value>
+      <webElementGuid>6370d0f7-59b1-431c-b3cc-ff447f6d5e44</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,10 +61,74 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/creacion cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>01a4b67c-295f-4764-b378-1b27da2f9e5f</webElementGuid>
+      <webElementGuid>1ff62a0e-3cda-449c-8541-d1cb76e22816</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='inactivarSessionForm:j_idt46']/span</value>
+      <webElementGuid>d7d6201a-fd85-4c93-87f1-71133693df18</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='¿desea invalidarla y continuar con esta sesión?'])[1]/following::span[1]</value>
+      <webElementGuid>0784006c-4343-415a-bfd5-cb70a420561e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ya existe una sesión previa con este usuario'])[1]/following::span[1]</value>
+      <webElementGuid>51b4fa1d-773b-4412-8bfc-9f18262dc4f3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancelar'])[1]/preceding::span[2]</value>
+      <webElementGuid>e6f0de0a-10b4-4cfc-ba54-7415a9b54596</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Error'])[1]/preceding::span[4]</value>
+      <webElementGuid>17c1a29b-6174-48c7-a14d-368106f6e043</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Aceptar']/parent::*</value>
+      <webElementGuid>d0e04c75-a1e3-45be-941a-3ce1278dcd28</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/center/button/span</value>
+      <webElementGuid>79213905-b88d-4308-9704-a8e4e8265e62</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Aceptar' or . = 'Aceptar')]</value>
+      <webElementGuid>84c67c5c-0318-4b0c-83ce-d659881d64ee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
@@ -110,13 +174,5 @@
       <type>Main</type>
       <value>//form/div[2]/button/span[2]</value>
       <webElementGuid>f0fccbe6-ced4-498c-afd6-76d018c30bb9</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//span[(text() = 'Aceptar' or . = 'Aceptar')]</value>
-      <webElementGuid>0df8e173-9b56-477b-97ce-618ae805f143</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

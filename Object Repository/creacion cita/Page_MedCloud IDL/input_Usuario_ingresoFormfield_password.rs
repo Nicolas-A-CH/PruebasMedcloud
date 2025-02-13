@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>09597da6-07b8-4a1b-b9a2-e117e0cc1a6c</webElementGuid>
+      <webElementGuid>91da6781-dbff-4e21-80d0-dd91d008a7b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ingresoForm:field_password</value>
-      <webElementGuid>2cbefad6-d6bb-4eaa-a167-7320c4b5bb79</webElementGuid>
+      <webElementGuid>41460e34-8e53-4a6b-9917-5971b2b9fa7e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>name</name>
       <type>Main</type>
       <value>ingresoForm:field_password</value>
-      <webElementGuid>1b57eec4-1fed-4af6-a433-298a3ca295b4</webElementGuid>
+      <webElementGuid>2f06447e-9dfb-4896-a100-7c44b137585f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,15 +53,15 @@
       <name>type</name>
       <type>Main</type>
       <value>password</value>
-      <webElementGuid>4cb6af70-cb16-4931-a538-d4fc529520ef</webElementGuid>
+      <webElementGuid>fc915c7f-d70a-4862-b02a-9be9a1c0fa0d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui-inputfield ui-password ui-widget ui-state-default ui-corner-all ui-state-focus</value>
-      <webElementGuid>fc4b3157-0a61-448a-b468-1297e71531b3</webElementGuid>
+      <value>ui-inputfield ui-password ui-widget ui-state-default ui-corner-all ui-state-error ui-state-focus</value>
+      <webElementGuid>7363d975-09b2-4620-ae55-0119877c3236</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>aria-required</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>b6fc7dc2-7ffa-4180-a203-502d2a2bc0b8</webElementGuid>
+      <webElementGuid>96c9a2fc-ed58-428a-89bc-a4e00fb74dad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>role</name>
       <type>Main</type>
       <value>textbox</value>
-      <webElementGuid>6c8aeaec-c1d5-4452-9590-a994cadeccf4</webElementGuid>
+      <webElementGuid>115a46e2-7520-4a8d-b386-f8eaac8c7340</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>aria-disabled</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>c33fcc8c-b14c-4a66-be81-08d5502757ea</webElementGuid>
+      <webElementGuid>13a2b58c-eb8e-4220-94c0-74702eb26c4b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>aria-readonly</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>4328e984-5fd7-4ea3-9c1c-a410c60c208f</webElementGuid>
+      <webElementGuid>ed69816e-6310-499a-af22-a0f7362c4608</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,7 +101,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ingresoForm:field_password&quot;)</value>
-      <webElementGuid>e409e3f0-b21c-4149-8e87-da3633788f6f</webElementGuid>
+      <webElementGuid>c4773568-666d-4a7d-ab31-b8baaa7f95c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-invalid</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>90de6448-a1a0-4d9d-86e5-7ed42240a9f3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -109,7 +117,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/creacion cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>8abb6c7e-6079-45bb-8707-c75c6131dbf4</webElementGuid>
+      <webElementGuid>11d294d8-c7a7-41b9-a9e1-4205ba414f07</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -117,7 +125,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='ingresoForm:field_password']</value>
-      <webElementGuid>2ea577da-eb30-4290-8dc0-f90991467541</webElementGuid>
+      <webElementGuid>eafd028b-8435-44de-afc2-a8247392b3b1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +133,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='ingresoForm']/div/div/div[3]/span/input</value>
-      <webElementGuid>2b4d68dd-189f-491a-9f79-c4c145969eef</webElementGuid>
+      <webElementGuid>b1cce278-2c72-4265-b47d-fb8fb11b1c63</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +141,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/span/input</value>
-      <webElementGuid>8ed444d0-0b4b-43cd-adbe-3ba90f781fe6</webElementGuid>
+      <webElementGuid>0f1cb59c-08dc-4c02-8350-92da7b6e58e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,6 +149,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'ingresoForm:field_password' and @name = 'ingresoForm:field_password' and @type = 'password']</value>
-      <webElementGuid>1a25682e-2873-44ce-9ae8-7f234c994527</webElementGuid>
+      <webElementGuid>6b8d44e7-7ba5-40f4-b0e0-c2454def3ce0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
