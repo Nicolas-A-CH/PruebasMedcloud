@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_Seleccione unoConyugueHermano(a)Hijo_8cc99f</name>
+   <tag></tag>
+   <elementGuidId>3963e850-0fb7-48c9-8db7-b7b698d833b1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='PacienteCrearForm:PacienteTabView:idParentesco']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Agendamiento Datos básicos Paciente - Profesional: NICOLAS  AREVALO  (La ventana se cerrará en 07:09 minutos!)&quot;i >> internal:label=&quot;Parentesco Acudiente:*&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>a2b539e4-09ad-4476-b5f0-e787c65480b9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>PacienteCrearForm:PacienteTabView:idParentesco</value>
+      <webElementGuid>f4bfd5f1-b32d-4fe6-a668-a0da0e3972cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>PacienteCrearForm:PacienteTabView:idParentesco</value>
+      <webElementGuid>a8cd8568-6d48-4bcd-97e4-ac87d92af6f3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>select-1</value>
+      <webElementGuid>d6cf89e8-dbe8-4d6c-a4d5-40f0d7752241</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>size</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>2de28eff-a1f1-484b-b9fe-5807a3bd512c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>	Seleccione uno
+	Conyugue
+	Hermano(a)
+	Hijo
+	No Aplicable
+	Otro
+	Padre(Madre)
+	Principal
+	Trabajador
+</value>
+      <webElementGuid>4cbcd9cf-8ba1-4100-80dc-6fb0f0771314</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PacienteCrearForm:PacienteTabView:idParentesco&quot;)</value>
+      <webElementGuid>f3f64896-803b-412e-86a8-e0391d6d066f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/crecion cita/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>c880aa96-99ec-4a99-9bb9-217fa5ca7708</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@id='PacienteCrearForm:PacienteTabView:idParentesco']</value>
+      <webElementGuid>532cf7cf-9827-49ec-8a68-448d93e942db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='PacienteCrearForm:PacienteTabView:datBasicos2_content']/div[8]/div[4]/select</value>
+      <webElementGuid>97031ca0-7e82-48e5-8e6f-7631c56d894a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[28]/following::select[1]</value>
+      <webElementGuid>d4d47534-293d-426a-a222-f732b3182ef2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[29]/preceding::select[1]</value>
+      <webElementGuid>0893c5ef-c753-461b-a8bf-c8364c873ad7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[8]/div[4]/select</value>
+      <webElementGuid>9ba1955e-b9c9-4e6d-9a7e-50bf8e53d690</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'PacienteCrearForm:PacienteTabView:idParentesco' and @name = 'PacienteCrearForm:PacienteTabView:idParentesco' and (text() = '	Seleccione uno
+	Conyugue
+	Hermano(a)
+	Hijo
+	No Aplicable
+	Otro
+	Padre(Madre)
+	Principal
+	Trabajador
+' or . = '	Seleccione uno
+	Conyugue
+	Hermano(a)
+	Hijo
+	No Aplicable
+	Otro
+	Padre(Madre)
+	Principal
+	Trabajador
+')]</value>
+      <webElementGuid>3b13f580-83a1-4da2-902f-fb0b1d7311ac</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

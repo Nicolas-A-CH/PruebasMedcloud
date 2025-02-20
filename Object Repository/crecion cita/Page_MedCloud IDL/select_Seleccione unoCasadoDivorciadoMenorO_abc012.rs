@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_Seleccione unoCasadoDivorciadoMenorO_abc012</name>
+   <tag></tag>
+   <elementGuidId>202758ca-e528-46c6-a1ce-077e9e222934</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='PacienteCrearForm:PacienteTabView:estadoCivil']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Agendamiento Datos básicos Paciente - Profesional: NICOLAS  AREVALO  (La ventana se cerrará en 07:49 minutos!)&quot;i >> internal:label=&quot;Estado Civil:*&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>f96918de-ed5d-4cdb-b8ba-8d0ac1cb777f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>PacienteCrearForm:PacienteTabView:estadoCivil</value>
+      <webElementGuid>c50a995c-9eea-49b6-9da1-3eee102ec28f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>PacienteCrearForm:PacienteTabView:estadoCivil</value>
+      <webElementGuid>6fd55c05-4529-4ceb-bf1d-551892349281</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>select-1</value>
+      <webElementGuid>ac274acf-6b5a-4b9a-b921-0c222d8a5dfd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>size</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>8b2aa7e7-486f-44bb-91a0-8b58376eaa09</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>	Seleccione uno
+	Casado
+	Divorciado
+	Menor
+	Otro
+	Separado
+	Soltero
+	Union Libre
+	Viudo
+</value>
+      <webElementGuid>a7f1c7d1-54f7-412d-a1f2-b1bfbc3437d8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PacienteCrearForm:PacienteTabView:estadoCivil&quot;)</value>
+      <webElementGuid>399c02ac-d1b6-4865-a2a4-a907e0823257</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/crecion cita/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>cb7f384a-c43d-456a-9e49-bff20c3e78b1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@id='PacienteCrearForm:PacienteTabView:estadoCivil']</value>
+      <webElementGuid>d6d796a1-345a-43c1-abc0-3699c843201c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='PacienteCrearForm:PacienteTabView:datBasicos2_content']/div[4]/div[4]/select</value>
+      <webElementGuid>5cdf2042-278a-475e-a0e5-7f2734375cee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[22]/following::select[1]</value>
+      <webElementGuid>3f2dc0ea-1b11-432a-beb9-26a1b19be7a0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[23]/preceding::select[1]</value>
+      <webElementGuid>c0cb9e22-e44d-4a8c-986d-fb8bac9466f7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div[4]/select</value>
+      <webElementGuid>8394778a-6537-4691-875d-6a0b6350bc39</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'PacienteCrearForm:PacienteTabView:estadoCivil' and @name = 'PacienteCrearForm:PacienteTabView:estadoCivil' and (text() = '	Seleccione uno
+	Casado
+	Divorciado
+	Menor
+	Otro
+	Separado
+	Soltero
+	Union Libre
+	Viudo
+' or . = '	Seleccione uno
+	Casado
+	Divorciado
+	Menor
+	Otro
+	Separado
+	Soltero
+	Union Libre
+	Viudo
+')]</value>
+      <webElementGuid>1a881354-6582-45ff-868e-e9a6dafd772c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

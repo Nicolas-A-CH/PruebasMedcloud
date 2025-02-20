@@ -1,0 +1,54 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/creacion cita/Page_MedCloud IDL/span_mircoles 12-feb.-2025_ui-button-icon-l_9a5267",
+      "brokenLocator": "//button[@id\u003d\u0027form:carrousel:0:j_idt235\u0027]/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//td[3]/button/span",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/creacion cita/Page_MedCloud IDL/span_NICOLAS AREVALO_ui-chkbox-icon ui-icon_8d450e",
+      "brokenLocator": "id(\"form:accordionPanel:agentesList\")/div[@class\u003d\"ui-selectlistbox-listcontainer\"]/ul[@class\u003d\"ui-selectlistbox-list\"]/li[@class\u003d\"ui-selectlistbox-item ui-corner-all ui-state-hover\"]/div[@class\u003d\"ui-chkbox ui-widget\"]/div[@class\u003d\"ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-hover\"]/span[@class\u003d\"ui-chkbox-icon ui-icon ui-icon-blank ui-c\"][count(. | //*[@ref_element \u003d \u0027Object Repository/creacion cita/Page_MedCloud IDL/iframe\u0027]) \u003d count(//*[@ref_element \u003d \u0027Object Repository/creacion cita/Page_MedCloud IDL/iframe\u0027])]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//div[@id\u003d\u0027form:accordionPanel:agentesList\u0027]/div[3]/ul/li[9]/div/div/span",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/creacion cita/Page_MedCloud IDL/li_1030 a. m",
+      "brokenLocator": "//li[@id\u003d\u0027tabview:addCuposForm:horaFinal_1\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Seleccione\u0027])[59]/following::li[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Creacion de citas 2/Page_MedCloud IDL/td_600 p. m.-610 p. m. BOGOTA              _22fc77",
+      "brokenLocator": "//tr[@id\u003d\u0027form:carrousel:0:treetableCalendar_node_10_0\u0027]/td",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*/text()[normalize-space(.)\u003d\u00276:00 p. m.\u0027]/parent::*",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Creacion de citas 2/Page_MedCloud IDL/td_600 p. m.-610 p. m. BOGOTA              _22fc77_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Creacion de citas 2/Page_MedCloud IDL/span_Aceptar",
+      "brokenLocator": "//button[@id\u003d\u0027inactivarSessionForm:j_idt46\u0027]/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Cancelar\u0027])[1]/preceding::span[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    }
+  ]
+}

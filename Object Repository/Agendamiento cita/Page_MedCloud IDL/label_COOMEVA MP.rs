@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_COOMEVA MP</name>
+   <tag></tag>
+   <elementGuidId>15cc4c13-8f33-42fe-b48b-9361a4f2f27d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@id='tabview:addCuposForm:tblEntidadSeguroCupos:0:j_idt777']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Cupos por Día&quot;i >> internal:text=&quot;COOMEVA MP&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>a519a9cf-d9ad-4a44-87aa-ebd485c11da6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>tabview:addCuposForm:tblEntidadSeguroCupos:0:j_idt777</value>
+      <webElementGuid>4a0e672e-2d39-4311-b41d-c8df9a71da74</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-outputlabel ui-widget</value>
+      <webElementGuid>8db38190-e4f3-4419-8f97-21dc2a66309a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>COOMEVA MP</value>
+      <webElementGuid>e8a42a22-39ff-4afb-bb03-439ba9a930c8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tabview:addCuposForm:tblEntidadSeguroCupos:0:j_idt777&quot;)</value>
+      <webElementGuid>f5d8fcea-4355-417c-9792-5fefc8352803</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Agendamiento cita/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>5e1d01b0-84c0-4f71-a422-958afb2dff7d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='tabview:addCuposForm:tblEntidadSeguroCupos:0:j_idt777']</value>
+      <webElementGuid>d852cda7-bdf4-4f7c-8c07-915a253dd520</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tbody[@id='tabview:addCuposForm:tblEntidadSeguroCupos_data']/tr/td/label</value>
+      <webElementGuid>87c0f0d9-f17c-4991-a6d6-ba81638f4b42</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Filter by Entidad Seguro'])[2]/following::label[1]</value>
+      <webElementGuid>03577391-2c1a-40ed-b307-5a3016b9a978</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Entidad Seguro'])[2]/following::label[2]</value>
+      <webElementGuid>57710db6-6533-4392-83df-02e8c028c2ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PARTICULAR'])[12]/preceding::label[1]</value>
+      <webElementGuid>b88fca9b-9ac7-481f-9eae-66395ac4ff6c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='COLSANITAS MP'])[3]/preceding::label[2]</value>
+      <webElementGuid>0ef868c5-6ff3-424e-ba81-8e329ee6407d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/div/div/table/tbody/tr/td/label</value>
+      <webElementGuid>913947df-16a0-4099-bbfd-7b6107005df6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'tabview:addCuposForm:tblEntidadSeguroCupos:0:j_idt777' and (text() = 'COOMEVA MP' or . = 'COOMEVA MP')]</value>
+      <webElementGuid>72bea0df-a8e4-4e74-a65a-998c56ee5070</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
