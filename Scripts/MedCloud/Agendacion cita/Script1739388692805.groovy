@@ -30,45 +30,45 @@ WebUI.navigateToUrl('https://medcloudpruebas.idl.com.co/medCloud/index.xhtml')
 // Aplicar zoom del 80% utilizando JavaScript
 WebUI.executeJavaScript('document.body.style.zoom=\'80%\'', null)
 
-WebUI.setText(findTestObject('Object Repository/creacion cita/Page_MedCloud IDL/input_Ver.9.9.5.12022025_ingresoFormfield_user'), 
+WebUI.setText(findTestObject('Object Repository/Agendamiento cita/Page_MedCloud IDL/input_Ver.9.9.5.12022025_ingresoFormfield_user'), 
     'niarevalo')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/creacion cita/Page_MedCloud IDL/input_Usuario_ingresoFormfield_password'), 
+WebUI.setEncryptedText(findTestObject('Object Repository/Agendamiento cita/Page_MedCloud IDL/input_Usuario_ingresoFormfield_password'), 
     'iKK2QhFB4Lt3r+B0vfLvEw==')
 
 // Simular la tecla Enter en el campo de contraseña
-WebUI.sendKeys(findTestObject('Object Repository/creacion cita/Page_MedCloud IDL/input_Usuario_ingresoFormfield_password'), 
+WebUI.sendKeys(findTestObject('Object Repository/Agendamiento cita/Page_MedCloud IDL/input_Usuario_ingresoFormfield_password'), 
     Keys.chord(Keys.ENTER))
 
 //Seleccionar el dococtor
-WebUI.enhancedClick(findTestObject('creacion cita/Page_MedCloud IDL/span_NICOLAS AREVALO_ui-chkbox-icon ui-icon_8d450e'))
+WebUI.enhancedClick(findTestObject('Agendamiento cita/Page_MedCloud IDL/span_NICOLAS AREVALO_ui-chkbox-icon ui-icon_8d450e'))
 
 //Seleccionar el icono para agregar la cita
-WebUI.enhancedClick(findTestObject('Object Repository/creacion cita/Page_MedCloud IDL/span_jueves 13-feb.-2025_ui-button-icon-lef_7ab219'))
+WebUI.enhancedClick(findTestObject('Object Repository/Agendamiento cita/Page_MedCloud IDL/span_jueves 13-feb.-2025_ui-button-icon-lef_7ab219'))
 
 // Esperar hasta que el formulario esté visible antes de interactuar con él (ajusta el tiempo máximo en segundos)
-WebUI.waitForElementVisible(findTestObject('Object Repository/creacion cita/Page_MedCloud IDL/span_Seleccione_ui-icon ui-icon-triangle-1-s ui-c'), 10)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Agendamiento cita/Page_MedCloud IDL/span_Seleccione_ui-icon ui-icon-triangle-1-s ui-c'), 10)
 
 //Formulario para agendar cita
 // Restablecer el zoom al 100%
 WebUI.executeJavaScript("document.body.style.zoom='100%'", null)
 
-WebUI.enhancedClick(findTestObject('Object Repository/creacion cita/Page_MedCloud IDL/span_Seleccione_ui-icon ui-icon-triangle-1-s ui-c'))
+WebUI.enhancedClick(findTestObject('Object Repository/Agendamiento cita/Page_MedCloud IDL/span_Seleccione_ui-icon ui-icon-triangle-1-s ui-c'))
 
 // Esperar hasta que el elemento `li_Tiempo` sea visible
-WebUI.waitForElementVisible(findTestObject('creacion cita/Page_MedCloud IDL/li_Tiempo'), 10)
+WebUI.waitForElementVisible(findTestObject('Agendamiento cita/Page_MedCloud IDL/li_Tiempo'), 10)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('creacion cita/Page_MedCloud IDL/li_Tiempo'))
+WebUI.click(findTestObject('Agendamiento cita/Page_MedCloud IDL/li_Tiempo'))
 
-WebUI.click(findTestObject('Object Repository/creacion cita/Page_MedCloud IDL/span_Seleccione_ui-icon ui-icon-triangle-1-s ui-c_1'))
+WebUI.click(findTestObject('Object Repository/Agendamiento cita/Page_MedCloud IDL/span_Seleccione_ui-icon ui-icon-triangle-1-s ui-c_1'))
 
-WebUI.click(findTestObject('Object Repository/creacion cita/Page_MedCloud IDL/li_1000 a. m'))
+WebUI.click(findTestObject('Object Repository/Agendamiento cita/Page_MedCloud IDL/li_1000 a. m'))
 
-WebUI.click(findTestObject('Object Repository/creacion cita/Page_MedCloud IDL/span_Seleccione_ui-icon ui-icon-triangle-1-s ui-c_1_2'))
+WebUI.click(findTestObject('Object Repository/Agendamiento cita/Page_MedCloud IDL/span_Seleccione_ui-icon ui-icon-triangle-1-s ui-c_1_2'))
 
-WebUI.click(findTestObject('Object Repository/creacion cita/Page_MedCloud IDL/li_1030 a. m'))
+WebUI.click(findTestObject('Object Repository/Agendamiento cita/Page_MedCloud IDL/li_1030 a. m'))
 
-WebUI.click(findTestObject('Object Repository/creacion cita/Page_MedCloud IDL/span_Aceptar_1'))
+WebUI.click(findTestObject('Object Repository/Agendamiento cita/Page_MedCloud IDL/span_Aceptar_1'))
 

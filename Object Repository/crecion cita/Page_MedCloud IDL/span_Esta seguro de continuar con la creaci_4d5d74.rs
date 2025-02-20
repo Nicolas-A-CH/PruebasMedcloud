@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Esta seguro de continuar con la creaci_4d5d74</name>
+   <tag></tag>
+   <elementGuidId>3afffb20-b699-4e60-b5af-865eb61bacd2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='PacienteCrearForm:yesbtn']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot; Si&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>60232487-227a-48e7-a6e2-3125bb746c76</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-button-icon-left ui-icon ui-c ui-icon-check</value>
+      <webElementGuid>b0e0ec27-ef8b-48d4-a53c-93b5645e3011</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PacienteCrearForm:yesbtn&quot;)/span[@class=&quot;ui-button-icon-left ui-icon ui-c ui-icon-check&quot;]</value>
+      <webElementGuid>12b7c7ab-1318-410c-a494-b311bc3b9cd4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/crecion cita/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>baf60619-ece4-41fb-8a5a-60f3be32e40d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='PacienteCrearForm:yesbtn']/span</value>
+      <webElementGuid>85baa409-6694-4bd7-b33c-93945a700d8f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[186]/div[3]/button/span</value>
+      <webElementGuid>874814cf-1885-4d6d-809a-28a1064c2c5e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -29,6 +29,26 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Creacion de citas 2/Page_MedCloud IDL/td_600 p. m.-610 p. m. BOGOTA              _22fc77",
+      "brokenLocator": "//tr[@id\u003d\u0027form:carrousel:0:treetableCalendar_node_10_0\u0027]/td",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*/text()[normalize-space(.)\u003d\u00276:00 p. m.\u0027]/parent::*",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Creacion de citas 2/Page_MedCloud IDL/td_600 p. m.-610 p. m. BOGOTA              _22fc77_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Creacion de citas 2/Page_MedCloud IDL/span_Aceptar",
+      "brokenLocator": "//button[@id\u003d\u0027inactivarSessionForm:j_idt46\u0027]/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Cancelar\u0027])[1]/preceding::span[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
     }
   ]
 }
