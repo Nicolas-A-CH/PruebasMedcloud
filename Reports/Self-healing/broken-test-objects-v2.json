@@ -69,6 +69,16 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/crecion cita/Page_MedCloud IDL/span_Iniciar sesin_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_sbado 22-feb.-2025_ui-button-icon-left_1ee6c9",
+      "brokenLocator": "//button[@id\u003d\u0027form:carrousel:0:j_idt235\u0027]/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//td[3]/button/span",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
     }
   ]
 }

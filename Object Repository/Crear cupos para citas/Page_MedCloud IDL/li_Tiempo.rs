@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_1030 a. m</name>
+   <name>li_Tiempo</name>
    <tag></tag>
-   <elementGuidId>6bd91348-5ca7-4602-b0a0-daf6e2efb146</elementGuidId>
+   <elementGuidId>378b5f21-e981-4140-a18b-efbaa2b963c7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//li[@id='tabview:addCuposForm:horaFinal_1']</value>
+         <value>//li[@id='tabview:addCuposForm:tipoRangoCombo_1']</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=option[name=&quot;10:30 a. m.&quot;i]</value>
+         <value>internal:role=option[name=&quot;Tiempo&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>li</value>
-      <webElementGuid>617a9c11-d4de-4039-840f-e32377320205</webElementGuid>
+      <webElementGuid>d5c56ffc-bb00-4893-9eb4-3bb0de1b9222</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,15 +37,15 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all ui-state-hover</value>
-      <webElementGuid>4b836c1d-6707-4625-81df-a6619b6ef3a5</webElementGuid>
+      <webElementGuid>ee12f97f-6248-45d0-9bdd-a4b314f81908</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-label</name>
       <type>Main</type>
-      <value>10:30 a. m.</value>
-      <webElementGuid>5c0ea6fb-7182-4033-9445-3590268494ae</webElementGuid>
+      <value>Tiempo</value>
+      <webElementGuid>571b9b0f-fcf6-47f9-8ef6-d4d47a86b89b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,7 +53,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>1e53c1e0-cc99-40ec-8df6-5bd9973c59aa</webElementGuid>
+      <webElementGuid>4f3e962d-d6b7-4023-b35e-af5df157c578</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,7 +61,7 @@
       <name>role</name>
       <type>Main</type>
       <value>option</value>
-      <webElementGuid>fb6d6ceb-0f0c-4044-86bb-0a0088ec4808</webElementGuid>
+      <webElementGuid>5eadb345-8c0f-4cec-aa14-e53acefd2fe8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -68,86 +69,102 @@
       <name>aria-selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>b8803fea-7b9c-4943-aa86-f477f5a1c56f</webElementGuid>
+      <webElementGuid>1936acf3-d193-4ca8-8c3c-c1f783179978</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>tabview:addCuposForm:horaFinal_1</value>
-      <webElementGuid>bfe5cca8-1799-41be-9bbb-0fac3a41bc1c</webElementGuid>
+      <value>tabview:addCuposForm:tipoRangoCombo_1</value>
+      <webElementGuid>1455d320-0500-418c-ace5-cc0655e248f8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>10:30 a. m.</value>
-      <webElementGuid>bea402d8-cc5a-4e02-a7cd-319695c26524</webElementGuid>
+      <value>Tiempo</value>
+      <webElementGuid>2d94d52c-6679-460d-b5db-9cb11fb5bdff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tabview:addCuposForm:horaFinal_1&quot;)</value>
-      <webElementGuid>03109c55-b0a5-4874-a4d0-fc1a8bd2e07f</webElementGuid>
+      <value>id(&quot;tabview:addCuposForm:tipoRangoCombo_1&quot;)</value>
+      <webElementGuid>9e8146b5-e769-4fc7-8510-cd4850fb6f28</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Agendamiento cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>bb02b5e2-db00-4f3e-8416-f1141164962c</webElementGuid>
+      <value>Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>e68a27cf-8a2b-462b-961e-007e00d581bc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//li[@id='tabview:addCuposForm:horaFinal_1']</value>
-      <webElementGuid>9ff5a5c9-1b39-484f-8ecb-cfbecc1d4a17</webElementGuid>
+      <value>//li[@id='tabview:addCuposForm:tipoRangoCombo_1']</value>
+      <webElementGuid>da0f6030-1146-4395-b01e-e0d00d202291</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//ul[@id='tabview:addCuposForm:horaFinal_items']/li[2]</value>
-      <webElementGuid>14e9025a-9c9b-4f9f-9a02-c03aed383ecf</webElementGuid>
+      <value>//ul[@id='tabview:addCuposForm:tipoRangoCombo_items']/li[2]</value>
+      <webElementGuid>e8d45462-01d6-40cf-b9e8-3561de8ff71e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccione'])[59]/following::li[1]</value>
-      <webElementGuid>1df9084d-fb85-4c4f-a1fc-925ad094a2ea</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccione'])[56]/following::li[1]</value>
+      <webElementGuid>63d79617-32cb-47b5-8cd3-fd7fbecff8fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='UNISALUD'])[1]/following::li[2]</value>
-      <webElementGuid>d4acfdaa-39e1-4051-95c4-a2a2435db31f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccione'])[55]/following::li[2]</value>
+      <webElementGuid>9dda41aa-2ca8-4c50-94fd-437613724978</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SubActividad'])[3]/preceding::li[1]</value>
+      <webElementGuid>2bf8bcfc-6ea8-4871-8c40-db1076599002</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actividad'])[5]/preceding::li[2]</value>
+      <webElementGuid>ba3e468e-392e-4b15-933d-db7c596a0101</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[125]/div/ul/li[2]</value>
-      <webElementGuid>1cef0119-0936-448a-bac5-a01bfcd365bd</webElementGuid>
+      <value>//div[163]/div/ul/li[2]</value>
+      <webElementGuid>8278146d-6cbf-4a4b-bc2e-38f87110492b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//li[@id = 'tabview:addCuposForm:horaFinal_1' and (text() = '10:30 a. m.' or . = '10:30 a. m.')]</value>
-      <webElementGuid>49a52039-9b9f-4a5b-8435-d46f659f24e4</webElementGuid>
+      <value>//li[@id = 'tabview:addCuposForm:tipoRangoCombo_1' and (text() = 'Tiempo' or . = 'Tiempo')]</value>
+      <webElementGuid>ad7db497-85c8-43c8-8647-df98236441a2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

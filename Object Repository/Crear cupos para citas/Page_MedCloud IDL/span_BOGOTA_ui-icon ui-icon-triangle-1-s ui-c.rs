@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_mircoles 12-feb.-2025_ui-button-icon-l_9a5267</name>
+   <name>span_BOGOTA_ui-icon ui-icon-triangle-1-s ui-c</name>
    <tag></tag>
-   <elementGuidId>2478ca1f-1c16-4ada-9180-f2a017810976</elementGuidId>
+   <elementGuidId>9b17d6cf-cb3d-45e6-9b0d-7850288193a5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='form:carrousel:0:j_idt235']/span</value>
+         <value>//div[@id='tabview:addCuposForm:profesionalesdAgentes']/div[3]/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>span.ui-button-icon-left.ui-icon.ui-c.ui-icon-add</value>
+         <value>div.ui-selectonemenu-trigger.ui-state-default.ui-corner-right.ui-state-hover > span.ui-icon.ui-icon-triangle-1-s.ui-c</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=button[name=&quot; agregar/eliminar cupos del dia&quot;i]</value>
+         <value>[id=&quot;tabview\:addCuposForm\:profesionalesdAgentes&quot;] span</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,46 +29,46 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>faaf61da-f63e-4c5c-ad20-9585a96aedde</webElementGuid>
+      <webElementGuid>faaa4ec2-c0bd-4196-b6b8-70f503bc7ff3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui-button-icon-left ui-icon ui-c ui-icon-add</value>
-      <webElementGuid>b5b19b78-e112-4da4-be71-cc9c5c01c468</webElementGuid>
+      <value>ui-icon ui-icon-triangle-1-s ui-c</value>
+      <webElementGuid>31a408b4-3010-49f2-a911-7b112b990160</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;form:carrousel:0:j_idt235&quot;)/span[@class=&quot;ui-button-icon-left ui-icon ui-c ui-icon-add&quot;]</value>
-      <webElementGuid>3753133a-fd4d-4a44-8545-8366d4490a12</webElementGuid>
+      <value>id(&quot;tabview:addCuposForm:profesionalesdAgentes&quot;)/div[@class=&quot;ui-selectonemenu-trigger ui-state-default ui-corner-right ui-state-hover&quot;]/span[@class=&quot;ui-icon ui-icon-triangle-1-s ui-c&quot;]</value>
+      <webElementGuid>03bcacbd-62a3-4f37-9fb2-6e85077c7ce9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Agendamiento cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>77903002-7aa2-4a0b-86c5-78843f046cbf</webElementGuid>
+      <value>Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>fbfb9972-82ad-4f04-a16b-318801909d9e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='form:carrousel:0:j_idt235']/span</value>
-      <webElementGuid>b2077248-c4e8-4f80-a078-9a33fd1ba810</webElementGuid>
+      <value>//div[@id='tabview:addCuposForm:profesionalesdAgentes']/div[3]/span</value>
+      <webElementGuid>c470fdfd-47c6-40e0-a9fd-c77c076db955</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[3]/button/span</value>
-      <webElementGuid>8fba89e3-71d7-45c2-a5c6-b5ea5693acf3</webElementGuid>
+      <value>//table[3]/tbody/tr[2]/td[2]/div/div[3]/span</value>
+      <webElementGuid>f300f2cf-22dd-4be9-9d74-7c0f62ecfd04</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

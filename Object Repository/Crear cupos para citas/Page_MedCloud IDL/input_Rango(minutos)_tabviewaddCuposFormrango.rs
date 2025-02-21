@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Filter by Entidad Seguro_tabviewaddCu_0fe1cf</name>
+   <name>input_Rango(minutos)_tabviewaddCuposFormrango</name>
    <tag></tag>
-   <elementGuidId>51b2a006-8a64-4e67-95aa-5dc8a5f33466</elementGuidId>
+   <elementGuidId>d2de535c-9789-4caf-8d92-b42cdf1b6e2e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='tabview:addCuposForm:tblEntidadSeguroCupos:j_idt775:filter']</value>
+         <value>//input[@id='tabview:addCuposForm:rango']</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=textbox[name=&quot;Filter by Entidad Seguro&quot;i]</value>
+         <value>[id=&quot;tabview\:addCuposForm\:rango&quot;]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,47 +29,63 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>946136af-36d8-43fc-93e4-20314743c799</webElementGuid>
+      <webElementGuid>419ab335-0e69-42ff-a7bc-b22f7a2ffcaf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>tabview:addCuposForm:tblEntidadSeguroCupos:j_idt775:filter</value>
-      <webElementGuid>f1b33a20-521d-4833-b766-10cc1194dfe5</webElementGuid>
+      <value>tabview:addCuposForm:rango</value>
+      <webElementGuid>45b65078-95ea-4938-8bea-9129ef52014b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>tabview:addCuposForm:tblEntidadSeguroCupos:j_idt775:filter</value>
-      <webElementGuid>531b014e-a3dc-4043-a9ff-e6dc5baaff37</webElementGuid>
+      <value>tabview:addCuposForm:rango</value>
+      <webElementGuid>8b7cf043-668d-4989-8fed-b7972fbede4b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>f64f7ddf-ed28-4b9d-b977-ffcc18ffbedf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>30</value>
+      <webElementGuid>7c0ad0b9-b986-4986-938e-8da7d8c2afef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui-column-filter ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-focus ui-state-hover</value>
-      <webElementGuid>90875aac-c330-4e39-b7e4-f08d405c6ace</webElementGuid>
+      <value>ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-filled ui-state-hover ui-state-focus</value>
+      <webElementGuid>e174cc5e-eafa-43e9-aac3-59d5c4644852</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>autocomplete</name>
+      <name>aria-required</name>
       <type>Main</type>
-      <value>off</value>
-      <webElementGuid>e2dd1353-abf1-4925-9d0e-db1441268587</webElementGuid>
+      <value>true</value>
+      <webElementGuid>d3daa21a-c769-4f6f-bf68-3e46c9fc3fe1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>aria-labelledby</name>
+      <name>onblur</name>
       <type>Main</type>
-      <value>tabview:addCuposForm:tblEntidadSeguroCupos:j_idt775:filter_label</value>
-      <webElementGuid>68eea0a2-be9c-4d59-bdef-06d0256ab491</webElementGuid>
+      <value>PrimeFaces.ab({s:&quot;tabview:addCuposForm:rango&quot;,e:&quot;blur&quot;,f:&quot;tabview:addCuposForm&quot;,p:&quot;tabview:addCuposForm:rango&quot;,u:&quot;tabview:addCuposForm:horaInicio&quot;});</value>
+      <webElementGuid>695e3754-a0c2-4b07-86d2-24108f619024</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -76,7 +93,7 @@
       <name>role</name>
       <type>Main</type>
       <value>textbox</value>
-      <webElementGuid>df90bab5-f63b-4b27-8814-ee112c5af20c</webElementGuid>
+      <webElementGuid>e436cb9c-6691-4f32-9e85-a947191fb763</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -84,7 +101,7 @@
       <name>aria-disabled</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>b53b3139-b42e-4fdf-bc7f-b6591c007d5b</webElementGuid>
+      <webElementGuid>a5e80f16-e6bf-42b6-bb07-054a66ab9b82</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -92,54 +109,54 @@
       <name>aria-readonly</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>61672633-e440-4aa6-9d9b-99a374068ed2</webElementGuid>
+      <webElementGuid>2b0b691f-d16d-4df4-aa93-f4f5828b83ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tabview:addCuposForm:tblEntidadSeguroCupos:j_idt775:filter&quot;)</value>
-      <webElementGuid>ff74897f-b1b5-4905-a8dd-f1fc832c06c7</webElementGuid>
+      <value>id(&quot;tabview:addCuposForm:rango&quot;)</value>
+      <webElementGuid>062dcd4a-c1cb-4548-a86e-e4bea5756c5a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Agendamiento cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>6afa5cef-cba6-4dc9-9926-9a3db9183cfd</webElementGuid>
+      <value>Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>547876c5-15ff-43a5-b9f7-85cf2a6bd1f6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='tabview:addCuposForm:tblEntidadSeguroCupos:j_idt775:filter']</value>
-      <webElementGuid>570f6e55-9bd2-472c-966c-ce3313a0337f</webElementGuid>
+      <value>//input[@id='tabview:addCuposForm:rango']</value>
+      <webElementGuid>9d136108-fd1d-4df5-b801-e09170de5056</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//th[@id='tabview:addCuposForm:tblEntidadSeguroCupos:j_idt775']/input</value>
-      <webElementGuid>c4d9a774-f475-4231-9024-cf233721bb55</webElementGuid>
+      <value>//table[@id='tabview:addCuposForm:panelRango']/tbody/tr/td[2]/input</value>
+      <webElementGuid>3da80cb6-26ed-49a5-bc5c-f56212ab7e38</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td/div/div/table/thead/tr/th/input</value>
-      <webElementGuid>303e4460-afbd-4a4a-a1e1-804f6caac4f6</webElementGuid>
+      <value>//table[2]/tbody/tr/td[2]/input</value>
+      <webElementGuid>cef3a007-7f64-4a82-920d-5872089761f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'tabview:addCuposForm:tblEntidadSeguroCupos:j_idt775:filter' and @name = 'tabview:addCuposForm:tblEntidadSeguroCupos:j_idt775:filter']</value>
-      <webElementGuid>bef92625-bab3-4c61-9244-44776d5010b6</webElementGuid>
+      <value>//input[@id = 'tabview:addCuposForm:rango' and @name = 'tabview:addCuposForm:rango' and @type = 'text']</value>
+      <webElementGuid>d627f375-8be6-440a-bd37-d55cdeffbfe1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

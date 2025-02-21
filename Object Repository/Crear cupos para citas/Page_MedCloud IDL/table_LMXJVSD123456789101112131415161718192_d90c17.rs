@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>table_LMXJVSD123456789101112131415161718192_d90c17</name>
+   <tag></tag>
+   <elementGuidId>c63ac2c8-43d0-47cb-87e8-394469335ff8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='form:calendar_inline']/div/table</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>table.ui-datepicker-calendar</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;  select month select year L M X J V S D 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 Hoy&quot;i] >> internal:role=table</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>table</value>
+      <webElementGuid>10629d16-505f-4454-94e6-49b249c7c515</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-datepicker-calendar</value>
+      <webElementGuid>529314ac-0406-41a6-9a8f-b47e483b4f12</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>LMXJVSD     12345678910111213141516171819202122232425262728  </value>
+      <webElementGuid>13fe8ba9-823a-45b1-97d8-cf8815a574d0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;form:calendar_inline&quot;)/div[@class=&quot;ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all&quot;]/table[@class=&quot;ui-datepicker-calendar&quot;]</value>
+      <webElementGuid>0686380c-fe64-4114-98c3-785229733dcc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>f733b678-6ef9-47ba-b7fc-9e7cada2c641</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='form:calendar_inline']/div/table</value>
+      <webElementGuid>24a6d5cc-1137-4682-b1bd-aa79dc9d512c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Febrero'])[1]/following::table[1]</value>
+      <webElementGuid>3b48a6d6-bdb0-4722-ad36-2dcba05002ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Siguiente'])[1]/following::table[1]</value>
+      <webElementGuid>8a757655-0149-44ae-b180-5daa4ee728c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/div/div/table</value>
+      <webElementGuid>c7e2c2c4-bf80-4b7a-8ea6-230081168523</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//table[(text() = 'LMXJVSD     12345678910111213141516171819202122232425262728  ' or . = 'LMXJVSD     12345678910111213141516171819202122232425262728  ')]</value>
+      <webElementGuid>3ab71cfb-fd1f-4cd8-a8af-cdffed338c88</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

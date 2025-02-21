@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_1500 p. m</name>
+   <name>li_2000 p. m</name>
    <tag></tag>
-   <elementGuidId>57a959a1-0b57-4cd9-8ab5-af6e2e0f0fcc</elementGuidId>
+   <elementGuidId>33461b2f-4305-4d7c-b158-32b05fa7b612</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//li[@id='tabview:addCuposForm:horaFinal_1']</value>
+         <value>//li[@id='tabview:addCuposForm:horaFinal_24']</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=option[name=&quot;15:00 p. m.&quot;i]</value>
+         <value>internal:role=option[name=&quot;20:00 p. m.&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>li</value>
-      <webElementGuid>ee407ceb-17ae-4765-9fb6-e6e492908bec</webElementGuid>
+      <webElementGuid>3a30d9a7-dc47-4f90-8d6f-cb96a39645c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,15 +37,15 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all ui-state-hover</value>
-      <webElementGuid>21b9a58a-a59b-472f-9200-16b0021d3276</webElementGuid>
+      <webElementGuid>7c5384ed-d5a5-446c-8c62-3826d0b06680</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-label</name>
       <type>Main</type>
-      <value>15:00 p. m.</value>
-      <webElementGuid>118d7ef8-cfce-4af0-8580-c4a6cc7008c0</webElementGuid>
+      <value>20:00 p. m.</value>
+      <webElementGuid>c7fd4f52-10a3-4233-9d2e-aec816894f0f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,7 +53,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>0483a9b3-b4bb-4639-8083-82e56762eaa1</webElementGuid>
+      <webElementGuid>e5703465-54bd-4f83-85da-03043bfd7197</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,7 +61,7 @@
       <name>role</name>
       <type>Main</type>
       <value>option</value>
-      <webElementGuid>5686ab73-361b-4fa8-8737-72966301f70a</webElementGuid>
+      <webElementGuid>c93d8b57-73f7-473c-8e63-721dc661d32c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -68,86 +69,86 @@
       <name>aria-selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>2ff59986-6370-4030-80f2-b854e430c6a0</webElementGuid>
+      <webElementGuid>5be62648-d05f-4394-a9c0-6085c11c6018</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>tabview:addCuposForm:horaFinal_1</value>
-      <webElementGuid>d2e45760-adf2-4c3d-96f6-0ee4216020f2</webElementGuid>
+      <value>tabview:addCuposForm:horaFinal_24</value>
+      <webElementGuid>e253e23e-e408-4a5e-93d4-31eaae5403be</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>15:00 p. m.</value>
-      <webElementGuid>e3f2e820-d03c-41dc-b106-865501ded5be</webElementGuid>
+      <value>20:00 p. m.</value>
+      <webElementGuid>134de6fa-e640-4db2-b652-f49d0edefd0f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tabview:addCuposForm:horaFinal_1&quot;)</value>
-      <webElementGuid>c421a501-0dc5-4fea-b08c-7f15fdb0c30e</webElementGuid>
+      <value>id(&quot;tabview:addCuposForm:horaFinal_24&quot;)</value>
+      <webElementGuid>67bec639-4bfd-457a-8e7e-69b8405e9fe5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Agendamiento cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>18018f25-f2f6-4ec0-961f-4094c32fe629</webElementGuid>
+      <value>Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>3bbebe5e-9679-4039-a5ce-1072e3cd5af6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//li[@id='tabview:addCuposForm:horaFinal_1']</value>
-      <webElementGuid>eee68f77-7b87-4467-90ef-22faba1fba5e</webElementGuid>
+      <value>//li[@id='tabview:addCuposForm:horaFinal_24']</value>
+      <webElementGuid>e43696ef-1e05-49c2-8c48-84a9c0737075</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//ul[@id='tabview:addCuposForm:horaFinal_items']/li[2]</value>
-      <webElementGuid>00e85447-6c4a-4afd-a2ef-f3b406de889b</webElementGuid>
+      <value>//ul[@id='tabview:addCuposForm:horaFinal_items']/li[25]</value>
+      <webElementGuid>653c532b-5510-4e34-be8f-a4ca9b816750</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccione'])[59]/following::li[1]</value>
-      <webElementGuid>12b58022-eae5-43aa-8628-e44857277cb1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccione'])[59]/following::li[24]</value>
+      <webElementGuid>86061735-0dbe-45f0-9b89-c7071d378cae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='UNISALUD'])[1]/following::li[2]</value>
-      <webElementGuid>8845d8c1-ef89-4252-9cdb-fddd6094e04b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccione'])[58]/following::li[72]</value>
+      <webElementGuid>1a120c17-eb0c-4d4a-8ad2-56b027533731</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[124]/div/ul/li[2]</value>
-      <webElementGuid>235b75b2-7a50-472a-a14d-ac2c7df82a2a</webElementGuid>
+      <value>//div[177]/div/ul/li[25]</value>
+      <webElementGuid>16cf7c13-6761-4ceb-ac09-a1eb3e9c170c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//li[@id = 'tabview:addCuposForm:horaFinal_1' and (text() = '15:00 p. m.' or . = '15:00 p. m.')]</value>
-      <webElementGuid>862dd474-a3f7-4bdf-83c5-7660c1f12e3c</webElementGuid>
+      <value>//li[@id = 'tabview:addCuposForm:horaFinal_24' and (text() = '20:00 p. m.' or . = '20:00 p. m.')]</value>
+      <webElementGuid>96a7ceee-7126-40aa-bf88-2d42fd73bac8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_AnteriorSiguienteFebrero2025LMXJVSD1234_d3f339</name>
+   <tag></tag>
+   <elementGuidId>8020fc50-c0c0-4d27-9f86-fda88c9b14bc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='form:calendar_inline']/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[id=&quot;form\:calendar_inline&quot;] >> internal:text=&quot;AnteriorSiguienteFebrero 2025LMXJVSD 1234567891011121314151617181920212223242526&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>40067ed6-78b9-4a0d-a562-a137fa92e61d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all</value>
+      <webElementGuid>032b09db-c91e-44e8-9c1e-e17ebab0b466</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>AnteriorSiguienteFebrero 2025LMXJVSD     12345678910111213141516171819202122232425262728  Hoy</value>
+      <webElementGuid>d1e5e120-7100-4a6a-841a-1a200ba92108</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;form:calendar_inline&quot;)/div[@class=&quot;ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all&quot;]</value>
+      <webElementGuid>678c3d06-da0f-4467-95d1-26d81489815c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>2e0668ea-f2eb-47f2-b3f5-501f0f672f23</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='form:calendar_inline']/div</value>
+      <webElementGuid>b0d04554-4f8f-44a8-9148-3045b567d0d9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Btn Back'])[1]/following::div[4]</value>
+      <webElementGuid>f6bb4247-5097-4013-990a-80f9a7addd13</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Etiqueta Historia'])[1]/following::div[7]</value>
+      <webElementGuid>605b7b58-2276-41a7-b572-eef3bab61452</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/div/div</value>
+      <webElementGuid>3dbb0ad6-839b-4f9c-ad49-ee0197dd7113</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'AnteriorSiguienteFebrero 2025LMXJVSD     12345678910111213141516171819202122232425262728  Hoy' or . = 'AnteriorSiguienteFebrero 2025LMXJVSD     12345678910111213141516171819202122232425262728  Hoy')]</value>
+      <webElementGuid>b35c6524-06de-4f21-abd9-9fa0d34de3ff</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

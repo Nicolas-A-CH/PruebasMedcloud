@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_settings</name>
+   <name>span_Iniciar sesin</name>
    <tag></tag>
-   <elementGuidId>3652f834-1560-4f2b-9e84-2b57399b3e68</elementGuidId>
+   <elementGuidId>115d298f-e4f7-4c57-a4b2-e79636c6c172</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
+         <value>//button[@id='ingresoForm:j_idt30']/span[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#j_idt84 > a.ripplelink.tabmenuitem-link</value>
+         <value>span.ui-button-text.ui-c</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=link[name=&quot;settings&quot;i]</value>
+         <value>internal:role=button[name=&quot; Iniciar sesión&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -27,103 +28,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
-      <webElementGuid>35a38e7b-86c4-4812-8184-d9f90ff3d9a5</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>href</name>
-      <type>Main</type>
-      <value>#</value>
-      <webElementGuid>620b83a1-ce69-45e7-a1e5-e6b50ba1db4e</webElementGuid>
+      <value>span</value>
+      <webElementGuid>185dcdf0-c31c-4ecc-9601-82812ad85389</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ripplelink tabmenuitem-link</value>
-      <webElementGuid>75d71d14-9d34-4aba-94bf-d1658c7f0181</webElementGuid>
+      <value>ui-button-text ui-c</value>
+      <webElementGuid>0813d997-e913-4b10-98a3-008dc39559bd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>settings</value>
-      <webElementGuid>d5c573cd-29d1-4981-9c39-14459d4cefe0</webElementGuid>
+      <value>Iniciar sesión</value>
+      <webElementGuid>35448e10-5a93-4066-b11d-103e80b21cfd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;j_idt84&quot;)/a[@class=&quot;ripplelink tabmenuitem-link&quot;]</value>
-      <webElementGuid>9a399e7e-0862-4249-96ae-e87002b7cf8d</webElementGuid>
+      <value>id(&quot;ingresoForm:j_idt30&quot;)/span[@class=&quot;ui-button-text ui-c&quot;]</value>
+      <webElementGuid>e552fef5-8531-4bf4-b0bf-c83eda01e4c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Agendamiento cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>1d28d9bc-51fb-40c7-b457-b4311a18ca12</webElementGuid>
+      <value>Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>3353bafa-bba7-43f5-9a6b-77d065f08010</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//li[@id='j_idt84']/a</value>
-      <webElementGuid>607a4241-64fa-4af1-9c74-ef36840fc30b</webElementGuid>
+      <value>//button[@id='ingresoForm:j_idt30']/span[2]</value>
+      <webElementGuid>a2090445-9be5-4da6-8454-783472fec36a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='IDL INGENIERIA DE DESARROLLO SAS'])[1]/following::a[1]</value>
-      <webElementGuid>9cb83609-6b24-4408-9424-57761c100aac</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='recordar mis datos'])[1]/following::span[2]</value>
+      <webElementGuid>9f9422b5-8786-4972-8699-54b04d2aecf4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='home'])[1]/following::a[1]</value>
-      <webElementGuid>7f047146-b875-4e05-8665-4b31d4b27eaa</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Contraseña'])[1]/following::span[3]</value>
+      <webElementGuid>a5c1bfa6-076c-4c0e-bd26-79fd606ab95f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Medcloud Menú'])[1]/preceding::a[1]</value>
-      <webElementGuid>946af4e2-06dd-4b2d-8318-f2a44a417409</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cambio Contraseña'])[1]/preceding::span[2]</value>
+      <webElementGuid>d3ebcb39-b45a-4213-9cb0-498a151b67ec</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:href</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(//a[contains(@href, '#')])[12]</value>
-      <webElementGuid>833b25fc-cf41-4248-a2a4-ab9472e3bc28</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Usuario:'])[1]/preceding::span[4]</value>
+      <webElementGuid>95ffe1a6-eafa-455e-bd21-6bb73855af58</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/ul/li[2]/a</value>
-      <webElementGuid>ad061113-ce89-4aca-91c9-ad0f35367ee8</webElementGuid>
+      <value>//span[2]</value>
+      <webElementGuid>ccfb1bfb-b2bd-4368-9d61-6bc7d027e972</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@href = '#' and (text() = 'settings' or . = 'settings')]</value>
-      <webElementGuid>1ba2266f-9c14-4334-8641-2bf6553e0623</webElementGuid>
+      <value>//span[(text() = 'Iniciar sesión' or . = 'Iniciar sesión')]</value>
+      <webElementGuid>54c976b3-1731-4533-a4af-a0928b995d2e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>label_COOMEVA MP</name>
+   <name>label_Seleccione_1</name>
    <tag></tag>
-   <elementGuidId>15cc4c13-8f33-42fe-b48b-9361a4f2f27d</elementGuidId>
+   <elementGuidId>616a19d0-a77a-434d-8f7e-96dd47f7e31a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[@id='tabview:addCuposForm:tblEntidadSeguroCupos:0:j_idt777']</value>
+         <value>//label[@id='tabview:addCuposForm:horaInicio_label']</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:label=&quot;Cupos por Día&quot;i >> internal:text=&quot;COOMEVA MP&quot;i</value>
+         <value>[id=&quot;tabview\:addCuposForm\:horaInicio_label&quot;]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,110 +29,110 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>a519a9cf-d9ad-4a44-87aa-ebd485c11da6</webElementGuid>
+      <webElementGuid>6afe21db-50e1-408b-aec2-76a00ebfab48</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>tabview:addCuposForm:tblEntidadSeguroCupos:0:j_idt777</value>
-      <webElementGuid>4a0e672e-2d39-4311-b41d-c8df9a71da74</webElementGuid>
+      <value>tabview:addCuposForm:horaInicio_label</value>
+      <webElementGuid>55230eae-6cca-4689-87fa-27dcb656c216</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui-outputlabel ui-widget</value>
-      <webElementGuid>8db38190-e4f3-4419-8f97-21dc2a66309a</webElementGuid>
+      <value>ui-selectonemenu-label ui-inputfield ui-corner-all</value>
+      <webElementGuid>84409327-dad1-4c9b-aa26-d45c76b9d54a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>COOMEVA MP</value>
-      <webElementGuid>e8a42a22-39ff-4afb-bb03-439ba9a930c8</webElementGuid>
+      <value>Seleccione</value>
+      <webElementGuid>e2618e1c-3c55-4188-824d-d002237f79f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tabview:addCuposForm:tblEntidadSeguroCupos:0:j_idt777&quot;)</value>
-      <webElementGuid>f5d8fcea-4355-417c-9792-5fefc8352803</webElementGuid>
+      <value>id(&quot;tabview:addCuposForm:horaInicio_label&quot;)</value>
+      <webElementGuid>a01dec53-fbde-4ca6-925a-1783b7d3cc2a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Agendamiento cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>5e1d01b0-84c0-4f71-a422-958afb2dff7d</webElementGuid>
+      <value>Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>cb098b54-c61d-449a-99d8-d4a85b3b438a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//label[@id='tabview:addCuposForm:tblEntidadSeguroCupos:0:j_idt777']</value>
-      <webElementGuid>d852cda7-bdf4-4f7c-8c07-915a253dd520</webElementGuid>
+      <value>//label[@id='tabview:addCuposForm:horaInicio_label']</value>
+      <webElementGuid>8e60e9f7-6fa8-4cd1-bc39-56a7987c3ab4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tbody[@id='tabview:addCuposForm:tblEntidadSeguroCupos_data']/tr/td/label</value>
-      <webElementGuid>87c0f0d9-f17c-4991-a6d6-ba81638f4b42</webElementGuid>
+      <value>//div[@id='tabview:addCuposForm:horaInicio']/label</value>
+      <webElementGuid>06d23c39-bbac-4293-b462-4aac72381480</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Filter by Entidad Seguro'])[2]/following::label[1]</value>
-      <webElementGuid>03577391-2c1a-40ed-b307-5a3016b9a978</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hora Inicio'])[1]/following::label[1]</value>
+      <webElementGuid>51c58add-c729-4a28-8e06-df05c46354dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Entidad Seguro'])[2]/following::label[2]</value>
-      <webElementGuid>57710db6-6533-4392-83df-02e8c028c2ff</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PROCEDIMIENTOS'])[4]/following::label[1]</value>
+      <webElementGuid>e471b9e9-f299-43e2-a728-d9cc1195c3af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='PARTICULAR'])[12]/preceding::label[1]</value>
-      <webElementGuid>b88fca9b-9ac7-481f-9eae-66395ac4ff6c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hora Final'])[1]/preceding::label[1]</value>
+      <webElementGuid>4151baa7-37ae-44b8-9088-720ecea3e64f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='COLSANITAS MP'])[3]/preceding::label[2]</value>
-      <webElementGuid>0ef868c5-6ff3-424e-ba81-8e329ee6407d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccione'])[44]/preceding::label[1]</value>
+      <webElementGuid>742167ca-2fe8-4508-81f4-997d4c7c48ee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td/div/div/table/tbody/tr/td/label</value>
-      <webElementGuid>913947df-16a0-4099-bbfd-7b6107005df6</webElementGuid>
+      <value>//table[3]/tbody/tr/td[2]/div/label</value>
+      <webElementGuid>9c812641-8a10-47d3-873f-b09ab31411ab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//label[@id = 'tabview:addCuposForm:tblEntidadSeguroCupos:0:j_idt777' and (text() = 'COOMEVA MP' or . = 'COOMEVA MP')]</value>
-      <webElementGuid>72bea0df-a8e4-4e74-a65a-998c56ee5070</webElementGuid>
+      <value>//label[@id = 'tabview:addCuposForm:horaInicio_label' and (text() = 'Seleccione' or . = 'Seleccione')]</value>
+      <webElementGuid>bf8f4628-7af3-4bea-b49a-bcd680a9c7c6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -3,7 +3,7 @@
    <description></description>
    <name>iframe</name>
    <tag></tag>
-   <elementGuidId>df2630b4-7a09-4773-b649-956e2ad4ffe1</elementGuidId>
+   <elementGuidId>2bc99502-277b-4be1-a716-79d09ca4e741</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>iframe</value>
-      <webElementGuid>ffe8cbbc-7ba2-4317-a9e6-2fd81bdaf7af</webElementGuid>
+      <webElementGuid>6904258d-1d08-423c-8792-ca34891e04c0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>src</name>
       <type>Main</type>
       <value>validaIngreso.xhtml</value>
-      <webElementGuid>c57d76b1-13c1-4747-aea3-90517be7639a</webElementGuid>
+      <webElementGuid>4dd91c1f-121e-440e-b30b-46ef26574a1e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/iframe[1]</value>
-      <webElementGuid>07c83c7c-a4f5-4aca-b9ba-a8d117ee7c6e</webElementGuid>
+      <webElementGuid>7f0474fc-9446-4f84-ac2b-5db580fce73e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//iframe</value>
-      <webElementGuid>df598339-a9c7-445a-96ff-0fd425266314</webElementGuid>
+      <webElementGuid>9b87d815-0fb7-4ed9-9bfe-539ea2542356</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,6 +61,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//iframe[@src = 'validaIngreso.xhtml']</value>
-      <webElementGuid>761f6711-6038-4702-aa25-4880bd53c1df</webElementGuid>
+      <webElementGuid>5a439c6c-263d-4cf1-b63b-4ed16122d54a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
