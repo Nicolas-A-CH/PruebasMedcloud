@@ -49,6 +49,26 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/crecion cita/Page_MedCloud IDL/a_Agendar",
+      "brokenLocator": "//a[@id\u003d\u0027form:carrousel:0:agendarbtn\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Descargar Logs Rips JSON\u0027])[1]/following::a[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/crecion cita/Page_MedCloud IDL/span_Iniciar sesin",
+      "brokenLocator": "//button[@id\u003d\u0027ingresoForm:j_idt29\u0027]/span[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027recordar mis datos\u0027])[1]/following::span[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/crecion cita/Page_MedCloud IDL/span_Iniciar sesin_neighbor.png"
     }
   ]
 }

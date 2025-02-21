@@ -18,7 +18,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\larevalo\\AppData\\Local\\Temp\\Katalon\\Test Cases\\MedCloud\\Creacion cita\\20250220_114642\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\larevalo\\AppData\\Local\\Temp\\Katalon\\Test Cases\\MedCloud\\Creacion cita\\20250221_114812\\execution.properties')
 
 TestCaseMain.beforeStart()
 

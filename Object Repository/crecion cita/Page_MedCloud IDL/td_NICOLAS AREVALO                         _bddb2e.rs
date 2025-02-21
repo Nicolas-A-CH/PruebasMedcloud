@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='form:carrousel:0:j_idt226']/table/tbody/tr/td[2]</value>
+         <value>//*[@id=&quot;form:carrousel:0:treetableCalendar_data&quot;]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>07c53650-6cbc-4117-bb28-03a8cd7ccb29</webElementGuid>
+      <webElementGuid>d737ac65-d001-4131-80ba-71e45707bc81</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,7 +41,7 @@
 
 
                                             jueves 20-feb.-2025</value>
-      <webElementGuid>1bd433cd-3718-4172-9869-5aea1c558d6c</webElementGuid>
+      <webElementGuid>d4e8615c-3366-4fb5-9c6e-66e4af2c54ba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,7 +49,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;form:carrousel:0:j_idt226&quot;)/table[1]/tbody[1]/tr[1]/td[2]</value>
-      <webElementGuid>7013cd94-601f-442f-a100-2aa9f8a6fdc0</webElementGuid>
+      <webElementGuid>4923d9fe-0fe4-4016-a9f7-23d3b60a29e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,7 +57,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/crecion cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>aa6f4bb5-b04f-4830-b440-89f2dfb8d1cb</webElementGuid>
+      <webElementGuid>cb236629-8f65-4199-ab8d-c2ba96a76276</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -66,7 +65,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//a[@id='form:carrousel:0:j_idt226']/table/tbody/tr/td[2]</value>
-      <webElementGuid>faf6d92e-b739-45d9-8e43-c1d2e3c2a2f9</webElementGuid>
+      <webElementGuid>839f3bbb-e07b-4606-ae5b-66a355098414</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,7 +73,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Agregar Nota'])[1]/following::td[3]</value>
-      <webElementGuid>61573b76-f7bf-42b4-b2fa-12cdf953e73b</webElementGuid>
+      <webElementGuid>1fcdb695-3f45-4601-bced-dc6660fdfc95</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +81,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='E'])[1]/following::td[3]</value>
-      <webElementGuid>99b4ec3b-c34d-489c-ae47-0c766b11db93</webElementGuid>
+      <webElementGuid>bfbb5d24-9129-4e1c-878f-023be2827d44</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +89,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a/table/tbody/tr/td[2]</value>
-      <webElementGuid>57c652cf-310e-41e2-8d26-4bf4698ffc22</webElementGuid>
+      <webElementGuid>430962ff-23d8-4adf-85f5-ec95f2956351</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -108,6 +107,6 @@
 
 
                                             jueves 20-feb.-2025')]</value>
-      <webElementGuid>3136140b-8a10-41e1-b6e7-91de52a7177d</webElementGuid>
+      <webElementGuid>c77f999f-3e56-4139-b990-17fc135ce72c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

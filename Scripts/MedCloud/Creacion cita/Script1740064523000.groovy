@@ -16,6 +16,38 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebElement as WebElement
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.testobject.ConditionType
+import org.openqa.selenium.WebElement as WebElement
+
+// Método para encontrar y seleccionar la cita por hora
+def seleccionarCitaPorHora(String horaInicio, String horaFin) {
+    // Cambiar el contexto al iframe
+    TestObject iframe = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/iframe')
+    WebUI.switchToFrame(iframe, 10)
+    
+    // XPath dinámico que busca la hora exacta en el <td> y el <span>
+    String xpath = "//tr[contains(@class, 'ui-node-level-2') and .//td[1][contains(., '${horaInicio}') and .//span[contains(@id, 'divhora') and contains(., '-${horaFin}')]]]"
+    
+    // Crear TestObject dinámico
+    TestObject filaCupo = new TestObject("filaCupo").addProperty("xpath", ConditionType.EQUALS, xpath)
+    
+    // Esperar a que la fila esté presente (máximo 10 segundos)
+    WebUI.waitForElementPresent(filaCupo, 10)
+    
+    // Verificar que el XPath funcione en Katalon
+    List<WebElement> elementos = WebUiCommonHelper.findWebElements(filaCupo, 10)
+    println "Elementos encontrados: " + elementos.size()
+    
+    // Interactuar con la fila encontrada
+    WebUI.click(filaCupo)
+    WebUI.rightClick(filaCupo)
+    
+    // Volver al contexto principal si es necesario
+    WebUI.switchToDefaultContent()
+}
 
 //apertura de navegacion
 WebUI.openBrowser('')
@@ -41,12 +73,15 @@ WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_
 WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/td_NICOLAS AREVALO                         _bddb2e'), 
     0)
 
-WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_var valor                               _39e786'))
+WebUI.delay(3)
 
-WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/td_310 p. m.-320 p. m. BOGOTA              _843fff'))
+// Seleccionar la cita por hora
+seleccionarCitaPorHora("5:00 p. m.", "5:10 p. m.") // Formato exacto del texto
 
-WebUI.rightClick(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/td_310 p. m.-320 p. m. BOGOTA              _843fff'))
-
+//WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_var valor                               _39e786'))
+//WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/td_310 p. m.-320 p. m. BOGOTA              _843fff'))
+//WebUI.rightClick(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/td_310 p. m.-320 p. m. BOGOTA              _843fff'))
+WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Agendar'))
 
 WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div_NICOLAS AREVALO'))
@@ -61,8 +96,7 @@ WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/spa
 WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Cedula Ciudadania'), 
     5)
 
-WebUI.waitForElementNotPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Cedula Ciudadania'), 
-    15)
+WebUI.waitForElementClickable(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Cedula Ciudadania'), 15)
 
 //Ingreso de datos del paciente en formulario
 WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Cedula Ciudadania'))
@@ -70,7 +104,7 @@ WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/lab
 WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Cedula Ciudadania'))
 
 WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewnroI_3c9080'), 
-    '1072364047')
+    '1072364048')
 
 WebUI.sendKeys(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewnroI_3c9080'), 
     Keys.chord(Keys.TAB))
