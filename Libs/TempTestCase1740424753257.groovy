@@ -18,7 +18,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\larevalo\\AppData\\Local\\Temp\\Katalon\\Test Cases\\MedCloud\\creacion de multiples citas\\20250223_151002\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\larevalo\\AppData\\Local\\Temp\\Katalon\\Test Cases\\MedCloud\\creacion de multiples citas\\20250224_141913\\execution.properties')
 
 TestCaseMain.beforeStart()
 

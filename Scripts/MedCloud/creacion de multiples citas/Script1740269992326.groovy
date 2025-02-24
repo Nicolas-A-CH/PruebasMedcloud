@@ -84,7 +84,6 @@ def convertirFormatoHora(String hora) {
 def seleccionarCupo(String horaInicio, String horaFin) {
     // Cambiar el contexto al iframe
     TestObject iframe = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/iframe')
-    WebUI.switchToFrame(iframe, 10)
     
     // Normalizar espacios no rompibles (U+00A0) a espacios normales y recortar
     horaInicio = horaInicio.replace('\u00A0', ' ').trim()
@@ -101,36 +100,78 @@ def seleccionarCupo(String horaInicio, String horaFin) {
     
     // Crear TestObject dinámico
     TestObject filaCupo = new TestObject("filaCupo").addProperty("xpath", ConditionType.EQUALS, xpath)
-    
-    try {
-        // Esperar a que el elemento esté presente y sea visible
-        WebUI.waitForElementPresent(filaCupo, 10)
-        WebUI.waitForElementVisible(filaCupo, 10)
-        
-        List<WebElement> elementos = WebUiCommonHelper.findWebElements(filaCupo, 5)
-		WebUI.comment("Cantidad de elementos encontrados: " + elementos.size())
-        
-        if (elementos.size() == 0) {
-            throw new Exception("No se encontraron elementos para el XPath: " + xpath)
-        }
-        
-		
-		// Hacer clic después de asegurar que está en vista
-		WebUI.waitForElementClickable(filaCupo, 5)
-		WebUI.focus(filaCupo)
-        WebUI.enhancedClick(filaCupo)
-        WebUI.rightClick(filaCupo)
-    } catch (Exception e) {
-        // Generar nombre de archivo con timestamp
-        def timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().time)
-        def screenshotPath = "error_cupo_${horaInicio}_${timestamp}.png"
-        
-        println "Error al seleccionar el cupo: " + e.getMessage()
-        e.printStackTrace()
-        throw new Exception("No se pudo seleccionar el cupo ${horaInicio}-${horaFin}: " + e.getMessage())
-    } finally {
-        WebUI.switchToDefaultContent()
-    }
+	
+	int intentos = 3
+	boolean exito = false
+	
+	while (intentos > 0 && !exito) {
+	
+		try {
+			// Cambiar al contexto del iframe en cada intento
+			WebUI.switchToFrame(iframe, 10)
+			
+			// Ocultar el encabezado fijo
+			((JavascriptExecutor) DriverFactory.getWebDriver()).executeScript("document.getElementById('form:divheaderProfesional').style.display = 'none';")
+			
+			// Obtener el valor del xpath del objeto filaCupo
+			def propiedades = filaCupo.getProperties()
+			def xpathCupo = propiedades.find { it.name == "xpath" }?.value
+			println "XPath del cupo: '${xpathCupo}'"
+			// Esperar a que el elemento esté presente y sea visible
+			WebUI.waitForElementPresent(filaCupo, 10)
+			WebUI.waitForElementVisible(filaCupo, 10)
+			
+			List<WebElement> elementos = WebUiCommonHelper.findWebElements(filaCupo, 5)
+			WebUI.comment("Cantidad de elementos encontrados: " + elementos.size())
+			
+			if (elementos.size() == 0) {
+				throw new Exception("No se encontraron elementos para el XPath: " + xpath)
+			}
+			
+			// Desplazar la página hasta el elemento usando JavaScript
+			WebElement element = elementos.get(0)
+			((JavascriptExecutor) DriverFactory.getWebDriver()).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element)
+			WebUI.delay(1) // Pequeña pausa para asegurar que el desplazamiento se complete
+			
+			// Hacer clic después de asegurar que está en vista
+			WebUI.waitForElementClickable(filaCupo, 5)
+			WebUI.focus(filaCupo)
+			WebUI.delay(1)
+			WebUI.enhancedClick(filaCupo)
+			WebUI.delay(2)
+			WebUI.rightClick(filaCupo)
+			
+			WebUI.delay(2)
+			
+			WebUI.switchToDefaultContent()
+			// Verificar si el elemento 'Agendar' es visible y clickable
+            if (!WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Agendar'), 5)) {
+                throw new Exception("El elemento 'Agendar' no es visible.")
+            }
+            
+            if (!WebUI.waitForElementClickable(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Agendar'), 5)) {
+                throw new Exception("El elemento 'Agendar' no es clickable.")
+            }
+			
+			WebUI.switchToFrame(iframe, 10)
+			
+			WebUI.comment("Cupo seleccionado correctamente: ${horaInicio} - ${horaFin}")
+			exito = true
+			
+		} catch (Exception e) {
+			intentos--
+            WebUI.comment("Error al seleccionar el cupo (${horaInicio} - ${horaFin}), intentos restantes: ${intentos}")
+            if (intentos == 0) {
+                String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().time)
+                WebUI.comment("No se pudo seleccionar el cupo tras varios intentos. Error: " + e.getMessage())
+                throw new Exception("No se pudo seleccionar el cupo ${horaInicio}-${horaFin} tras múltiples intentos.")
+            }
+            WebUI.delay(2)
+		} finally {
+			WebUI.switchToDefaultContent()
+		}
+	}
+	
 }
 
 // Método para crear cita con parámetros dinámicos
@@ -140,9 +181,11 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 	
 	// Flujo de creación de cita
 	WebUI.delay(2)
-	WebUI.takeScreenshot("screenshot_before_click.png")
 	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Agendar'))
-	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div_NICOLAS AREVALO'))
+	
+	//Esperar ventana emergente
+	WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div_NICOLAS AREVALO'), 10)
+	WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div_NICOLAS AREVALO'), 20)
 	
 	// Configuración de tipo de cita
 	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Seleccione'))
@@ -150,10 +193,11 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar'))
 	
 	//Esperar a que la ventana del formulario cargue
+	
+	WebUI.delay(3) // Esperar 2 segundos antes de continuar
+	
 	WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewnroI_3c9080'),
 		5)
-	
-	WebUI.delay(2) // Esperar 2 segundos antes de continuar
 	
 	WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewnroI_3c9080'), 15)
 	
@@ -270,6 +314,8 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 	
 	WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/button_Aceptar'),15)
 	
+	WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/button_Aceptar'),25)
+	
 	WebUI.waitForElementClickable(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/button_Aceptar'),15)
 	
 	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/button_Aceptar'))
@@ -327,7 +373,7 @@ WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_
 WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/td_NICOLAS AREVALO                         _bddb2e'), 
     0)
 
-selectDynamicDate('24')
+selectDynamicDate('25')
 
 WebUI.delay(3)
 

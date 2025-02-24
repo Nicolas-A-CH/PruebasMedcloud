@@ -17,18 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-// Función para reducir el tamaño de la página al 90%
-// Ejecutar JavaScript para cambiar el nivel de zoom al 90%
-// Esperar un momento para que se aplique el cambio
-// Función para reducir el tamaño de la página al 90%
-// Ejecutar JavaScript para cambiar el nivel de zoom al 90%
-// Esperar un momento para que se aplique el cambio
-// Función principal para selección de fecha
-// Cambiar al iframe en cada intento
-// Vuelve al contexto principal
-// Configuración del día deseado (cambia este valor según necesites)
-String targetDay = '24'
-
 //Apertura del navegador
 WebUI.openBrowser('')
 
@@ -58,15 +46,10 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/Crear cupos para
 //Seleccionar doctor para la agendacion de cupos
 WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_NICOLAS AREVALO'))
 
-// Reducir el tamaño de la página al 90%
-reducirTamanioPagina()
+WebUI.delay(1)
 
-//Elemento donde esta el calendario
-//WebUI.click(findTestObject('Crear cupos para citas/Page_MedCloud IDL/div_AnteriorSiguienteFebrero2025LMXJVSD1234_d3f339'))
 // Llamado a la función reutilizable (cambiar el parámetro según necesidad)
-selectDynamicDate('24')
-
-aumentarTamanioPagina()
+selectDynamicDate('25')
 
 //Esperar a que el boton de crear cupos para el doctor especificado este presente
 WebUI.waitForElementPresent(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_sbado 22-feb.-2025_ui-button-icon-left_1ee6c9'), 
@@ -105,6 +88,10 @@ WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedClo
 WebUI.setText(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/input_Rango(minutos)_tabviewaddCuposFormrango'), 
     '30')
 
+WebUI.delay(2)
+
+WebUI.waitForElementClickable(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_Seleccione_ui-icon ui-icon-triangle-1-s ui-c_1'), 10)
+
 WebUI.enhancedClick(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_Seleccione_ui-icon ui-icon-triangle-1-s ui-c'))
 
 WebUI.delay(2)
@@ -133,18 +120,6 @@ WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedClo
 
 //Envio de formulario
 WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_Aceptar'))
-
-def reducirTamanioPagina() {
-    WebUI.executeJavaScript('document.body.style.zoom=\'90%\'', null)
-
-    WebUI.delay(1)
-}
-
-def aumentarTamanioPagina() {
-    WebUI.executeJavaScript('document.body.style.zoom=\'100%\'', null)
-
-    WebUI.delay(1)
-}
 
 def selectDynamicDate(String day) {
     int intentos = 3
