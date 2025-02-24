@@ -17,33 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+// Función para reducir el tamaño de la página al 90%
+// Ejecutar JavaScript para cambiar el nivel de zoom al 90%
+// Esperar un momento para que se aplique el cambio
+// Función para reducir el tamaño de la página al 90%
+// Ejecutar JavaScript para cambiar el nivel de zoom al 90%
+// Esperar un momento para que se aplique el cambio
 // Función principal para selección de fecha
-def selectDynamicDate(String day) {
-    // Cambiar al iframe del calendario
-    WebUI.switchToFrame(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe'), 10)
-    
-    try {
-        // Crear XPath dinámico
-        String xpathDate = "//table[@class='ui-datepicker-calendar']//a[text()='${day}']"
-        
-        // Construir objeto dinámico
-        TestObject fecha = new TestObject("dia_${day}").addProperty(
-            'xpath', 
-            com.kms.katalon.core.testobject.ConditionType.EQUALS, 
-            xpathDate
-        )
-        
-        // Esperar y hacer clic
-        WebUI.waitForElementPresent(fecha, 10)
-        WebUI.waitForElementClickable(fecha, 10)
-        WebUI.enhancedClick(fecha)
-    } finally {
-        // Volver al contexto principal
-        WebUI.switchToDefaultContent()
-    }
-}
+// Cambiar al iframe en cada intento
+// Vuelve al contexto principal
 // Configuración del día deseado (cambia este valor según necesites)
-String targetDay = "23"
+String targetDay = '24'
 
 //Apertura del navegador
 WebUI.openBrowser('')
@@ -65,13 +49,24 @@ WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedClo
 //Esperar que el listado de doctores este disponible
 WebUI.waitForPageLoad(5)
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_NICOLAS AREVALO'), 
+    5)
+
+WebUI.waitForElementClickable(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_NICOLAS AREVALO'), 
+    5)
+
 //Seleccionar doctor para la agendacion de cupos
 WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_NICOLAS AREVALO'))
+
+// Reducir el tamaño de la página al 90%
+reducirTamanioPagina()
 
 //Elemento donde esta el calendario
 //WebUI.click(findTestObject('Crear cupos para citas/Page_MedCloud IDL/div_AnteriorSiguienteFebrero2025LMXJVSD1234_d3f339'))
 // Llamado a la función reutilizable (cambiar el parámetro según necesidad)
-selectDynamicDate('23')
+selectDynamicDate('24')
+
+aumentarTamanioPagina()
 
 //Esperar a que el boton de crear cupos para el doctor especificado este presente
 WebUI.waitForElementPresent(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_sbado 22-feb.-2025_ui-button-icon-left_1ee6c9'), 
@@ -87,8 +82,11 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/Crear cupos para
 WebUI.enhancedClick(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_sbado 22-feb.-2025_ui-button-icon-left_1ee6c9'))
 
 //Esperar que el formulario abra
-WebUI.waitForElementPresent(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/td_COOMEVA MP'), 5)
-WebUI.waitForElementVisible(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/td_COOMEVA MP'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/td_COOMEVA MP'), 
+    5)
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/td_COOMEVA MP'), 
+    5)
 
 //Formulario para la creacion de cupos
 WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/td_COOMEVA MP'))
@@ -97,7 +95,9 @@ WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedClo
 
 //Esperar que los items del select esten disponibles
 WebUI.waitForElementPresent(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_Tiempo'), 5)
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_Tiempo'), 5)
+
 WebUI.waitForElementClickable(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_Tiempo'), 5)
 
 WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_Tiempo'))
@@ -105,24 +105,83 @@ WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedClo
 WebUI.setText(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/input_Rango(minutos)_tabviewaddCuposFormrango'), 
     '30')
 
-WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_Seleccione_ui-icon ui-icon-triangle-1-s ui-c'))
+WebUI.enhancedClick(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_Seleccione_ui-icon ui-icon-triangle-1-s ui-c'))
+
+WebUI.delay(2)
 
 //Esperar que los items del select esten disponibles
 WebUI.waitForElementPresent(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_0800 a. m'), 5)
-WebUI.waitForElementVisible(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_0800 a. m'), 5)
-WebUI.waitForElementClickable(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_0800 a. m'), 5)
 
-WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_0800 a. m'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_0800 a. m'), 5)
+
+WebUI.waitForElementClickable(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_0800 a. m'), 
+    5)
+
+WebUI.enhancedClick(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_0800 a. m'))
 
 WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_Seleccione_ui-icon ui-icon-triangle-1-s ui-c_1'))
 
 //Esperar que los items del select esten disponibles
 WebUI.waitForElementPresent(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_2000 p. m'), 5)
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_2000 p. m'), 5)
-WebUI.waitForElementClickable(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_2000 p. m'), 5)
+
+WebUI.waitForElementClickable(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_2000 p. m'), 
+    5)
 
 WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_2000 p. m'))
 
 //Envio de formulario
 WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_Aceptar'))
+
+def reducirTamanioPagina() {
+    WebUI.executeJavaScript('document.body.style.zoom=\'90%\'', null)
+
+    WebUI.delay(1)
+}
+
+def aumentarTamanioPagina() {
+    WebUI.executeJavaScript('document.body.style.zoom=\'100%\'', null)
+
+    WebUI.delay(1)
+}
+
+def selectDynamicDate(String day) {
+    int intentos = 3
+
+    boolean exito = false
+
+    while ((intentos > 0) && !(exito)) {
+        try {
+            WebUI.switchToFrame(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe'), 10)
+
+            String xpathDate = "//table[@class='ui-datepicker-calendar']//a[text()='$day']"
+
+            TestObject fecha = new TestObject("dia_$day").addProperty('xpath', com.kms.katalon.core.testobject.ConditionType.EQUALS, 
+                xpathDate)
+
+            WebUI.waitForElementPresent(fecha, 5)
+
+            WebUI.waitForElementClickable(fecha, 5)
+
+            WebUI.enhancedClick(fecha)
+
+            exito = true
+        }
+        catch (org.openqa.selenium.StaleElementReferenceException e) {
+            intentos--
+
+            if (intentos == 0) {
+                throw e
+            }
+            
+            WebUI.switchToDefaultContent()
+
+            WebUI.delay(1)
+        } 
+        finally { 
+            WebUI.switchToDefaultContent()
+        }
+    }
+}
 

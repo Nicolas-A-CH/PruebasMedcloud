@@ -79,6 +79,36 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_Iniciar sesin",
+      "brokenLocator": "//button[@id\u003d\u0027ingresoForm:j_idt30\u0027]/span[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027recordar mis datos\u0027])[1]/following::span[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_Iniciar sesin_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_NICOLAS AREVALO",
+      "brokenLocator": "//div[@id\u003d\u0027form:accordionPanel:agentesList\u0027]/div[3]/ul/li[9]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027NICOLE MORENO\u0027])[2]/preceding::li[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_NICOLAS AREVALO_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/crecion cita/Page_MedCloud IDL/td_NICOLAS AREVALO                         _bddb2e",
+      "brokenLocator": "//*[@id\u003d\"form:carrousel:0:treetableCalendar_data\"]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Agregar Nota\u0027])[1]/following::td[3]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
     }
   ]
 }

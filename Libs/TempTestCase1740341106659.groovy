@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\larevalo\\AppData\\Local\\Temp\\Katalon\\Test Cases\\MedCloud\\Creacion de cupos\\20250221_161955\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\larevalo\\AppData\\Local\\Temp\\Katalon\\Test Cases\\MedCloud\\creacion de multiples citas\\20250223_150506\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/MedCloud/Creacion de cupos', new TestCaseBinding('Test Cases/MedCloud/Creacion de cupos',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/MedCloud/creacion de multiples citas', new TestCaseBinding('Test Cases/MedCloud/creacion de multiples citas',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

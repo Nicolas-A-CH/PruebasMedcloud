@@ -76,7 +76,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_
 WebUI.delay(3)
 
 // Seleccionar la cita por hora
-seleccionarCitaPorHora("5:00 p. m.", "5:10 p. m.") // Formato exacto del texto
+seleccionarCitaPorHora("5:00 p. m.", "5:30 p. m.") // Formato exacto del texto
 
 //WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_var valor                               _39e786'))
 //WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/td_310 p. m.-320 p. m. BOGOTA              _843fff'))
