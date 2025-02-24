@@ -1,1 +1,22 @@
+# Archivos y carpetas generados automáticamente
 bin/
+Libs/
+.classpath
+.project
+.settings/
+build/
+reports/
+test-output/
+node_modules/
+
+# Archivos de configuración del usuario
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Archivos específicos de Katalon Studio
+.settings/
+Katalon/
