@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>label_Seleccione</name>
+   <name>a_Cambiar estados</name>
    <tag></tag>
-   <elementGuidId>093adddc-d084-4444-a6dd-755b6db06370</elementGuidId>
+   <elementGuidId>3809401e-6b53-4dd3-b062-4734241190b2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[@id='subactividadesValidationForm:subactividadListInterna_label']</value>
+         <value>//div[@id='form:carrousel:0:tableMenu']/ul/li[6]/a</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value>a.ui-menuitem-link.ui-submenu-link.ui-corner-all.ui-state-hover</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>[id=&quot;subactividadesValidationForm\:subactividadListInterna_label&quot;]</value>
+         <value>internal:role=link[name=&quot;Cambiar estados &quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -27,111 +28,111 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>label</value>
-      <webElementGuid>faf94472-b8a2-41fe-92de-eac5162a8408</webElementGuid>
+      <value>a</value>
+      <webElementGuid>3da9a8b4-0093-440d-80a8-eb11b8c1bf14</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>href</name>
       <type>Main</type>
-      <value>subactividadesValidationForm:subactividadListInterna_label</value>
-      <webElementGuid>dbc5ca00-6827-4e39-afa1-15d64f9ba0b5</webElementGuid>
+      <value>#</value>
+      <webElementGuid>8fea7faa-03e2-49ce-8ba8-40fbc37bbee6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>f98cdda8-cb32-4f3e-abeb-427fc5a8c9f4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui-selectonemenu-label ui-inputfield ui-corner-all</value>
-      <webElementGuid>1427db85-db2b-44c2-991f-1d69a6111b0f</webElementGuid>
+      <value>ui-menuitem-link ui-submenu-link ui-corner-all ui-state-hover</value>
+      <webElementGuid>dbd102db-7f17-4fb6-adc0-1cfbd2fddbb7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Seleccione</value>
-      <webElementGuid>cafbec1e-344b-4311-98e1-fe4f918c803b</webElementGuid>
+      <value>Cambiar estados</value>
+      <webElementGuid>0940598f-a753-4c76-bf54-22a61028548c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;subactividadesValidationForm:subactividadListInterna_label&quot;)</value>
-      <webElementGuid>201a5207-9808-4098-b3dd-d7d8b7c0f499</webElementGuid>
+      <value>id(&quot;form:carrousel:0:tableMenu&quot;)/ul[@class=&quot;ui-menu-list ui-helper-reset&quot;]/li[@class=&quot;ui-widget ui-menuitem ui-corner-all ui-menu-parent ui-menuitem-active&quot;]/a[@class=&quot;ui-menuitem-link ui-submenu-link ui-corner-all ui-state-hover&quot;]</value>
+      <webElementGuid>465ad48f-4f84-4dd9-9cf9-9c5689fe9c2b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/crecion cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>837e96a0-0404-48b6-819d-89122e999def</webElementGuid>
+      <value>Object Repository/CambioEstadoCita/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>2bcb0dc2-b52d-46bc-b079-6a90a4d10192</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//label[@id='subactividadesValidationForm:subactividadListInterna_label']</value>
-      <webElementGuid>96e0b0ae-4990-4d0b-858f-1d042e404726</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='subactividadesValidationForm:subactividadListInterna']/label</value>
-      <webElementGuid>1f7858de-6ce0-4775-8d0c-c4a0df16e645</webElementGuid>
+      <value>//div[@id='form:carrousel:0:tableMenu']/ul/li[5]/a</value>
+      <webElementGuid>6068896e-5b12-417d-a1e3-87383aca10c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccione la subactividad antes de continuar'])[1]/following::label[1]</value>
-      <webElementGuid>6a4be0f5-8aa4-4273-8996-9df52954036c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Profesionales firmantes'])[1]/following::a[1]</value>
+      <webElementGuid>97f1dcb7-c0b5-4e19-955b-2d8adfcbd6d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='NICOLAS AREVALO'])[6]/following::label[1]</value>
-      <webElementGuid>5ca17637-e108-4175-b859-b1fd077551d0</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Agregar Bono electrónico'])[1]/following::a[2]</value>
+      <webElementGuid>76090b2f-5ee0-439d-8077-b3c33a3c1335</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Selecciona la modalidad de la cita:'])[1]/preceding::label[1]</value>
-      <webElementGuid>a48b822b-0a2e-4cb6-b24d-4950a926f092</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Confirmado'])[1]/preceding::a[1]</value>
+      <webElementGuid>ad13c3d5-1fd9-45ba-bb65-0816ee3019cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>xpath:href</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Presencial'])[1]/preceding::label[2]</value>
-      <webElementGuid>eb18d92c-87b0-425b-8e67-868dc0f5ca5e</webElementGuid>
+      <value>(//a[contains(@href, '#')])[470]</value>
+      <webElementGuid>db4a83ab-c314-4e68-bab0-af9fa8dfff8f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td/div/label</value>
-      <webElementGuid>2ef5282a-42d3-4dc1-9746-e27dacc6e5ff</webElementGuid>
+      <value>//div[103]/ul/li[5]/a</value>
+      <webElementGuid>53c47dde-3069-417b-bc1b-5f377c60c59b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//label[@id = 'subactividadesValidationForm:subactividadListInterna_label' and (text() = 'Seleccione' or . = 'Seleccione')]</value>
-      <webElementGuid>0cd99e4f-1420-48f6-8c95-23baf2c6f1b1</webElementGuid>
+      <value>//a[@href = '#' and (text() = 'Cambiar estados' or . = 'Cambiar estados')]</value>
+      <webElementGuid>8ebc1408-f4cd-4757-b5d3-4dc714e308a6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

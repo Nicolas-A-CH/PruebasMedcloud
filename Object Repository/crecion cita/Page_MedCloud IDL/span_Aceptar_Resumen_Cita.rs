@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>label_Seleccione uno_1</name>
+   <name>span_Aceptar_Resumen_Cita</name>
    <tag></tag>
-   <elementGuidId>4eb932f2-06c7-4511-b572-b6c1a9f5730d</elementGuidId>
+   <elementGuidId>0742ec1d-3a1b-4060-902c-1fe0873ea169</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[@id='PacienteCrearForm:PacienteTabView:selectFeTipoUsuario_label']</value>
+         <value>//button[@id='datosCitaForm:j_idt1095']/span</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>[id=&quot;PacienteCrearForm\:PacienteTabView\:selectFeTipoUsuario_label&quot;]</value>
+         <value>internal:role=button[name=&quot;Aceptar&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -27,40 +28,32 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>label</value>
-      <webElementGuid>2a5cd13f-e277-43ee-b83f-811f1b8b59d5</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>PacienteCrearForm:PacienteTabView:selectFeTipoUsuario_label</value>
-      <webElementGuid>5d7e2102-d992-4d27-9f0d-892cb5f408a3</webElementGuid>
+      <value>span</value>
+      <webElementGuid>37d7d905-43bb-412e-b5a5-2c418fc449b9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui-selectonemenu-label ui-inputfield ui-corner-all</value>
-      <webElementGuid>edb6eb53-d8cf-416a-b5b7-baa90e78cd48</webElementGuid>
+      <value>ui-button-text ui-c</value>
+      <webElementGuid>535c201a-5d2b-4d8e-b0e0-a22ad3432341</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Seleccione uno</value>
-      <webElementGuid>ab9c5db0-96c0-4dcb-8a70-2ea0ada66cbd</webElementGuid>
+      <value>Aceptar</value>
+      <webElementGuid>f5868fba-7124-46a9-b78a-459c4e372362</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;PacienteCrearForm:PacienteTabView:selectFeTipoUsuario_label&quot;)</value>
-      <webElementGuid>882c28db-a8b7-4463-9870-88d2471c360c</webElementGuid>
+      <value>id(&quot;datosCitaForm:j_idt1095&quot;)/span[@class=&quot;ui-button-text ui-c&quot;]</value>
+      <webElementGuid>151b3ce5-4f2c-4503-b0f0-29b15105c05d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -68,54 +61,62 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/crecion cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>48a5b4d2-4b3b-4985-bf91-52b4d4b80b64</webElementGuid>
+      <webElementGuid>8339182d-f99e-48eb-b6a4-f8f9f618d67c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//label[@id='PacienteCrearForm:PacienteTabView:selectFeTipoUsuario_label']</value>
-      <webElementGuid>3e88e2e4-9ddc-4783-885b-da8175d51742</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='PacienteCrearForm:PacienteTabView:selectFeTipoUsuario']/label</value>
-      <webElementGuid>45617c88-b2ee-4702-a81e-1b6ffa79168c</webElementGuid>
+      <value>//button[@id='datosCitaForm:j_idt1095']/span</value>
+      <webElementGuid>d194df1f-3c04-415d-8796-12c5dd2dd677</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[25]/following::label[1]</value>
-      <webElementGuid>44f68699-8dcf-431e-8280-49852e020feb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='leerle las Recomendaciones al Paciente'])[1]/following::span[1]</value>
+      <webElementGuid>13d0c52b-bc11-4f79-b282-d4d97b0c0bfc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[26]/preceding::label[1]</value>
-      <webElementGuid>1a5ce700-be44-45cc-a0a4-1370825e4813</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='LUIS NICOLAS AREVALO CHIQUIZA'])[1]/following::span[3]</value>
+      <webElementGuid>dce393b8-58cc-4884-875b-7ede2107ebff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='El cupo ya ha sido usado'])[1]/preceding::span[3]</value>
+      <webElementGuid>64958ba7-87b1-467f-acb0-2146b6e30c95</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aceptar'])[5]/preceding::span[3]</value>
+      <webElementGuid>49478a37-c992-4b24-b3e1-7c715a0cb77d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/div/div[7]/div[2]/div/label</value>
-      <webElementGuid>987405cd-4600-47ed-9991-fdd6cfbe1a04</webElementGuid>
+      <value>//center[2]/button/span</value>
+      <webElementGuid>2ae7d0b0-3184-4738-b2d9-a101de1390a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//label[@id = 'PacienteCrearForm:PacienteTabView:selectFeTipoUsuario_label' and (text() = 'Seleccione uno' or . = 'Seleccione uno')]</value>
-      <webElementGuid>85eecd52-9f22-4586-9d6c-e5be6b9ac583</webElementGuid>
+      <value>//span[(text() = 'Aceptar' or . = 'Aceptar')]</value>
+      <webElementGuid>51457d9f-0adf-4cfd-ba26-5da742fc62a9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

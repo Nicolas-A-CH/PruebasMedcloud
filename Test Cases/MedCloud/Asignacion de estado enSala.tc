@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Asignacion de estado enSala</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d43d07bc-6270-47fe-bf18-b2ff82f9570d</testCaseGuid>
+</TestCaseEntity>

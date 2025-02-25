@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>0ea04695-d345-48d1-8f8e-eb135a5ca228</webElementGuid>
+      <webElementGuid>4009f93b-8c13-4080-96aa-d20ce2f0f795</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-button-text ui-c</value>
-      <webElementGuid>05426603-e754-42cd-b92d-bc94685e7d64</webElementGuid>
+      <webElementGuid>70f518b9-0ae4-4f37-ab49-df616a2e6b8c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Guardar</value>
-      <webElementGuid>78b7bfa3-fd92-46e3-90c8-10edc209662b</webElementGuid>
+      <webElementGuid>00cd2259-e776-4147-adbc-cd252e899198</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;PacienteCrearForm:savebtn&quot;)/span[@class=&quot;ui-button-text ui-c&quot;]</value>
-      <webElementGuid>37453b26-5131-4470-b075-3a04b4d79582</webElementGuid>
+      <webElementGuid>21ee620f-99c3-48ee-a2a3-5f29ed4fa9ee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/crecion cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>f9ed1f96-d75d-4e06-899e-f16114d1a6e4</webElementGuid>
+      <webElementGuid>7551bba5-7509-4f23-b908-48fece295bae</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='PacienteCrearForm:savebtn']/span[2]</value>
-      <webElementGuid>ecf7a90b-e771-471c-b1fc-3b9edd351b43</webElementGuid>
+      <webElementGuid>5e63ee7b-4383-4f94-901e-0e6cd3cb601c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='EPS:'])[1]/following::span[2]</value>
-      <webElementGuid>537a78f0-16f6-4a70-91d3-e66acbe3df5f</webElementGuid>
+      <webElementGuid>9513b87a-01db-40ba-9216-51bd2e9ff1f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ui-button'])[15]/preceding::span[2]</value>
-      <webElementGuid>e8765d8b-8bf7-470b-aab0-9c2ea95f2ee6</webElementGuid>
+      <webElementGuid>cbf1f8ca-c2e2-43bc-b666-608fa0542015</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ui-button'])[16]/preceding::span[3]</value>
-      <webElementGuid>34e7a07d-1ca5-4bd2-a99c-f9dda3573963</webElementGuid>
+      <webElementGuid>7e9ede4d-f657-4d40-b5cb-0c7e81dcab02</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//form/button[2]/span[2]</value>
-      <webElementGuid>b8393977-df77-4b21-b72e-c9a1ddaf37ee</webElementGuid>
+      <webElementGuid>ace95baf-563e-437f-b1a2-b594e7a166c3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Guardar' or . = 'Guardar')]</value>
-      <webElementGuid>934a2d55-f8ed-4591-9124-21012183ff9d</webElementGuid>
+      <webElementGuid>fa7e52d1-28ec-4b3a-b081-6ac7870d109e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

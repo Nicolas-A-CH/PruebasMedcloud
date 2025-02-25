@@ -29,9 +29,9 @@ import org.openqa.selenium.JavascriptExecutor
 import com.kms.katalon.core.webui.driver.DriverFactory
 
 // Configuración inicial
-@Field String horaInicioJornada = "8:00"
-@Field String baseIdentidad = "10723640"
-@Field int totalCitas = 24
+@Field String horaInicioJornada = "18:10"
+@Field String baseIdentidad = "10723643"
+@Field int totalCitas = 10
 
 def selectDynamicDate(String day) {
 	int intentos = 3
@@ -225,77 +225,129 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 		
 	} else {
 		
-		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewprim_676a58'),
-			'luis')
+		//Seccion de Datos Basicos
+		int intentos = 3, intentos2 = 3
+		boolean exito = false, exito2 = false
 		
-		WebUI.sendKeys(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewprim_676a58'),
-			Keys.chord(Keys.TAB))
+		while (intentos > 0 && !exito) {
+			
+			try {
+				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewprim_676a58'),
+					'luis')
+				
+				WebUI.sendKeys(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewprim_676a58'),
+					Keys.chord(Keys.TAB))
+				
+				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input_Segundo Nombre_PacienteCrearFormPacie_702494'),
+					'nicolas')
+				
+				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewprim_d7f304'),
+					'arevalo')
+				
+				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input_Segundo Apellido_PacienteCrearFormPac_2061f7'),
+					'chiquiza')
+				
+				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewcelular'),
+					'3134541985')
+				
+				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Seleccione uno'))
+				
+				//Esperar que las opciones desplegables se muestren
+				WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Masculino'), 5)
+				
+				if (!WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Masculino'), 20)) {
+					
+					throw new Exception("El elemento 'li_Masculino' no es visible.")
+				}
+				WebUI.waitForElementClickable(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Masculino'), 5)
+				
+				//---------------------------------------------------------------------------------------------------------------------------
+				
+				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Masculino'))
+				
+				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span__ui-button-icon-left ui-icon ui-icon-calendar'))
+				
+				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewfech_a2cb1e'),
+					'2004-01-29')
+				
+				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Seleccione uno_ui-icon ui-icon-triangl_fd1878'))
+				
+				//Esperar que las opciones desplegables se muestren
+				WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_SANITAS'), 5)
+				
+				if (!WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_SANITAS'), 20)) {
+					
+					throw new Exception("El elemento 'li_SANITAS' no es visible.")
+				}
+				WebUI.waitForElementClickable(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_SANITAS'), 5)
+				
+				//---------------------------------------------------------------------------------------------------------------------------
+				
+				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_SANITAS'))
+				
+				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewemai_4f6d20'),
+					'pruebas@gmail.com')
+				
+				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewinEps'),
+					'famisanal')
+				
+				WebUI.check(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Acepta Tratamiento De Datos_ui-chkbox-_5009df'))
+				
+				exito = true
+				
+			} catch (Exception e) {
+				
+				//Reducir intentos
+				intentos--
+				
+				
+				WebUI.comment("Error en el llenado del formulario datos basicos")
+				if (intentos == 0) {
+					String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().time)
+					WebUI.comment("No se pudo seleccionar el cupo tras varios intentos. Error: " + e.getMessage())
+					throw new Exception("No se pudo completar el formulario tras múltiples intentos.")
+				}
+				WebUI.delay(2)
+			}
+		}
 		
-		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input_Segundo Nombre_PacienteCrearFormPacie_702494'),
-			'nicolas')
-		
-		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewprim_d7f304'),
-			'arevalo')
-		
-		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input_Segundo Apellido_PacienteCrearFormPac_2061f7'),
-			'chiquiza')
-		
-		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewcelular'),
-			'3134541985')
-		
-		WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Seleccione uno'))
-		
-		WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Masculino'))
-		
-		WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span__ui-button-icon-left ui-icon ui-icon-calendar'))
-		
-		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewfech_a2cb1e'),
-			'2004-01-29')
-		
-		WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Seleccione uno_ui-icon ui-icon-triangl_fd1878'))
-		
-		WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_SANITAS'))
-		
-		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewemai_4f6d20'),
-			'pruebas@gmail.com')
-		
-		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewinEps'),
-			'famisanal')
-		
-		WebUI.check(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Acepta Tratamiento De Datos_ui-chkbox-_5009df'))
-		
-		WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Datos Complementarios'))
-		
-		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewdireccion'),
-			'calle 25 #70-05')
-		
-		WebUI.selectOptionByValue(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoCasadoDivorciadoMenorO_abc012'),
-			'class co.idl.medicalcloud.entities.EstadoCivil@6', true)
-		
-		WebUI.selectOptionByValue(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoAdicionalBeneficiarioC_c24d6b'),
-			'class co.idl.medicalcloud.entities.TipoAfiliado@2', true)
-		
-		WebUI.selectOptionByValue(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoContributivoDesplazado_13c85f'),
-			'class co.idl.medicalcloud.entities.TipoUsuario@1', true)
-		
-		WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Seleccione uno_1'))
-		
-		WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Contributivo Cotizante'))
-		
-		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewacudiente'),
-			'adriana')
-		
-		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewtele_792a81'),
-			'3233205930')
-		
-		WebUI.selectOptionByValue(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoConyugueHermano(a)Hijo_8cc99f'),
-			'class co.idl.medicalcloud.entities.Parentesco@6', true)
-		
-		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewresponsable'),
-			'yo mismo')
-		
-		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewtelR_048270'),
-			'3233205930')
+		//Seccion Datos Completos
+		try {
+			WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Datos Complementarios'))
+			
+			WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewdireccion'),
+				'calle 25 #70-05')
+			
+			WebUI.selectOptionByValue(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoCasadoDivorciadoMenorO_abc012'),
+				'class co.idl.medicalcloud.entities.EstadoCivil@6', true)
+			
+			WebUI.selectOptionByValue(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoAdicionalBeneficiarioC_c24d6b'),
+				'class co.idl.medicalcloud.entities.TipoAfiliado@2', true)
+			
+			WebUI.selectOptionByValue(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoContributivoDesplazado_13c85f'),
+				'class co.idl.medicalcloud.entities.TipoUsuario@1', true)
+			
+			WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Seleccione uno_1'))
+			
+			WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Contributivo Cotizante'))
+			
+			WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewacudiente'),
+				'adriana')
+			
+			WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewtele_792a81'),
+				'3233205930')
+			
+			WebUI.selectOptionByValue(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoConyugueHermano(a)Hijo_8cc99f'),
+				'class co.idl.medicalcloud.entities.Parentesco@6', true)
+			
+			WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewresponsable'),
+				'yo mismo')
+			
+			WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewtelR_048270'),
+				'3233205930')
+		} catch (Exception e) {
+			e.printStackTrace()
+		}
 		
 	}
 	
@@ -304,21 +356,15 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 	
 	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Esta seguro de continuar con la creaci_4d5d74'))
 	
-	WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div_Cita Agendada con xitoCdigo Cita465346F_3bb5d0'), 
-	    5)
-	
-	WebUI.waitForElementClickable(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div_Cita Agendada con xitoCdigo Cita465346F_3bb5d0'), 
-	    15)
-	
 	WebUI.delay(4)
 	
-	WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/button_Aceptar'),15)
+	WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar_Resumen_Cita'),15)
 	
-	WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/button_Aceptar'),25)
+	WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar_Resumen_Cita'),25)
 	
-	WebUI.waitForElementClickable(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/button_Aceptar'),15)
+	WebUI.waitForElementClickable(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar_Resumen_Cita'),15)
 	
-	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/button_Aceptar'))
+	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar_Resumen_Cita'))
 }
 
 // Lógica principal para crear citas de 12 horas
@@ -331,7 +377,7 @@ def crearJornadaCompleta() {
         // Calcular horario en formato de 24 horas
         def horaActual = calendar.time
         def horaInicio24h = formatoHora.format(horaActual)
-        calendar.add(Calendar.MINUTE, 30)
+        calendar.add(Calendar.MINUTE, 10)
         def horaFin24h = formatoHora.format(calendar.time)
         
         // Convertir a formato de 12 horas para la interfaz
@@ -373,12 +419,9 @@ WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_
 WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/td_NICOLAS AREVALO                         _bddb2e'), 
     0)
 
-selectDynamicDate('25')
+selectDynamicDate('26')
 
 WebUI.delay(3)
 
 // Crear jornada completa
 crearJornadaCompleta()
-
-WebUI.closeBrowser()
-

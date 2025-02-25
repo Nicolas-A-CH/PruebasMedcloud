@@ -17,6 +17,73 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def selectDynamicDate(String day) {
+	int intentos = 3
+
+	boolean exito = false
+
+	while ((intentos > 0) && !(exito)) {
+		try {
+			WebUI.switchToFrame(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe'), 10)
+
+			String xpathDate = "//table[@class='ui-datepicker-calendar']//a[text()='$day']"
+
+			TestObject fecha = new TestObject("dia_$day").addProperty('xpath', com.kms.katalon.core.testobject.ConditionType.EQUALS,
+				xpathDate)
+
+			WebUI.waitForElementPresent(fecha, 5)
+
+			WebUI.waitForElementClickable(fecha, 5)
+			
+			WebUI.delay(1)
+
+			WebUI.enhancedClick(fecha)
+
+			exito = true
+		}
+		catch (org.openqa.selenium.StaleElementReferenceException e) {
+			intentos--
+
+			if (intentos == 0) {
+				throw e
+			}
+			
+			WebUI.switchToDefaultContent()
+
+			WebUI.delay(1)
+		}
+		finally {
+			WebUI.switchToDefaultContent()
+		}
+	}
+}
+
+
+def inicioSecion() {
+
+	try {
+		
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/input_Ver.9.9.5.19022025_ingresoFormfield_user'), 5)
+		if (!WebUI.waitForElementVisible(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/input_Ver.9.9.5.19022025_ingresoFormfield_user'), 10)) {
+			throw new Exception("El campo de nombre para el login no es visible")
+		}
+		WebUI.waitForElementClickable(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/input_Ver.9.9.5.19022025_ingresoFormfield_user'), 5)
+		
+		//Ingreso de credenciales en el login
+		WebUI.setText(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/input_Ver.9.9.5.19022025_ingresoFormfield_user'),
+			'niarevalo')
+		
+		WebUI.setEncryptedText(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/input_Usuario_ingresoFormfield_password'),
+			'iKK2QhFB4Lt3r+B0vfLvEw==')
+		
+		WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_Iniciar sesin'))
+		
+	} catch (Exception e) {
+		e.printStackTrace()
+	}
+	
+}
+
 //Apertura del navegador
 WebUI.openBrowser('')
 
@@ -25,14 +92,7 @@ WebUI.maximizeWindow()
 //Ingreso de la pagina
 WebUI.navigateToUrl('https://medcloudpruebas.idl.com.co/medCloud/index.xhtml')
 
-//Ingreso de credenciales en el login
-WebUI.setText(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/input_Ver.9.9.5.19022025_ingresoFormfield_user'), 
-    'niarevalo')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/input_Usuario_ingresoFormfield_password'), 
-    'iKK2QhFB4Lt3r+B0vfLvEw==')
-
-WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_Iniciar sesin'))
+inicioSecion()
 
 //Esperar que el listado de doctores este disponible
 WebUI.waitForPageLoad(5)
@@ -46,10 +106,10 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/Crear cupos para
 //Seleccionar doctor para la agendacion de cupos
 WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_NICOLAS AREVALO'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 // Llamado a la función reutilizable (cambiar el parámetro según necesidad)
-selectDynamicDate('25')
+selectDynamicDate('26')
 
 //Esperar a que el boton de crear cupos para el doctor especificado este presente
 WebUI.waitForElementPresent(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_sbado 22-feb.-2025_ui-button-icon-left_1ee6c9'), 
@@ -86,7 +146,7 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/Crear cupos para
 WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/li_Tiempo'))
 
 WebUI.setText(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/input_Rango(minutos)_tabviewaddCuposFormrango'), 
-    '30')
+    '10')
 
 WebUI.delay(2)
 
@@ -120,43 +180,3 @@ WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedClo
 
 //Envio de formulario
 WebUI.click(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/span_Aceptar'))
-
-def selectDynamicDate(String day) {
-    int intentos = 3
-
-    boolean exito = false
-
-    while ((intentos > 0) && !(exito)) {
-        try {
-            WebUI.switchToFrame(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe'), 10)
-
-            String xpathDate = "//table[@class='ui-datepicker-calendar']//a[text()='$day']"
-
-            TestObject fecha = new TestObject("dia_$day").addProperty('xpath', com.kms.katalon.core.testobject.ConditionType.EQUALS, 
-                xpathDate)
-
-            WebUI.waitForElementPresent(fecha, 5)
-
-            WebUI.waitForElementClickable(fecha, 5)
-
-            WebUI.enhancedClick(fecha)
-
-            exito = true
-        }
-        catch (org.openqa.selenium.StaleElementReferenceException e) {
-            intentos--
-
-            if (intentos == 0) {
-                throw e
-            }
-            
-            WebUI.switchToDefaultContent()
-
-            WebUI.delay(1)
-        } 
-        finally { 
-            WebUI.switchToDefaultContent()
-        }
-    }
-}
-
