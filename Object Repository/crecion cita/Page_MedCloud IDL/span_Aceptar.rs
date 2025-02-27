@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='subactividadesValidationForm:j_idt651']/span</value>
+         <value>//*[@id=&quot;subactividadesValidationForm:j_idt651&quot;]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>4bd2bb0e-fd4f-4637-a2e7-a741f9e652dc</webElementGuid>
+      <webElementGuid>55966912-e1ab-45b5-9acd-efe1e8109e65</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-button-text ui-c</value>
-      <webElementGuid>bdc57ccd-c344-439f-8a94-78f15aad662a</webElementGuid>
+      <webElementGuid>9953b892-2c86-4267-84c9-668db013f028</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,15 +45,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Aceptar</value>
-      <webElementGuid>efe163a5-e19a-4131-b2c1-e2fa615bdf60</webElementGuid>
+      <webElementGuid>f508515f-94e6-495c-8288-893cf3f084f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;subactividadesValidationForm:j_idt651&quot;)/span[@class=&quot;ui-button-text ui-c&quot;]</value>
-      <webElementGuid>cddd36c9-f2af-4529-a926-bfae648a3d28</webElementGuid>
+      <value>id(&quot;subactividadesValidationForm:j_idt622&quot;)/span[@class=&quot;ui-button-text ui-c&quot;]</value>
+      <webElementGuid>4aa6c9a1-59bd-436f-a3d4-2f45ea9e13c1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,15 +61,15 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/crecion cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>91a76d91-1594-4598-a07d-1ce7ff80cf04</webElementGuid>
+      <webElementGuid>4bc1ce3e-f471-4a40-9b8d-1de395d4624e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='subactividadesValidationForm:j_idt651']/span</value>
-      <webElementGuid>8c2061ed-c6e2-4930-a861-36c35fae5f58</webElementGuid>
+      <value>//*[@id=&quot;subactividadesValidationForm:j_idt651&quot;]</value>
+      <webElementGuid>2c69287f-0600-4cbb-a683-fca970cce9ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta domiciliaria'])[1]/following::span[1]</value>
-      <webElementGuid>1d81f399-9b81-4097-aadc-81fae5ba51c3</webElementGuid>
+      <webElementGuid>1326a579-fd4c-4e26-a5ee-6b1ed373ed52</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Videoconsulta'])[1]/following::span[2]</value>
-      <webElementGuid>6c4349d9-f500-4d74-833b-565bdac167f7</webElementGuid>
+      <webElementGuid>f18e9bde-75e1-4d1e-90d8-f9eda30d12c1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,15 +93,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccione la subactividad antes de continuar'])[2]/preceding::span[5]</value>
-      <webElementGuid>904e9ea6-b20e-4372-b4ee-a9deab5231d1</webElementGuid>
+      <webElementGuid>52745604-e2a7-4649-90ca-47c90ef99555</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccione'])[15]/preceding::span[6]</value>
-      <webElementGuid>fbf33c8d-790d-43fa-9cba-f80e03b62158</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccione'])[16]/preceding::span[6]</value>
+      <webElementGuid>f3ee0e80-f75c-4aac-90d3-ef0bf48905ae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Aceptar']/parent::*</value>
-      <webElementGuid>25538d22-f54c-4726-b793-44f69fe1d038</webElementGuid>
+      <webElementGuid>71ef8263-6672-4cdc-9a4b-fb4d60a27c02</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/form/button/span</value>
-      <webElementGuid>05c4f6ae-56b9-4bc6-89a5-545385c28d79</webElementGuid>
+      <webElementGuid>a5c9ad84-813b-4f90-852f-132a2173cb10</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,23 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Aceptar' or . = 'Aceptar')]</value>
-      <webElementGuid>216648da-041c-42f0-b418-53ec29f60e71</webElementGuid>
+      <webElementGuid>e5d8119d-502f-41f8-8831-dc03fd8ae56e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='subactividadesValidationForm:j_idt651']/span</value>
+      <webElementGuid>edeffb28-6783-4fa5-9644-4231019bf8fb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccione'])[15]/preceding::span[6]</value>
+      <webElementGuid>0b04486a-8553-4601-8353-3761e0b49997</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,6 +149,6 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='subactividadesValidationForm:j_idt650']/span</value>
-      <webElementGuid>061652d3-e6a0-460a-a61d-0c428e131ec5</webElementGuid>
+      <webElementGuid>ddcd85fc-d757-4ee7-ab51-b7e7dd6bfbc0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

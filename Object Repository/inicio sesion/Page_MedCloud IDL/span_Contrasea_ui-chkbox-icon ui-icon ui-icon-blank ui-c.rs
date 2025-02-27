@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Acepta Tratamiento De Datos_ui-chkbox-_5009df</name>
+   <name>span_Contrasea_ui-chkbox-icon ui-icon ui-icon-blank ui-c</name>
    <tag></tag>
-   <elementGuidId>e82c7f91-b9f7-4be4-912e-fcadd02ce1c9</elementGuidId>
+   <elementGuidId>99f537bc-7c00-4e25-a1ca-6104ec85a0aa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;PacienteCrearForm:PacienteTabView:j_idt392&quot;]/div[2]</value>
+         <value>//div[@id='ingresoForm:remember-me']/div[2]/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default.ui-state-hover > span.ui-chkbox-icon.ui-icon.ui-icon-blank.ui-c</value>
+         <value>span.ui-chkbox-icon.ui-icon.ui-icon-blank.ui-c</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>[id=&quot;PacienteCrearForm\:PacienteTabView\:j_idt363&quot;] span</value>
+         <value>[id=&quot;ingresoForm\:remember-me&quot;] span</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>10a98b33-d42a-4efa-952b-4785601f7320</webElementGuid>
+      <webElementGuid>f1151b14-4902-49dc-9ab1-f0f4fea00235</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,31 +37,31 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-chkbox-icon ui-icon ui-icon-blank ui-c</value>
-      <webElementGuid>89f056ca-7019-475c-95a2-947e30e669e4</webElementGuid>
+      <webElementGuid>b6883357-7a5e-47a7-98e6-f219210bc359</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;PacienteCrearForm:PacienteTabView:j_idt363&quot;)/div[@class=&quot;ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-hover&quot;]/span[@class=&quot;ui-chkbox-icon ui-icon ui-icon-blank ui-c&quot;]</value>
-      <webElementGuid>fb210790-9cfa-4ef9-aeb9-fd8934ca03bb</webElementGuid>
+      <value>id(&quot;ingresoForm:remember-me&quot;)/div[@class=&quot;ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-hover&quot;]/span[@class=&quot;ui-chkbox-icon ui-icon ui-icon-blank ui-c&quot;]</value>
+      <webElementGuid>b904eeab-5c0c-450e-a527-c2ba8d5194e6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/crecion cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>1b42473f-a37d-4e2f-8423-a6087c541fa7</webElementGuid>
+      <value>Object Repository/inicio sesion/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>61400bfd-ecad-405f-bd48-1f068a3334c1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='PacienteCrearForm:PacienteTabView:j_idt363']/div[2]/span</value>
-      <webElementGuid>f3e0e5f5-5ec2-47de-a5b1-8c2e0b54af7b</webElementGuid>
+      <value>//div[@id='ingresoForm:remember-me']/div[2]/span</value>
+      <webElementGuid>3392144b-2180-4c84-bbcc-dad11252ebce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,14 +69,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div/div[2]/span</value>
-      <webElementGuid>5fa0ba3e-cd0b-44eb-a247-9cabd8c67893</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='PacienteCrearForm:PacienteTabView:j_idt391']/div[2]/span</value>
-      <webElementGuid>2f7109a8-8de6-41f3-aa59-26d0a202362b</webElementGuid>
+      <webElementGuid>1c25ea06-8f64-4827-a39c-8ce76a5f6b56</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

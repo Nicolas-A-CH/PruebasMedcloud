@@ -1,0 +1,29 @@
+{
+  "keywordFileContentHash": "EE425C60228D045401E984DAEA5EEECF",
+  "keywordClasses": [
+    {
+      "name": "utils.SelectorCalendario",
+      "keywordMethods": [
+        {
+          "name": "selectDynamicDate",
+          "parameters": [
+            {
+              "name": "day",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

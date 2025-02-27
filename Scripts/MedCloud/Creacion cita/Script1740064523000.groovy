@@ -63,7 +63,7 @@ WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/i
 WebUI.setEncryptedText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input_Usuario_ingresoFormfield_password'), 
     'iKK2QhFB4Lt3r+B0vfLvEw==')
 
-WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Iniciar sesin'))
+WebUI.click(findTestObject('null'))
 
 //Navegación a la agenda médica
 WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div_Agendas Expandidas                     _5ffbf0_1'))

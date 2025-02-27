@@ -13,8 +13,13 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+import internal.GlobalVariable
+import utils.InicioSesionClass
+import utils.SelecccionarCuposClass
+import utils.SelectorCalendarioClass
+
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.By as By
 import org.openqa.selenium.WebElement as WebElement
@@ -29,48 +34,14 @@ import org.openqa.selenium.JavascriptExecutor
 import com.kms.katalon.core.webui.driver.DriverFactory
 
 // Configuración inicial
-@Field String horaInicioJornada = "18:10"
-@Field String baseIdentidad = "10723643"
-@Field int totalCitas = 10
+@Field String horaInicioJornada = "7:00"
+@Field String baseIdentidad = "107236"
+@Field int totalCitas = 168
 
-def selectDynamicDate(String day) {
-	int intentos = 3
-
-	boolean exito = false
-
-	while ((intentos > 0) && !(exito)) {
-		try {
-			WebUI.switchToFrame(findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe'), 10)
-
-			String xpathDate = "//table[@class='ui-datepicker-calendar']//a[text()='$day']"
-
-			TestObject fecha = new TestObject("dia_$day").addProperty('xpath', com.kms.katalon.core.testobject.ConditionType.EQUALS,
-				xpathDate)
-
-			WebUI.waitForElementPresent(fecha, 5)
-
-			WebUI.waitForElementClickable(fecha, 5)
-
-			WebUI.enhancedClick(fecha)
-
-			exito = true
-		}
-		catch (org.openqa.selenium.StaleElementReferenceException e) {
-			intentos--
-
-			if (intentos == 0) {
-				throw e
-			}
-			
-			WebUI.switchToDefaultContent()
-
-			WebUI.delay(1)
-		}
-		finally {
-			WebUI.switchToDefaultContent()
-		}
-	}
-}
+//Intancia de class
+InicioSesionClass inicioSesion = new InicioSesionClass()
+SelectorCalendarioClass seleccionCalendario = new SelectorCalendarioClass()
+@Field SelecccionarCuposClass seleccionarCupos = new SelecccionarCuposClass()
 
 // Método para convertir formato de hora (HH:mm -> h:mm a. m./p. m.)
 def convertirFormatoHora(String hora) {
@@ -80,122 +51,49 @@ def convertirFormatoHora(String hora) {
 	return formatoSalida.format(fecha)
 }
 
-// Método para encontrar y seleccionar la cita por hora
-def seleccionarCupo(String horaInicio, String horaFin) {
-    // Cambiar el contexto al iframe
-    TestObject iframe = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/iframe')
-    
-    // Normalizar espacios no rompibles (U+00A0) a espacios normales y recortar
-    horaInicio = horaInicio.replace('\u00A0', ' ').trim()
-    horaFin = horaFin.replace('\u00A0', ' ').trim()
-    
-    // XPath corregido: Se busca dentro del td de la fila de nivel 2
-    String xpath = "//tr[contains(@class, 'ui-node-level-2')]/td[contains(., '${horaInicio}') and .//span[contains(@id, 'divhora') and contains(., '-${horaFin}')]]"
-    
-    // Depuración: Log de valores reales
-    println "Hora inicio normalizada: '${horaInicio}'"
-    println "Hora fin normalizada: '${horaFin}'"
-    println "XPath generado: ${xpath}"
-    WebUI.comment("XPath utilizado: " + xpath)
-    
-    // Crear TestObject dinámico
-    TestObject filaCupo = new TestObject("filaCupo").addProperty("xpath", ConditionType.EQUALS, xpath)
-	
-	int intentos = 3
-	boolean exito = false
-	
-	while (intentos > 0 && !exito) {
-	
-		try {
-			// Cambiar al contexto del iframe en cada intento
-			WebUI.switchToFrame(iframe, 10)
-			
-			// Ocultar el encabezado fijo
-			((JavascriptExecutor) DriverFactory.getWebDriver()).executeScript("document.getElementById('form:divheaderProfesional').style.display = 'none';")
-			
-			// Obtener el valor del xpath del objeto filaCupo
-			def propiedades = filaCupo.getProperties()
-			def xpathCupo = propiedades.find { it.name == "xpath" }?.value
-			println "XPath del cupo: '${xpathCupo}'"
-			// Esperar a que el elemento esté presente y sea visible
-			WebUI.waitForElementPresent(filaCupo, 10)
-			WebUI.waitForElementVisible(filaCupo, 10)
-			
-			List<WebElement> elementos = WebUiCommonHelper.findWebElements(filaCupo, 5)
-			WebUI.comment("Cantidad de elementos encontrados: " + elementos.size())
-			
-			if (elementos.size() == 0) {
-				throw new Exception("No se encontraron elementos para el XPath: " + xpath)
-			}
-			
-			// Desplazar la página hasta el elemento usando JavaScript
-			WebElement element = elementos.get(0)
-			((JavascriptExecutor) DriverFactory.getWebDriver()).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element)
-			WebUI.delay(1) // Pequeña pausa para asegurar que el desplazamiento se complete
-			
-			// Hacer clic después de asegurar que está en vista
-			WebUI.waitForElementClickable(filaCupo, 5)
-			WebUI.focus(filaCupo)
-			WebUI.delay(1)
-			WebUI.enhancedClick(filaCupo)
-			WebUI.delay(2)
-			WebUI.rightClick(filaCupo)
-			
-			WebUI.delay(2)
-			
-			WebUI.switchToDefaultContent()
-			// Verificar si el elemento 'Agendar' es visible y clickable
-            if (!WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Agendar'), 5)) {
-                throw new Exception("El elemento 'Agendar' no es visible.")
-            }
-            
-            if (!WebUI.waitForElementClickable(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Agendar'), 5)) {
-                throw new Exception("El elemento 'Agendar' no es clickable.")
-            }
-			
-			WebUI.switchToFrame(iframe, 10)
-			
-			WebUI.comment("Cupo seleccionado correctamente: ${horaInicio} - ${horaFin}")
-			exito = true
-			
-		} catch (Exception e) {
-			intentos--
-            WebUI.comment("Error al seleccionar el cupo (${horaInicio} - ${horaFin}), intentos restantes: ${intentos}")
-            if (intentos == 0) {
-                String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().time)
-                WebUI.comment("No se pudo seleccionar el cupo tras varios intentos. Error: " + e.getMessage())
-                throw new Exception("No se pudo seleccionar el cupo ${horaInicio}-${horaFin} tras múltiples intentos.")
-            }
-            WebUI.delay(2)
-		} finally {
-			WebUI.switchToDefaultContent()
-		}
-	}
-	
+//Metodo para verificar si los campos del formulario estan vacios o no
+def obtenerYVerificarCampo(TestObject testObject) {
+	String valorActual = WebUI.getAttribute(testObject, 'value')
+	return (valorActual == null || valorActual.trim().isEmpty()) ? "" : valorActual
 }
 
 // Método para crear cita con parámetros dinámicos
 def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 	// Selección de cupo específico
-	seleccionarCupo(horaInicio, horaFin)
+	seleccionarCupos.seleccionarCupo(horaInicio, horaFin)
 	
 	// Flujo de creación de cita
 	WebUI.delay(2)
 	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Agendar'))
 	
-	//Esperar ventana emergente
-	WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div_NICOLAS AREVALO'), 10)
-	WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div_NICOLAS AREVALO'), 20)
+	int intentos3 = 0
+	boolean encontrado = false
 	
-	// Configuración de tipo de cita
-	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Seleccione'))
-	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_CIRUGIA PLASTICA-PRIMERA VEZ (120min)'))
-	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar'))
+	while (intentos3 < 3 && !encontrado) {
+		
+		try {
+			
+			//Esperar ventana emergente
+			WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div_NICOLAS AREVALO'), 15)
+			WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div_NICOLAS AREVALO'), 20)
+			
+			// Configuración de tipo de cita
+			WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Seleccione'))
+			WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_CIRUGIA PLASTICA-PRIMERA VEZ (120min)'))
+			WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar'))
+			
+			WebUI.waitForElementNotVisible(findTestObject('Object Repository/elementos espontaneos/Page_MedCloud IDL/spin de carga'), 50)
+			
+			encontrado = true
+			
+		} catch (Exception e) {
+			intentos3++
+			println("Intento ${intentos3}: Elemento no válido, reintentando...")
+			WebUI.delay(2) // Espera antes de reintentar
+		}
+	}
 	
 	//Esperar a que la ventana del formulario cargue
-	
-	WebUI.delay(3) // Esperar 2 segundos antes de continuar
-	
 	WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewnroI_3c9080'),
 		5)
 	
@@ -208,7 +106,7 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 	WebUI.sendKeys(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewnroI_3c9080'),
 		Keys.chord(Keys.TAB))
 	
-	WebUI.delay(2)
+	WebUI.waitForElementNotVisible(findTestObject('Object Repository/elementos espontaneos/Page_MedCloud IDL/spin de carga'), 50)
 	
 	// Verificar si los campos están autocompletados
 	def campoNombre = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewprim_676a58')
@@ -229,26 +127,39 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 		int intentos = 3, intentos2 = 3
 		boolean exito = false, exito2 = false
 		
+		
 		while (intentos > 0 && !exito) {
 			
 			try {
-				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewprim_676a58'),
-					'luis')
 				
-				WebUI.sendKeys(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewprim_676a58'),
-					Keys.chord(Keys.TAB))
+				// Obtenemos los TestObjects de cada campo
+				TestObject nombreObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewprim_676a58')
+				TestObject segundoNombreObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input_Segundo Nombre_PacienteCrearFormPacie_702494')
+				TestObject apellidoObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewprim_d7f304')
+				TestObject segundoApellidoObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input_Segundo Apellido_PacienteCrearFormPac_2061f7')
+				TestObject celularObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewcelular')
+				TestObject emailObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewemai_4f6d20')
+				TestObject epsObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewinEps')
 				
-				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input_Segundo Nombre_PacienteCrearFormPacie_702494'),
-					'nicolas')
+				if (obtenerYVerificarCampo(nombreObj).isEmpty()) {
+					WebUI.setText(nombreObj, 'luis')
+				}
 				
-				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewprim_d7f304'),
-					'arevalo')
+				if (obtenerYVerificarCampo(segundoNombreObj).isEmpty()) {
+					WebUI.setText(segundoNombreObj, 'Nicolas')
+				}
 				
-				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input_Segundo Apellido_PacienteCrearFormPac_2061f7'),
-					'chiquiza')
+				if (obtenerYVerificarCampo(apellidoObj).isEmpty()) {
+					WebUI.setText(apellidoObj, 'Arevalo')
+				}
 				
-				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewcelular'),
-					'3134541985')
+				if (obtenerYVerificarCampo(segundoApellidoObj).isEmpty()) {
+					WebUI.setText(segundoApellidoObj, 'Chiquiza')
+				}
+				
+				if (obtenerYVerificarCampo(celularObj).isEmpty()) {
+					WebUI.setText(celularObj, '3134541985')
+				}
 				
 				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Seleccione uno'))
 				
@@ -285,21 +196,39 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 				
 				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_SANITAS'))
 				
-				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewemai_4f6d20'),
-					'pruebas@gmail.com')
+				if (obtenerYVerificarCampo(emailObj).isEmpty()) {
+					WebUI.setText(emailObj, 'tohana8332@btcours.com')
+				}
 				
 				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewinEps'),
 					'famisanal')
+				
+				// Validación final: verificar que todos los campos estén llenos
+				if (obtenerYVerificarCampo(nombreObj).isEmpty() ||
+					obtenerYVerificarCampo(segundoNombreObj).isEmpty() ||
+					obtenerYVerificarCampo(apellidoObj).isEmpty() ||
+					obtenerYVerificarCampo(segundoApellidoObj).isEmpty() ||
+					obtenerYVerificarCampo(celularObj).isEmpty() ||
+					obtenerYVerificarCampo(emailObj).isEmpty() ||
+					obtenerYVerificarCampo(epsObj).isEmpty()) {
+		
+					// Si alguno está vacío, lanzar excepción para que se ejecute el catch
+					throw new Exception("No se llenaron todos los campos requeridos.")
+				}
 				
 				WebUI.check(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Acepta Tratamiento De Datos_ui-chkbox-_5009df'))
 				
 				exito = true
 				
 			} catch (Exception e) {
+
+				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Datos Complementarios'))
 				
+				WebUI.delay(2)
+				
+				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Datos Basicos'))
 				//Reducir intentos
 				intentos--
-				
 				
 				WebUI.comment("Error en el llenado del formulario datos basicos")
 				if (intentos == 0) {
@@ -311,44 +240,107 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 			}
 		}
 		
-		//Seccion Datos Completos
-		try {
-			WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Datos Complementarios'))
-			
-			WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewdireccion'),
-				'calle 25 #70-05')
-			
-			WebUI.selectOptionByValue(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoCasadoDivorciadoMenorO_abc012'),
-				'class co.idl.medicalcloud.entities.EstadoCivil@6', true)
-			
-			WebUI.selectOptionByValue(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoAdicionalBeneficiarioC_c24d6b'),
-				'class co.idl.medicalcloud.entities.TipoAfiliado@2', true)
-			
-			WebUI.selectOptionByValue(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoContributivoDesplazado_13c85f'),
-				'class co.idl.medicalcloud.entities.TipoUsuario@1', true)
-			
-			WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Seleccione uno_1'))
-			
-			WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Contributivo Cotizante'))
-			
-			WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewacudiente'),
-				'adriana')
-			
-			WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewtele_792a81'),
-				'3233205930')
-			
-			WebUI.selectOptionByValue(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoConyugueHermano(a)Hijo_8cc99f'),
-				'class co.idl.medicalcloud.entities.Parentesco@6', true)
-			
-			WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewresponsable'),
-				'yo mismo')
-			
-			WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewtelR_048270'),
-				'3233205930')
-		} catch (Exception e) {
-			e.printStackTrace()
-		}
+		WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Datos Complementarios'))
 		
+		while (intentos2 > 0 && !exito2) {
+			
+			//Seccion Datos Completos
+			try {
+				//Objetos de tipo text
+				TestObject dirreccionResidenciaObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewdireccion')
+				TestObject nombreAcudienteObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewacudiente')
+				TestObject numeroAcudienteObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewtele_792a81')
+				TestObject nombreResponsableObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewresponsable')
+				TestObject celularResponsableObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewtelR_048270')
+				
+				//objetos de tpo selectValue
+				TestObject estadoCivil = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoCasadoDivorciadoMenorO_abc012')
+				TestObject tipoAfiliado = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoAdicionalBeneficiarioC_c24d6b')
+				TestObject tipoUsuario = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoContributivoDesplazado_13c85f')
+				TestObject parentescoAcudiente = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoConyugueHermano(a)Hijo_8cc99f')
+				
+				if (obtenerYVerificarCampo(dirreccionResidenciaObj).isEmpty()) {
+					WebUI.setText(dirreccionResidenciaObj, 'calle 25 #70-05')
+				}
+				
+				WebUI.selectOptionByValue(estadoCivil, 'class co.idl.medicalcloud.entities.EstadoCivil@6', true)
+				
+				WebUI.verifyOptionSelectedByValue(estadoCivil, 'class co.idl.medicalcloud.entities.EstadoCivil@6', false, 10)
+				
+				WebUI.selectOptionByValue(tipoAfiliado, 'class co.idl.medicalcloud.entities.TipoAfiliado@2', true)
+				
+				WebUI.verifyOptionSelectedByValue(tipoAfiliado, 'class co.idl.medicalcloud.entities.TipoAfiliado@2', false, 10)
+				
+				WebUI.selectOptionByValue(tipoUsuario, 'class co.idl.medicalcloud.entities.TipoUsuario@1', true)
+				
+				WebUI.verifyOptionSelectedByValue(tipoUsuario, 'class co.idl.medicalcloud.entities.TipoUsuario@1', false, 10)
+				
+				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Seleccione uno_1'))
+				
+				//Esperar que las opciones desplegables se muestren
+				WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Contributivo Cotizante'), 5)
+				
+				if (!WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Contributivo Cotizante'), 20)) {
+					
+					throw new Exception("El elemento 'li_SANITAS' no es visible.")
+				}
+				WebUI.waitForElementClickable(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Contributivo Cotizante'), 5)
+				
+				//---------------------------------------------------------------------------------------------------------------------------
+				
+				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Contributivo Cotizante'))
+				
+				if (obtenerYVerificarCampo(nombreAcudienteObj).isEmpty()) {
+					WebUI.setText(nombreAcudienteObj, 'adriana')
+				}
+				
+				if (obtenerYVerificarCampo(numeroAcudienteObj).isEmpty()) {
+					WebUI.setText(numeroAcudienteObj, '3233205930')
+				}
+				
+				WebUI.selectOptionByValue(parentescoAcudiente, 'class co.idl.medicalcloud.entities.Parentesco@6', true)
+				
+				if (obtenerYVerificarCampo(nombreResponsableObj).isEmpty()) {
+					WebUI.setText(nombreResponsableObj, 'yo mismo')
+				}
+				
+				if (obtenerYVerificarCampo(celularResponsableObj).isEmpty()) {
+					WebUI.setText(celularResponsableObj, '3231456987')
+				}
+				
+				// Validación final: verificar que todos los campos estén llenos
+				if (obtenerYVerificarCampo(dirreccionResidenciaObj).isEmpty() ||
+					obtenerYVerificarCampo(nombreAcudienteObj).isEmpty() ||
+					obtenerYVerificarCampo(numeroAcudienteObj).isEmpty() ||
+					obtenerYVerificarCampo(nombreResponsableObj).isEmpty() ||
+					obtenerYVerificarCampo(celularResponsableObj).isEmpty())
+					{
+		
+					// Si alguno está vacío, lanzar excepción para que se ejecute el catch
+					throw new Exception("No se llenaron todos los campos requeridos.")
+				}
+				exito2 = true
+				
+			} catch (Exception e) {
+				
+				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Datos Basicos'))
+				
+				WebUI.delay(2)
+				
+				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Datos Complementarios'))
+				
+				//Reducir intentos
+				intentos--
+				
+				WebUI.comment("Error en el llenado del formulario datos basicos")
+				if (intentos == 0) {
+					String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().time)
+					WebUI.comment("No se pudo seleccionar el cupo tras varios intentos. Error: " + e.getMessage())
+					throw new Exception("No se pudo completar el formulario tras múltiples intentos.")
+				}
+				WebUI.delay(2)
+			}
+		}
 	}
 	
 	//Envio de formulario
@@ -356,7 +348,7 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 	
 	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Esta seguro de continuar con la creaci_4d5d74'))
 	
-	WebUI.delay(4)
+	WebUI.waitForElementNotVisible(findTestObject('Object Repository/elementos espontaneos/Page_MedCloud IDL/spin de carga'), 300)
 	
 	WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar_Resumen_Cita'),15)
 	
@@ -365,6 +357,8 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 	WebUI.waitForElementClickable(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar_Resumen_Cita'),15)
 	
 	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar_Resumen_Cita'))
+	
+	WebUI.waitForElementNotVisible(findTestObject('Object Repository/elementos espontaneos/Page_MedCloud IDL/spin de carga'), 300)
 }
 
 // Lógica principal para crear citas de 12 horas
@@ -377,7 +371,7 @@ def crearJornadaCompleta() {
         // Calcular horario en formato de 24 horas
         def horaActual = calendar.time
         def horaInicio24h = formatoHora.format(horaActual)
-        calendar.add(Calendar.MINUTE, 10)
+        calendar.add(Calendar.MINUTE, 5)
         def horaFin24h = formatoHora.format(calendar.time)
         
         // Convertir a formato de 12 horas para la interfaz
@@ -403,23 +397,9 @@ WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://medcloudpruebas.idl.com.co/medCloud/index.xhtml')
 
 //Inicio de sesion
-WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input_Ver.9.9.5.19022025_ingresoFormfield_user'), 
-    'niarevalo')
+inicioSesion.inicioSesion()
 
-WebUI.setEncryptedText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input_Usuario_ingresoFormfield_password'), 
-    'iKK2QhFB4Lt3r+B0vfLvEw==')
-
-WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Iniciar sesin'))
-
-//Navegación a la agenda médica
-WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div_Agendas Expandidas                     _5ffbf0_1'))
-
-WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_NICOLAS AREVALO'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/td_NICOLAS AREVALO                         _bddb2e'), 
-    0)
-
-selectDynamicDate('26')
+seleccionCalendario.selectDynamicDate("28")
 
 WebUI.delay(3)
 

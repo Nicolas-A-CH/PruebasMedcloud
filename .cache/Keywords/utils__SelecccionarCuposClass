@@ -1,0 +1,42 @@
+{
+  "keywordFileContentHash": "31643FFC2DB46B2CDB0EE64F5880F553",
+  "keywordClasses": [
+    {
+      "name": "utils.SelecccionarCuposClass",
+      "keywordMethods": [
+        {
+          "name": "seleccionarCupo",
+          "parameters": [
+            {
+              "name": "horaInicio",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "horaFin",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

@@ -149,6 +149,36 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/crecion cita/Page_MedCloud IDL/span_Acepta Tratamiento De Datos_ui-chkbox-_5009df_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar_Resumen_Cita",
+      "brokenLocator": "//button[@id\u003d\u0027datosCitaForm:j_idt1095\u0027]/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027leerle las Recomendaciones al Paciente\u0027])[1]/following::span[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar_Resumen_Cita_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/inicio sesion/Page_MedCloud IDL/div_invalidar Sessionya existe una sesin previa con este usuario",
+      "brokenLocator": "//div[@id\u003d\u0027inactivarSession\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Cerrar\u0027])[1]/following::div[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/crecion cita/Page_MedCloud IDL/li_NICOLAS AREVALO",
+      "brokenLocator": "//div[@id\u003d\u0027form:accordionPanel:agentesList\u0027]/div[3]/ul/li[9]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027MAURICIO DURAN PEREZ\u0027])[2]/following::li[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/crecion cita/Page_MedCloud IDL/li_NICOLAS AREVALO_neighbor.png"
     }
   ]
 }
