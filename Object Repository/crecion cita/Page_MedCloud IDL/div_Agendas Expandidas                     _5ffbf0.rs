@@ -6,12 +6,12 @@
    <elementGuidId>b2e2baad-affe-4617-885d-dcb36b06eed6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='form']/div[2]/div[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.ui-g-12.ui-md-10.ui-g-nopad</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='form']/div[2]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

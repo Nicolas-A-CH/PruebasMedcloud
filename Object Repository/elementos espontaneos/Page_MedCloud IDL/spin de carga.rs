@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='j_idt3177']//i[contains(@class, 'fa-spin')]</value>
+         <value>//i[contains(@class, 'ajax-loader') and contains(@class, 'fa-spin')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,6 +22,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/elementos espontaneos/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>07399945-24b8-4c8d-8c92-b6033db553b9</webElementGuid>
+      <webElementGuid>3d8cf433-a8e6-4a19-9a94-28ae7baad31d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

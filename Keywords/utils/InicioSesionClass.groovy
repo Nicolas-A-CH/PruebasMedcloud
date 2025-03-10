@@ -26,9 +26,9 @@ class InicioSesionClass {
 	//Declaracion de elementos
 	TestObject nombreUsuarioObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/input_Ver.9.9.5.25022025_ingresoFormfield_user')
 	TestObject passwordUsuarioObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/input_Usuario_ingresoFormfield_password')
-	TestObject btnIngresarObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/span_Iniciar sesin')
+	TestObject btnIngresarObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/button_Aceptar')
 	TestObject ventanaFlotanteObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/div_invalidar Sessionya existe una sesin previa con este usuario')
-	TestObject btnConfirmarIngresoYCerrarSesionAnteriorObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/span_Aceptar')
+	TestObject btnConfirmarIngresoYCerrarSesionAnteriorObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/button_Aceptar')
 	TestObject checkbobRecordarUsuarioObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/span_Contrasea_ui-chkbox-icon ui-icon ui-icon-blank ui-c')
 	TestObject liDoctorSeleccionado = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_NICOLAS AREVALO')
 	TestObject validadorSeleccionObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/td_NICOLAS AREVALO                         _bddb2e')
@@ -58,6 +58,7 @@ class InicioSesionClass {
 				WebUI.waitForElementClickable(btnConfirmarIngresoYCerrarSesionAnteriorObj, 5)
 				WebUI.click(btnConfirmarIngresoYCerrarSesionAnteriorObj)
 			}
+
 
 			//Navegación a la agenda médica
 			WebUI.waitForElementPresent(liDoctorSeleccionado, 5)

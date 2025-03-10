@@ -6,12 +6,12 @@
    <elementGuidId>e82c7f91-b9f7-4be4-912e-fcadd02ce1c9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;PacienteCrearForm:PacienteTabView:j_idt392&quot;]/div[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default.ui-state-hover > span.ui-chkbox-icon.ui-icon.ui-icon-blank.ui-c</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;PacienteCrearForm:PacienteTabView:j_idt392&quot;]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

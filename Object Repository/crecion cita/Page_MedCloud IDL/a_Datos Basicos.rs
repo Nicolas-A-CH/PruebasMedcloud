@@ -6,12 +6,12 @@
    <elementGuidId>9fdcf903-95e4-45ba-86c8-54f47a852a03</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='PacienteCrearForm:PacienteTabView']/ul/li/a</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>li.ui-tabs-header.ui-state-default.ui-corner-top.ui-state-hover > a</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='PacienteCrearForm:PacienteTabView']/ul/li/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

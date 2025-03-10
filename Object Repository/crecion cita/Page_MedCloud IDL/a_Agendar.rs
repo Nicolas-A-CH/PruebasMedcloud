@@ -6,11 +6,11 @@
    <elementGuidId>61e4607e-05e5-40b2-ba61-e9038bec5d62</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@id='form:carrousel:0:agendarbtn']</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//a[@id='form:carrousel:0:agendarbtn']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

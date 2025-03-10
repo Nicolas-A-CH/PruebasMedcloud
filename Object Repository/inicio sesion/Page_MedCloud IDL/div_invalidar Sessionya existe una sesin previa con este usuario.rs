@@ -6,12 +6,12 @@
    <elementGuidId>9ec57eb8-2e5a-45c7-9d4d-1d8b92363080</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='inactivarSession']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#inactivarSession</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='inactivarSession']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

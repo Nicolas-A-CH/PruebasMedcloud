@@ -6,12 +6,12 @@
    <elementGuidId>99f537bc-7c00-4e25-a1ca-6104ec85a0aa</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='ingresoForm:remember-me']/div[2]/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>span.ui-chkbox-icon.ui-icon.ui-icon-blank.ui-c</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='ingresoForm:remember-me']/div[2]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
+import utils.CalcularIteraciones
 import utils.InicioSesionClass
 import utils.SelecccionarCuposClass
 import utils.SelectorCalendarioClass
@@ -34,14 +35,13 @@ import org.openqa.selenium.JavascriptExecutor
 import com.kms.katalon.core.webui.driver.DriverFactory
 
 // Configuración inicial
-@Field String horaInicioJornada = "7:00"
 @Field String baseIdentidad = "107236"
-@Field int totalCitas = 168
 
 //Intancia de class
 InicioSesionClass inicioSesion = new InicioSesionClass()
 SelectorCalendarioClass seleccionCalendario = new SelectorCalendarioClass()
 @Field SelecccionarCuposClass seleccionarCupos = new SelecccionarCuposClass()
+@Field CalcularIteraciones calculoIteracion = new CalcularIteraciones()
 
 // Método para convertir formato de hora (HH:mm -> h:mm a. m./p. m.)
 def convertirFormatoHora(String hora) {
@@ -52,9 +52,14 @@ def convertirFormatoHora(String hora) {
 }
 
 //Metodo para verificar si los campos del formulario estan vacios o no
-def obtenerYVerificarCampo(TestObject testObject) {
-	String valorActual = WebUI.getAttribute(testObject, 'value')
-	return (valorActual == null || valorActual.trim().isEmpty()) ? "" : valorActual
+boolean verificarCampoVacio(TestObject campo, boolean logError = false) {
+    String valor = WebUI.getAttribute(campo, "value")
+    boolean estaVacio = (valor == null || valor.trim().isEmpty())
+    
+    if (estaVacio && logError) {
+        println "ERROR: El campo ${campo.getObjectId()} está vacío."
+    }
+    return estaVacio
 }
 
 // Método para crear cita con parámetros dinámicos
@@ -80,7 +85,8 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 			// Configuración de tipo de cita
 			WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Seleccione'))
 			WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_CIRUGIA PLASTICA-PRIMERA VEZ (120min)'))
-			WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar'))
+			WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/button_AceptarFase1'))
+			
 			
 			WebUI.waitForElementNotVisible(findTestObject('Object Repository/elementos espontaneos/Page_MedCloud IDL/spin de carga'), 50)
 			
@@ -117,6 +123,7 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 	
 	if (valorNombre?.trim()) {
 		
+		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input fecha deseada cita'), '2025-03-11')
 		// Si el campo de nombre ya tiene un valor, el formulario está autocompletado
 		println "El formulario está autocompletado. Omitiendo el llenado de campos."
 		WebUI.delay(2) // Esperar un momento para asegurar que el sistema termine de autocompletar
@@ -141,23 +148,23 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 				TestObject emailObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewemai_4f6d20')
 				TestObject epsObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewinEps')
 				
-				if (obtenerYVerificarCampo(nombreObj).isEmpty()) {
+				if (verificarCampoVacio(nombreObj).isEmpty()) {
 					WebUI.setText(nombreObj, 'luis')
 				}
 				
-				if (obtenerYVerificarCampo(segundoNombreObj).isEmpty()) {
+				if (verificarCampoVacio(segundoNombreObj).isEmpty()) {
 					WebUI.setText(segundoNombreObj, 'Nicolas')
 				}
 				
-				if (obtenerYVerificarCampo(apellidoObj).isEmpty()) {
+				if (verificarCampoVacio(apellidoObj).isEmpty()) {
 					WebUI.setText(apellidoObj, 'Arevalo')
 				}
 				
-				if (obtenerYVerificarCampo(segundoApellidoObj).isEmpty()) {
+				if (verificarCampoVacio(segundoApellidoObj).isEmpty()) {
 					WebUI.setText(segundoApellidoObj, 'Chiquiza')
 				}
 				
-				if (obtenerYVerificarCampo(celularObj).isEmpty()) {
+				if (verificarCampoVacio(celularObj).isEmpty()) {
 					WebUI.setText(celularObj, '3134541985')
 				}
 				
@@ -181,6 +188,8 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewfech_a2cb1e'),
 					'2004-01-29')
 				
+				WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input fecha deseada cita'), '2025-03-11')
+				
 				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Seleccione uno_ui-icon ui-icon-triangl_fd1878'))
 				
 				//Esperar que las opciones desplegables se muestren
@@ -196,7 +205,7 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 				
 				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_SANITAS'))
 				
-				if (obtenerYVerificarCampo(emailObj).isEmpty()) {
+				if (verificarCampoVacio(emailObj).isEmpty()) {
 					WebUI.setText(emailObj, 'tohana8332@btcours.com')
 				}
 				
@@ -204,13 +213,13 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 					'famisanal')
 				
 				// Validación final: verificar que todos los campos estén llenos
-				if (obtenerYVerificarCampo(nombreObj).isEmpty() ||
-					obtenerYVerificarCampo(segundoNombreObj).isEmpty() ||
-					obtenerYVerificarCampo(apellidoObj).isEmpty() ||
-					obtenerYVerificarCampo(segundoApellidoObj).isEmpty() ||
-					obtenerYVerificarCampo(celularObj).isEmpty() ||
-					obtenerYVerificarCampo(emailObj).isEmpty() ||
-					obtenerYVerificarCampo(epsObj).isEmpty()) {
+				if (verificarCampoVacio(nombreObj).isEmpty() ||
+					verificarCampoVacio(segundoNombreObj).isEmpty() ||
+					verificarCampoVacio(apellidoObj).isEmpty() ||
+					verificarCampoVacio(segundoApellidoObj).isEmpty() ||
+					verificarCampoVacio(celularObj).isEmpty() ||
+					verificarCampoVacio(emailObj).isEmpty() ||
+					verificarCampoVacio(epsObj).isEmpty()) {
 		
 					// Si alguno está vacío, lanzar excepción para que se ejecute el catch
 					throw new Exception("No se llenaron todos los campos requeridos.")
@@ -259,7 +268,7 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 				TestObject tipoUsuario = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoContributivoDesplazado_13c85f')
 				TestObject parentescoAcudiente = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/select_Seleccione unoConyugueHermano(a)Hijo_8cc99f')
 				
-				if (obtenerYVerificarCampo(dirreccionResidenciaObj).isEmpty()) {
+				if (verificarCampoVacio(dirreccionResidenciaObj).isEmpty()) {
 					WebUI.setText(dirreccionResidenciaObj, 'calle 25 #70-05')
 				}
 				
@@ -290,30 +299,30 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 				
 				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Contributivo Cotizante'))
 				
-				if (obtenerYVerificarCampo(nombreAcudienteObj).isEmpty()) {
+				if (verificarCampoVacio(nombreAcudienteObj).isEmpty()) {
 					WebUI.setText(nombreAcudienteObj, 'adriana')
 				}
 				
-				if (obtenerYVerificarCampo(numeroAcudienteObj).isEmpty()) {
+				if (verificarCampoVacio(numeroAcudienteObj).isEmpty()) {
 					WebUI.setText(numeroAcudienteObj, '3233205930')
 				}
 				
 				WebUI.selectOptionByValue(parentescoAcudiente, 'class co.idl.medicalcloud.entities.Parentesco@6', true)
 				
-				if (obtenerYVerificarCampo(nombreResponsableObj).isEmpty()) {
+				if (verificarCampoVacio(nombreResponsableObj).isEmpty()) {
 					WebUI.setText(nombreResponsableObj, 'yo mismo')
 				}
 				
-				if (obtenerYVerificarCampo(celularResponsableObj).isEmpty()) {
+				if (verificarCampoVacio(celularResponsableObj).isEmpty()) {
 					WebUI.setText(celularResponsableObj, '3231456987')
 				}
 				
 				// Validación final: verificar que todos los campos estén llenos
-				if (obtenerYVerificarCampo(dirreccionResidenciaObj).isEmpty() ||
-					obtenerYVerificarCampo(nombreAcudienteObj).isEmpty() ||
-					obtenerYVerificarCampo(numeroAcudienteObj).isEmpty() ||
-					obtenerYVerificarCampo(nombreResponsableObj).isEmpty() ||
-					obtenerYVerificarCampo(celularResponsableObj).isEmpty())
+				if (verificarCampoVacio(dirreccionResidenciaObj).isEmpty() ||
+					verificarCampoVacio(nombreAcudienteObj).isEmpty() ||
+					verificarCampoVacio(numeroAcudienteObj).isEmpty() ||
+					verificarCampoVacio(nombreResponsableObj).isEmpty() ||
+					verificarCampoVacio(celularResponsableObj).isEmpty())
 					{
 		
 					// Si alguno está vacío, lanzar excepción para que se ejecute el catch
@@ -362,27 +371,41 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 }
 
 // Lógica principal para crear citas de 12 horas
-def crearJornadaCompleta() {
+def crearJornadaCompleta(String horaInicio, String horaFin, int incrementoMinutos) {
     def formatoHora = new SimpleDateFormat("HH:mm") // Formato de 24 horas para cálculos
     def calendar = Calendar.getInstance()
-    calendar.setTime(formatoHora.parse(horaInicioJornada)) // Usa el formato de 24 horas
-    
+    calendar.setTime(formatoHora.parse(horaInicio)) // Usa el formato de 24 horas
+	def totalCitas = calculoIteracion.calcularIteraciones(horaInicio, horaFin, incrementoMinutos)
+    def actualIteracion = 0
+	
     (1..totalCitas).each { index ->
         // Calcular horario en formato de 24 horas
         def horaActual = calendar.time
         def horaInicio24h = formatoHora.format(horaActual)
-        calendar.add(Calendar.MINUTE, 5)
+        calendar.add(Calendar.MINUTE, incrementoMinutos)
         def horaFin24h = formatoHora.format(calendar.time)
         
         // Convertir a formato de 12 horas para la interfaz
-        def horaInicio = convertirFormatoHora(horaInicio24h)
-        def horaFin = convertirFormatoHora(horaFin24h)
+        def horaInicio12h = convertirFormatoHora(horaInicio24h)
+        def horaFin12h = convertirFormatoHora(horaFin24h)
         
         // Generar identificación única
         def numeroIdentidad = "${baseIdentidad}${index}"
+		
+		actualIteracion++
+		
+		WebUI.comment("Iteracion acual: ${actualIteracion}")
         
+		if (actualIteracion % 20 == 0) {
+			
+			WebUI.comment("Se activo el descanzo")
+			
+			WebUI.delay(30)
+			
+			actualIteracion = 0
+		}
         // Crear cita
-        crearCita(horaInicio, horaFin, numeroIdentidad)
+        crearCita(horaInicio12h, horaFin12h, numeroIdentidad)
         
         // Pequeña pausa entre citas
         WebUI.delay(3)
@@ -399,9 +422,9 @@ WebUI.navigateToUrl('https://medcloudpruebas.idl.com.co/medCloud/index.xhtml')
 //Inicio de sesion
 inicioSesion.inicioSesion()
 
-seleccionCalendario.selectDynamicDate("28")
+seleccionCalendario.selectDynamicDate("11")
 
 WebUI.delay(3)
 
 // Crear jornada completa
-crearJornadaCompleta()
+crearJornadaCompleta("07:00", "9:00", 5)

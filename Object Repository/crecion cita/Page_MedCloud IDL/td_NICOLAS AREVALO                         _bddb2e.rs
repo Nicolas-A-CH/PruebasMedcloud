@@ -6,11 +6,11 @@
    <elementGuidId>80c7034a-969d-4e21-b47e-f17fe487c1d8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;form:carrousel:0:treetableCalendar_data&quot;]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;form:carrousel:0:treetableCalendar_data&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

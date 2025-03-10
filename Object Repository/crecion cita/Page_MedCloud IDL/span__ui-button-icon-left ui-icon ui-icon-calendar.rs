@@ -6,12 +6,12 @@
    <elementGuidId>e4b1114b-9feb-4fc1-8962-559b3f9ee303</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[@id='PacienteCrearForm:PacienteTabView:fechaNacimiento']/button/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.ui-datepicker-trigger.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-state-focus.ui-state-hover > span.ui-button-icon-left.ui-icon.ui-icon-calendar</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='PacienteCrearForm:PacienteTabView:fechaNacimiento']/button/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

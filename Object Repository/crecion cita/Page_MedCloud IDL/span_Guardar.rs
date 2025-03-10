@@ -6,11 +6,11 @@
    <elementGuidId>2262a8e1-772e-4e46-8c3a-54df30803ecf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='PacienteCrearForm:savebtn']/span[2]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//button[@id='PacienteCrearForm:savebtn']/span[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

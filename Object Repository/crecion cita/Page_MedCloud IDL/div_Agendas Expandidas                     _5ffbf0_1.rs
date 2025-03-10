@@ -6,12 +6,12 @@
    <elementGuidId>ea0c1f7f-c754-4c8d-984b-37fa4ec05b3e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='form:carrousel']/div</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.ui-carousel-header.ui-widget-header.ui-corner-all</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='form:carrousel']/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,12 +6,12 @@
    <elementGuidId>314b1ccf-b38b-46ea-84b9-e8c4397deef6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='PacienteCrearForm:PacienteTabView:idEntidadSeguros']/div[3]/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.ui-selectonemenu-trigger.ui-state-default.ui-corner-right.ui-state-hover > span.ui-icon.ui-icon-triangle-1-s.ui-c</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='PacienteCrearForm:PacienteTabView:idEntidadSeguros']/div[3]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

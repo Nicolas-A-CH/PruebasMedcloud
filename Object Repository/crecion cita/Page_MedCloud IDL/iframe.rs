@@ -6,12 +6,12 @@
    <elementGuidId>46443e25-6141-4e48-bac1-3220080deaaa</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//iframe</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>iframe</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//iframe</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>iframe</value>
-      <webElementGuid>821e2ef7-2c52-4c48-a3d2-8a419d90892d</webElementGuid>
+      <webElementGuid>bfee2a3d-e667-48b8-bbb7-206a20a252e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>src</name>
       <type>Main</type>
       <value>validaIngreso.xhtml</value>
-      <webElementGuid>4b1e88a8-633f-4b28-b57d-e64e8f12ab49</webElementGuid>
+      <webElementGuid>cbd4ad9d-e9c7-41dd-8007-31fcf348feb5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/iframe[1]</value>
-      <webElementGuid>b16465cf-92af-490f-85a9-b6d04035bf6a</webElementGuid>
+      <webElementGuid>9421c4c0-8754-43ff-86f8-015ca0d67d7d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//iframe</value>
-      <webElementGuid>ebfe6e4d-91f6-4f66-b170-ded0f97dbfc6</webElementGuid>
+      <webElementGuid>4312d2e3-0dc4-446d-9d3d-5bec2b59254a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,6 +61,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//iframe[@src = 'validaIngreso.xhtml']</value>
-      <webElementGuid>996445d0-64b5-46b6-99a5-dad7a0db2361</webElementGuid>
+      <webElementGuid>7ea40e34-fe1d-47bb-9b0b-b1083c882b97</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

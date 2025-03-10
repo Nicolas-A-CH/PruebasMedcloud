@@ -6,11 +6,11 @@
    <elementGuidId>6f9b5049-6724-4d44-bdfb-25b5f45523b1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='datosCitaForm:j_idt1094']</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//button[@id='datosCitaForm:j_idt1094']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

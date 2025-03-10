@@ -6,11 +6,11 @@
    <elementGuidId>7938b17f-df25-4ac7-bae3-12e5b817e4e6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//li[@id='PacienteCrearForm:PacienteTabView:idEntidadSeguros_6']</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//li[@id='PacienteCrearForm:PacienteTabView:idEntidadSeguros_6']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

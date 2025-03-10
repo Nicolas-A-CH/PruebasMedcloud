@@ -6,12 +6,12 @@
    <elementGuidId>e1375b38-8aaa-485a-b9d7-de725453cd6c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='ingresoForm:j_idt29']/span[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>span.ui-button-text.ui-c</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='ingresoForm:j_idt29']/span[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>3a1db924-1ddd-4188-81c1-0ba559f305be</webElementGuid>
+      <webElementGuid>8c2fd9e6-b6d8-4966-a0c8-bdc88854dd51</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-button-text ui-c</value>
-      <webElementGuid>9fa85eed-ed94-40e7-8b0f-3f3d15bc568a</webElementGuid>
+      <webElementGuid>2bfe2451-b067-45f7-b591-b08b35f3eb8e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Iniciar sesión</value>
-      <webElementGuid>8bc57afd-1f90-46eb-ac92-e63adcd4c2b7</webElementGuid>
+      <webElementGuid>6f23d5af-6bde-4084-bb0a-014502ffadfe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ingresoForm:j_idt29&quot;)/span[@class=&quot;ui-button-text ui-c&quot;]</value>
-      <webElementGuid>743a1503-f3fe-458a-a7d2-8342e36ad5c8</webElementGuid>
+      <webElementGuid>e8c06889-8448-4923-9aa3-0fdb10986aed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/inicio sesion/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>30c1b5f0-470b-427e-8c4e-a8fa9a2690e8</webElementGuid>
+      <webElementGuid>58f17a00-7e63-4394-87ac-d3604d3c16d5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='ingresoForm:j_idt29']/span[2]</value>
-      <webElementGuid>fc939ee1-436d-4c6d-b2a0-8e889a3a24c5</webElementGuid>
+      <webElementGuid>9d48ffea-11ff-4cc9-83dd-de71117795dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='recordar mis datos'])[1]/following::span[2]</value>
-      <webElementGuid>e0d7c2b3-b6c6-4749-aedf-7499d990b198</webElementGuid>
+      <webElementGuid>9b46a9af-7832-408f-89ce-f12dbb4c45c7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Contraseña'])[1]/following::span[3]</value>
-      <webElementGuid>ec339ad4-d28f-4010-b0c8-cedd7683c78b</webElementGuid>
+      <webElementGuid>5735264f-bf0d-4a5b-bd43-4a055ceb21dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cambio Contraseña'])[1]/preceding::span[2]</value>
-      <webElementGuid>7c413079-8c80-4316-93c5-65936a363e06</webElementGuid>
+      <webElementGuid>b3b1ac39-8213-4833-a6f2-ff6278ed92e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Usuario:'])[1]/preceding::span[4]</value>
-      <webElementGuid>5333378a-1614-4fbe-bcfc-384aca98b613</webElementGuid>
+      <webElementGuid>b285153e-a73e-4ef3-a7a6-93e5053afdad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span[2]</value>
-      <webElementGuid>d98dcb6f-2d4a-480d-9bb3-955ef46c2314</webElementGuid>
+      <webElementGuid>b2b8da03-ac9a-4a2b-8fa3-cb4907b25c2c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +117,22 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Iniciar sesión' or . = 'Iniciar sesión')]</value>
-      <webElementGuid>f120f84f-6e19-45ce-8530-134d5200b8fa</webElementGuid>
+      <webElementGuid>7eceafef-674f-41f7-8adc-5a6ee4d4f54e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='ingresoForm:j_idt33']/span[2]</value>
+      <webElementGuid>e8e47a0e-2e24-4c89-9353-81dc3fbbf1fd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='ingresoForm:j_idt30']/span[2]</value>
+      <webElementGuid>6b72a613-8691-46d3-9162-0cda145062df</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

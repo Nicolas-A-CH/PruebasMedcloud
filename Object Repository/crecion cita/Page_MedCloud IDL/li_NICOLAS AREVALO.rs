@@ -6,12 +6,12 @@
    <elementGuidId>93c362ed-3bba-46df-a412-521b89eb691c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='form:accordionPanel:agentesList']/div[3]/ul/li[9]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>li.ui-selectlistbox-item.ui-corner-all.ui-state-hover</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='form:accordionPanel:agentesList']/div[3]/ul/li[9]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

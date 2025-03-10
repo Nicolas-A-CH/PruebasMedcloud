@@ -6,12 +6,12 @@
    <elementGuidId>1a9b9064-50dd-4702-a145-c8c63a60a4e1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='subactividadDialog']/div</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#subactividadDialog > div.ui-dialog-titlebar.ui-widget-header.ui-helper-clearfix.ui-corner-top.ui-draggable-handle</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='subactividadDialog']/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

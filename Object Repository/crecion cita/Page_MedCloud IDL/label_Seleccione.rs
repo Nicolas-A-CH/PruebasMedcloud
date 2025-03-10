@@ -6,11 +6,11 @@
    <elementGuidId>093adddc-d084-4444-a6dd-755b6db06370</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//label[@id='subactividadesValidationForm:subactividadListInterna_label']</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//label[@id='subactividadesValidationForm:subactividadListInterna_label']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

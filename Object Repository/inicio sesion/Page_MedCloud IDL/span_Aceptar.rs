@@ -6,12 +6,11 @@
    <elementGuidId>82339262-c856-400c-b3b5-5fcbb6076442</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='inactivarSessionForm:j_idt46']/span</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[@id='inactivarSessionForm:j_idt50']/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>9481452f-90ea-4635-8456-ea6e71ef6774</webElementGuid>
+      <webElementGuid>9e85f62c-6b31-42b1-87ca-e64e514e1634</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-button-text ui-c</value>
-      <webElementGuid>ec3c1d57-aada-4d9c-98af-c9f85503adf2</webElementGuid>
+      <webElementGuid>7d90ccaf-48f1-498b-86f7-5134514a0a09</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,15 +44,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Aceptar</value>
-      <webElementGuid>b01b67b1-f27b-4fe8-a8c9-87326c154975</webElementGuid>
+      <webElementGuid>f72cd67b-81f4-4dec-919a-1508a3f0fef3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;inactivarSessionForm:j_idt46&quot;)/span[@class=&quot;ui-button-text ui-c&quot;]</value>
-      <webElementGuid>2cf3b910-af98-409d-b443-2ca7ec27874c</webElementGuid>
+      <value>id(&quot;inactivarSessionForm:j_idt50&quot;)/span[@class=&quot;ui-button-text ui-c&quot;]</value>
+      <webElementGuid>0b920981-8e66-46af-b5a1-d36ead412428</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,15 +60,15 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/inicio sesion/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>abdff738-5b6b-44a9-9f57-a73b545d23c3</webElementGuid>
+      <webElementGuid>bb6ae49d-6add-4d7a-9ae9-7a447e8956c3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='inactivarSessionForm:j_idt46']/span</value>
-      <webElementGuid>362ea737-3fd6-4a0e-a1b6-ee15151bc759</webElementGuid>
+      <value>//button[@id='inactivarSessionForm:j_idt50']/span</value>
+      <webElementGuid>0916d7fe-6814-417c-a6d0-013ca1781450</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='¿desea invalidarla y continuar con esta sesión?'])[1]/following::span[1]</value>
-      <webElementGuid>5534ed07-3d05-41e7-bb58-87b1142871be</webElementGuid>
+      <webElementGuid>64663c2d-918f-4d4b-9798-3eb2eac632de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ya existe una sesión previa con este usuario'])[1]/following::span[1]</value>
-      <webElementGuid>bde479af-a7cc-4094-95b2-d230ff85c358</webElementGuid>
+      <webElementGuid>196d34e2-65d2-4a10-8cc6-3b3c6390b49a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancelar'])[1]/preceding::span[2]</value>
-      <webElementGuid>4a634718-92f5-4cca-9b32-ca10ac1402dc</webElementGuid>
+      <webElementGuid>e18d2f58-53ea-4b2b-9e70-e8fcb1e59206</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +100,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Error'])[1]/preceding::span[4]</value>
-      <webElementGuid>cf9cb283-e786-4211-aaeb-656c02e2e927</webElementGuid>
+      <webElementGuid>bd87f7ae-80f0-4770-9070-83d77bafe6eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +108,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Aceptar']/parent::*</value>
-      <webElementGuid>3e2094eb-5e25-4fc1-92e4-6873cd114f10</webElementGuid>
+      <webElementGuid>cd6f319c-3735-4a59-a0a6-ba89c33e7bff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +116,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span/center/button/span</value>
-      <webElementGuid>78bbfa01-4f59-4490-ab99-349594085e4c</webElementGuid>
+      <webElementGuid>c11a44de-7ae8-41a3-b1b4-62eadaf8dfb8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +124,22 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Aceptar' or . = 'Aceptar')]</value>
-      <webElementGuid>d9f3c648-90be-4287-83ff-d9fd80a3a349</webElementGuid>
+      <webElementGuid>d7f98033-a099-4b2f-afa8-e586b050be1b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='inactivarSessionForm:j_idt46']/span</value>
+      <webElementGuid>0cbeb3e2-6fbe-4469-ba0a-7ec7b544cb5b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='inactivarSessionForm:j_idt47']/span</value>
+      <webElementGuid>f1bcf3f9-7ff7-4a4e-b0f5-bb4841887da7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

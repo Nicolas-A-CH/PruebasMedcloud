@@ -6,12 +6,12 @@
    <elementGuidId>31bef6f3-ceda-4f48-ad2f-e05cd048ed9d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='j_idt1072_content']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#j_idt1072_content</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='j_idt1072_content']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

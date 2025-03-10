@@ -6,12 +6,11 @@
    <elementGuidId>7ccf6f65-c4cb-4427-b03a-a64818e52fc5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='ingresoForm:field_user']</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@id='ingresoForm:field_user']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

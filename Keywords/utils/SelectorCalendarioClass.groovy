@@ -21,42 +21,42 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class SelectorCalendarioClass {
-//Elementos DOM
-	
+	//Elementos DOM
+
 	TestObject ifremObj = findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe')
-	
+
 	@Keyword
 	def selectDynamicDate(String day) {
 		int intentos = 3
-	
+
 		boolean exito = false
-	
+
 		while ((intentos > 0) && !(exito)) {
 			try {
 				WebUI.switchToFrame(ifremObj, 10)
-	
+
 				String xpathDate = "//table[@class='ui-datepicker-calendar']//a[text()='$day']"
-	
+
 				TestObject fecha = new TestObject("dia_$day").addProperty('xpath', com.kms.katalon.core.testobject.ConditionType.EQUALS,
-					xpathDate)
-	
+						xpathDate)
+
 				WebUI.waitForElementPresent(fecha, 5)
-	
+
 				WebUI.waitForElementClickable(fecha, 5)
-	
+
 				WebUI.enhancedClick(fecha)
-	
+
 				exito = true
 			}
 			catch (org.openqa.selenium.StaleElementReferenceException e) {
 				intentos--
-	
+
 				if (intentos == 0) {
 					throw e
 				}
-				
+
 				WebUI.switchToDefaultContent()
-	
+
 				WebUI.delay(1)
 			}
 			finally {

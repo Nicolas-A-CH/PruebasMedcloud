@@ -1,16 +1,15 @@
 {
-  "keywordFileContentHash": "9F39927E6CB0AE161CF98F2087496DDA",
+  "keywordFileContentHash": "305DD94FB4C335A4CA1CA9E1BF856E11",
   "keywordClasses": [
     {
       "name": "utils.InicioSesionClass",
       "keywordMethods": [
         {
           "name": "inicioSesion",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
