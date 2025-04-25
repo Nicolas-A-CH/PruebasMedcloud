@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>checkboxDiagnostico</name>
+   <tag></tag>
+   <elementGuidId>ad72b79e-ab76-4dec-9f02-0872709cef58</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>IMAGE</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;historiaPacienteForm:tabView:diagnosticoComponente:diagnosicoTable_data&quot;)/tr[@class=&quot;ui-widget-content ui-datatable-even ui-datatable-selectable&quot;]/td[@class=&quot;ui-selection-column&quot;]/div[@class=&quot;ui-chkbox ui-widget&quot;]/div[@class=&quot;ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-hover&quot;]/span[@class=&quot;ui-chkbox-icon ui-icon ui-icon-blank ui-c&quot;][count(. | //*[@ref_element = 'Object Repository/CambioEstadoCita/Page_MedCloud IDL/iframe']) = count(//*[@ref_element = 'Object Repository/CambioEstadoCita/Page_MedCloud IDL/iframe'])]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default.ui-state-hover > span.ui-chkbox-icon.ui-icon.ui-icon-blank.ui-c</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;historiaPacienteForm:tabView:diagnosticoComponente:diagnosicoTable_data&quot;]/tr[1]/td[1]/div/div[2]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=row[name=&quot;A830 Encefalitis Japonesa&quot;i] >> span</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>fe3edcf7-8b20-4b35-8572-dac2424878e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-chkbox-icon ui-icon ui-icon-blank ui-c</value>
+      <webElementGuid>b8533eee-af04-4d5f-b133-48160034d91b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;historiaPacienteForm:tabView:diagnosticoComponente:diagnosicoTable_data&quot;)/tr[@class=&quot;ui-widget-content ui-datatable-even ui-datatable-selectable&quot;]/td[@class=&quot;ui-selection-column&quot;]/div[@class=&quot;ui-chkbox ui-widget&quot;]/div[@class=&quot;ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-hover&quot;]/span[@class=&quot;ui-chkbox-icon ui-icon ui-icon-blank ui-c&quot;]</value>
+      <webElementGuid>35487301-6bf8-4a5e-91e1-f37ab66f43b0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/CambioEstadoCita/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>8310fe64-b2b5-4dc8-b340-d8f4d5397eae</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tbody[@id='historiaPacienteForm:tabView:diagnosticoComponente:diagnosicoTable_data']/tr/td/div/div[2]/span</value>
+      <webElementGuid>118bf749-1410-414a-9f32-189522a7748a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/table/tbody/tr/td/div/div[2]/span</value>
+      <webElementGuid>70609215-cb06-461d-952a-1e5a918ecb8c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

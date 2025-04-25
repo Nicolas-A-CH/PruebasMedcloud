@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Confirmacion cita medica</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f1f5c7e6-1071-42e9-b56a-49aa9073fcd3</testCaseGuid>
+</TestCaseEntity>

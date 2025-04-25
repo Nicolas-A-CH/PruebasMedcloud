@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Diagnstico</name>
+   <tag></tag>
+   <elementGuidId>42620522-0cae-4db0-99b3-05fd19b52618</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>tr.ui-selectlistbox-item.ui-corner-all.ui-state-hover > td:nth-of-type(2) > span > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;historiaPacienteForm:tabView:menu&quot;]/div[3]/table/tbody/tr[6]/td[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[id=&quot;historiaPacienteForm\:tabView\:menu&quot;] >> internal:role=rowgroup >> internal:text=&quot;Diagnóstico&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>da5f817a-85d8-400a-b667-48005cb642ec</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Diagnóstico</value>
+      <webElementGuid>3b0226f2-5a0a-4f8a-b8fb-900c01564d2b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;historiaPacienteForm:tabView:menu&quot;)/div[@class=&quot;ui-selectlistbox-listcontainer&quot;]/table[@class=&quot;ui-selectlistbox-list&quot;]/tbody[1]/tr[@class=&quot;ui-selectlistbox-item ui-corner-all ui-state-hover&quot;]/td[2]/span[1]/span[@class=&quot;&quot;]</value>
+      <webElementGuid>429d5c4c-d48a-4668-bef9-e03caa066e14</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/CambioEstadoCita/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>91ad982c-73fb-4526-975a-9c3c85c6d75c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='historiaPacienteForm:tabView:menu']/div[3]/table/tbody/tr[6]/td[2]/span/span</value>
+      <webElementGuid>72e4c04b-42be-4356-b986-b8d6352a2690</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Antecedentes personales'])[2]/following::span[3]</value>
+      <webElementGuid>2cfba774-daa6-4075-9ec3-131b05cf5a75</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Paint image'])[2]/following::span[6]</value>
+      <webElementGuid>230cab53-a8a1-4603-9a0c-d805cdc2487d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Laboratorios solicitados'])[2]/preceding::span[3]</value>
+      <webElementGuid>251f4b47-a005-49c8-8eca-1077c8d7ba24</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Signos vitales'])[2]/preceding::span[6]</value>
+      <webElementGuid>605df013-34d9-4488-9c14-cda35e700186</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[6]/td[2]/span/span</value>
+      <webElementGuid>82b21f07-c310-479b-b019-e2968542a19b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Diagnóstico' or . = 'Diagnóstico')]</value>
+      <webElementGuid>1f8ff1de-bf48-4c44-8db6-2713eb8c2c3b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

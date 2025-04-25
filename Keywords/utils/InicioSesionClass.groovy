@@ -24,17 +24,17 @@ import org.openqa.selenium.Keys as Keys
 class InicioSesionClass {
 
 	//Declaracion de elementos
-	TestObject nombreUsuarioObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/input_Ver.9.9.5.25022025_ingresoFormfield_user')
-	TestObject passwordUsuarioObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/input_Usuario_ingresoFormfield_password')
-	TestObject btnIngresarObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/button_Aceptar')
-	TestObject ventanaFlotanteObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/div_invalidar Sessionya existe una sesin previa con este usuario')
-	TestObject btnConfirmarIngresoYCerrarSesionAnteriorObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/button_Aceptar')
-	TestObject checkbobRecordarUsuarioObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/span_Contrasea_ui-chkbox-icon ui-icon ui-icon-blank ui-c')
-	TestObject liDoctorSeleccionado = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_NICOLAS AREVALO')
-	TestObject validadorSeleccionObj = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/td_NICOLAS AREVALO                         _bddb2e')
+	static TestObject nombreUsuarioObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/input_Ver.9.9.5.25022025_ingresoFormfield_user')
+	static TestObject passwordUsuarioObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/input_Usuario_ingresoFormfield_password')
+	static TestObject btnIngresarObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/button_Aceptar')
+	static TestObject ventanaFlotanteObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/div_invalidar Sessionya existe una sesin previa con este usuario')
+	static TestObject btnConfirmarIngresoYCerrarSesionAnteriorObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/button_Aceptar')
+	static TestObject checkbobRecordarUsuarioObj = findTestObject('Object Repository/inicio sesion/Page_MedCloud IDL/span_Contrasea_ui-chkbox-icon ui-icon ui-icon-blank ui-c')
+	static TestObject liDoctorSeleccionado = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_NICOLAS AREVALO')
+	static TestObject spinnerLogin = findTestObject('Object Repository/elementos espontaneos/Page_MedCloud IDL/spin de carga')
 
 	@Keyword
-	def inicioSesion(){
+	static void inicioSesion(){
 
 		try {
 			//Esperar que el login este presente
@@ -67,8 +67,7 @@ class InicioSesionClass {
 
 			WebUI.click(liDoctorSeleccionado)
 
-			WebUI.waitForElementPresent(validadorSeleccionObj, 5)
-			WebUI.waitForElementVisible(validadorSeleccionObj, 20)
+			WebUI.waitForElementNotVisible(spinnerLogin, 50)
 		} catch (Exception e) {
 			println("Error inesperado durante el inicio de sesión: " + e.getMessage())
 			throw e

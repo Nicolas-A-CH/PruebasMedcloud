@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>419ab335-0e69-42ff-a7bc-b22f7a2ffcaf</webElementGuid>
+      <webElementGuid>c12bae11-3ae6-4276-a962-6ec1de5819bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>tabview:addCuposForm:rango</value>
-      <webElementGuid>45b65078-95ea-4938-8bea-9129ef52014b</webElementGuid>
+      <webElementGuid>ff4599c0-907b-4a71-8613-464887d237ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>name</name>
       <type>Main</type>
       <value>tabview:addCuposForm:rango</value>
-      <webElementGuid>8b7cf043-668d-4989-8fed-b7972fbede4b</webElementGuid>
+      <webElementGuid>669cf377-03cf-4cad-bdc2-611792114258</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>f64f7ddf-ed28-4b9d-b977-ffcc18ffbedf</webElementGuid>
+      <webElementGuid>a3e8762a-f1e8-4120-98f1-a5f038099a97</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>value</name>
       <type>Main</type>
       <value>30</value>
-      <webElementGuid>7c0ad0b9-b986-4986-938e-8da7d8c2afef</webElementGuid>
+      <webElementGuid>e4eae223-a941-4b49-af58-024b2c3e22eb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-filled ui-state-hover ui-state-focus</value>
-      <webElementGuid>e174cc5e-eafa-43e9-aac3-59d5c4644852</webElementGuid>
+      <webElementGuid>b24a8044-af24-4633-87ef-ae25da074974</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>aria-required</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>d3daa21a-c769-4f6f-bf68-3e46c9fc3fe1</webElementGuid>
+      <webElementGuid>24b641b0-33d7-4496-a441-12953cfd34ec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>PrimeFaces.ab({s:&quot;tabview:addCuposForm:rango&quot;,e:&quot;blur&quot;,f:&quot;tabview:addCuposForm&quot;,p:&quot;tabview:addCuposForm:rango&quot;,u:&quot;tabview:addCuposForm:horaInicio&quot;});</value>
-      <webElementGuid>695e3754-a0c2-4b07-86d2-24108f619024</webElementGuid>
+      <webElementGuid>ada99065-a5aa-4d48-b3db-899a88bb4ead</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>role</name>
       <type>Main</type>
       <value>textbox</value>
-      <webElementGuid>e436cb9c-6691-4f32-9e85-a947191fb763</webElementGuid>
+      <webElementGuid>e11e8f8f-9c71-43fa-944a-b2f2cdf29e79</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>aria-disabled</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>a5e80f16-e6bf-42b6-bb07-054a66ab9b82</webElementGuid>
+      <webElementGuid>af4162fd-0f93-451e-8d49-157a960ae6eb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>aria-readonly</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>2b0b691f-d16d-4df4-aa93-f4f5828b83ed</webElementGuid>
+      <webElementGuid>11050020-90c9-4484-bdae-0e487fa93363</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tabview:addCuposForm:rango&quot;)</value>
-      <webElementGuid>062dcd4a-c1cb-4548-a86e-e4bea5756c5a</webElementGuid>
+      <webElementGuid>18abb2d7-ff84-4e85-8f4a-bd7462f3163b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -125,7 +125,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>547876c5-15ff-43a5-b9f7-85cf2a6bd1f6</webElementGuid>
+      <webElementGuid>ad4ed0e5-0159-4e13-980e-e440f51da35d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -133,7 +133,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='tabview:addCuposForm:rango']</value>
-      <webElementGuid>9d136108-fd1d-4df5-b801-e09170de5056</webElementGuid>
+      <webElementGuid>452d0c3a-57d2-47b6-b3ee-804cb9e68c7d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,7 +141,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tabview:addCuposForm:panelRango']/tbody/tr/td[2]/input</value>
-      <webElementGuid>3da80cb6-26ed-49a5-bc5c-f56212ab7e38</webElementGuid>
+      <webElementGuid>988547f7-feb8-407c-8aff-bd1ac3edb707</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -149,7 +149,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//table[2]/tbody/tr/td[2]/input</value>
-      <webElementGuid>cef3a007-7f64-4a82-920d-5872089761f9</webElementGuid>
+      <webElementGuid>c60a2ded-5942-4547-a6bd-9a2bbce11334</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -157,6 +157,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'tabview:addCuposForm:rango' and @name = 'tabview:addCuposForm:rango' and @type = 'text']</value>
-      <webElementGuid>d627f375-8be6-440a-bd37-d55cdeffbfe1</webElementGuid>
+      <webElementGuid>b79b014d-1a40-4982-8874-a0eed12f154c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

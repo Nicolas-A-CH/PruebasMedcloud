@@ -70,7 +70,7 @@ WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div
 
 WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_NICOLAS AREVALO'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/td_NICOLAS AREVALO                         _bddb2e'), 
+WebUI.waitForElementPresent(findTestObject('null'), 
     0)
 
 WebUI.delay(3)

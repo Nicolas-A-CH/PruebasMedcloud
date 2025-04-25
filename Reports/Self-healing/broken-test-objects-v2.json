@@ -259,6 +259,16 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/CambioEstadoCita/Page_MedCloud IDL/button_Guardar_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/CambioEstadoCita/Page_MedCloud IDL/a_Cambiar estados",
+      "brokenLocator": "//div[@id\u003d\u0027form:carrousel:0:tableMenu\u0027]/ul/li[6]/a",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Confirmado\u0027])[1]/preceding::a[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
     }
   ]
 }

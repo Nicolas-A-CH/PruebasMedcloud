@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li_Otro</name>
+   <tag></tag>
+   <elementGuidId>89b82138-aa84-4f67-80fe-8683e6069a21</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;cancelarCitaForm:razon&quot;]/div[2]/ul/li[9]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li.ui-selectlistbox-item.ui-corner-all.ui-state-hover</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Cancelación de citas&quot;i >> li >> internal:has-text=&quot;Otro&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+      <webElementGuid>3b7d293d-8a5c-439d-bb27-f60cfbb6a804</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-selectlistbox-item ui-corner-all ui-state-hover</value>
+      <webElementGuid>0fd49ac2-5989-4c61-94f6-82d82559fddd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Otro</value>
+      <webElementGuid>0400cec8-d5c6-4f8c-a9bd-977ef9b1bf3c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;cancelarCitaForm:razon&quot;)/div[@class=&quot;ui-selectlistbox-listcontainer&quot;]/ul[@class=&quot;ui-selectlistbox-list&quot;]/li[@class=&quot;ui-selectlistbox-item ui-corner-all ui-state-hover&quot;]</value>
+      <webElementGuid>3d29a648-0a79-4b94-aadc-44192f827bc9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/CambioEstadoCita/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>89c07dc2-8592-4d15-a3a7-6f1d8cb1a770</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='cancelarCitaForm:razon']/div[2]/ul/li[9]</value>
+      <webElementGuid>7aef781c-4e47-4207-8717-b242bf5a648f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No tiene acompañante'])[2]/following::li[1]</value>
+      <webElementGuid>54038238-6be2-4ba8-a736-d151b2c91aca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No permiso en el trabajo'])[2]/following::li[2]</value>
+      <webElementGuid>de5bbb06-a9c7-4817-9c3c-84c26fc50589</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Problemas de movilidad'])[2]/preceding::li[1]</value>
+      <webElementGuid>48f758aa-1121-4c16-85df-d0ecfe1357f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/ul/li[9]</value>
+      <webElementGuid>b838b975-8c0f-4831-9605-2a34a7a288e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//li[(text() = 'Otro' or . = 'Otro')]</value>
+      <webElementGuid>195b2673-b938-4f5a-b926-7ec46b470edf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

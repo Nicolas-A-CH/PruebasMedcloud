@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_NICOLAS AREVALO                         _bddb2e</name>
+   <name>span_Atendido</name>
    <tag></tag>
-   <elementGuidId>80c7034a-969d-4e21-b47e-f17fe487c1d8</elementGuidId>
+   <elementGuidId>64450b9e-8562-44d8-8be1-38abf4d408f4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
+         <value>span:nth-of-type(6)</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;form:carrousel:0:treetableCalendar_data&quot;]</value>
+         <value>//tr[@id='form:carrousel:0:treetableCalendar_node_0_0']/td/span[6]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=link[name=&quot;Editar NICOLAS AREVALO jueves 20-feb.-2025  agregar/eliminar cupos del dia  bloquear dia/rango  desbloquear Dia  imprimir  Migrar citas entre agentes  Movimiento caja diario notas agenda dia&quot;i]</value>
+         <value>[id=&quot;form\:carrousel\:0\:treetableCalendar_node_0_0&quot;] >> internal:text=&quot;Atendido&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -27,86 +28,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>d737ac65-d001-4131-80ba-71e45707bc81</webElementGuid>
+      <value>span</value>
+      <webElementGuid>db3e1d8a-a0e8-4c80-9864-e4a61c6564ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-
-                                            NICOLAS AREVALO 
-
-
-                                            jueves 20-feb.-2025</value>
-      <webElementGuid>d4e8615c-3366-4fb5-9c6e-66e4af2c54ba</webElementGuid>
+      <value>Atendido</value>
+      <webElementGuid>c1807b76-e5a6-4f24-846c-e9fad859c315</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;form:carrousel:0:j_idt226&quot;)/table[1]/tbody[1]/tr[1]/td[2]</value>
-      <webElementGuid>4923d9fe-0fe4-4016-a9f7-23d3b60a29e7</webElementGuid>
+      <value>id(&quot;form:carrousel:0:treetableCalendar_node_0_0&quot;)/td[1]/span[6]</value>
+      <webElementGuid>6507fb67-b809-4a94-9343-7737e6aafbe7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/crecion cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>cb236629-8f65-4199-ab8d-c2ba96a76276</webElementGuid>
+      <value>Object Repository/CambioEstadoCita/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>e471a789-8bc2-4f1f-8875-7b7952daa834</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//a[@id='form:carrousel:0:j_idt226']/table/tbody/tr/td[2]</value>
-      <webElementGuid>839f3bbb-e07b-4606-ae5b-66a355098414</webElementGuid>
+      <value>//tr[@id='form:carrousel:0:treetableCalendar_node_0_0']/td/span[6]</value>
+      <webElementGuid>3390059b-b967-4a51-8d45-60778d8a4a7f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Agregar Nota'])[1]/following::td[3]</value>
-      <webElementGuid>1fcdb695-3f45-4601-bced-dc6660fdfc95</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BOGOTA      PRIMERA VEZ'])[1]/preceding::span[1]</value>
+      <webElementGuid>447dd772-8e8c-4a52-ad15-518e50815165</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='E'])[1]/following::td[3]</value>
-      <webElementGuid>bfbb5d24-9129-4e1c-878f-023be2827d44</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Historia Clinica'])[1]/preceding::span[8]</value>
+      <webElementGuid>7ac0fdeb-4aeb-40bd-bd94-163bdf05da4c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Atendido']/parent::*</value>
+      <webElementGuid>7a9bb9b5-a053-4b22-b4a5-d9d57121a05f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//a/table/tbody/tr/td[2]</value>
-      <webElementGuid>430962ff-23d8-4adf-85f5-ec95f2956351</webElementGuid>
+      <value>//span[6]</value>
+      <webElementGuid>ee213951-6944-4787-8874-07bbbcca3b50</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '
-
-                                            NICOLAS AREVALO 
-
-
-                                            jueves 20-feb.-2025' or . = '
-
-                                            NICOLAS AREVALO 
-
-
-                                            jueves 20-feb.-2025')]</value>
-      <webElementGuid>c77f999f-3e56-4139-b990-17fc135ce72c</webElementGuid>
+      <value>//span[(text() = 'Atendido' or . = 'Atendido')]</value>
+      <webElementGuid>9b633552-c556-4bab-9696-778419faa138</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

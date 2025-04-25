@@ -13,6 +13,7 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testdata.TestData
+import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -23,10 +24,11 @@ import internal.GlobalVariable
 public class SelectorCalendarioClass {
 	//Elementos DOM
 
-	TestObject ifremObj = findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe')
+	static TestObject ifremObj = findTestObject('Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe')
+	static TestObject spinnerLogin = new TestObject("spinner").addProperty("xpath", ConditionType.EQUALS, "//i[contains(@class, 'ajax-loader') and contains(@class, 'fa-spin')]")
 
 	@Keyword
-	def selectDynamicDate(String day) {
+	static void selectDynamicDate(String day) {
 		int intentos = 3
 
 		boolean exito = false
@@ -40,11 +42,11 @@ public class SelectorCalendarioClass {
 				TestObject fecha = new TestObject("dia_$day").addProperty('xpath', com.kms.katalon.core.testobject.ConditionType.EQUALS,
 						xpathDate)
 
-				WebUI.waitForElementPresent(fecha, 5)
-
 				WebUI.waitForElementClickable(fecha, 5)
 
 				WebUI.enhancedClick(fecha)
+
+				WebUI.waitForElementNotVisible(spinnerLogin, 50)
 
 				exito = true
 			}

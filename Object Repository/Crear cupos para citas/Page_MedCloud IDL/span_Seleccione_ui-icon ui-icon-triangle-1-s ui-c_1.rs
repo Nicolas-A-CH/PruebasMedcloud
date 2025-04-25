@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='tabview:addCuposForm:horaFinal']/div[3]/span</value>
+         <value>//div[@id='tabview:addCuposForm:horaInicio']/div[3]/span</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>ecf56377-dfab-4091-920d-0f0f1f50dafe</webElementGuid>
+      <webElementGuid>460ec4e8-e240-4696-819b-a38904a66d17</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,15 +37,15 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-icon ui-icon-triangle-1-s ui-c</value>
-      <webElementGuid>8c24c13a-24f3-418d-bf9d-7db3aad19f79</webElementGuid>
+      <webElementGuid>6b796330-7fb5-4b6b-a48e-296e2505ddd0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tabview:addCuposForm:horaFinal&quot;)/div[@class=&quot;ui-selectonemenu-trigger ui-state-default ui-corner-right ui-state-hover&quot;]/span[@class=&quot;ui-icon ui-icon-triangle-1-s ui-c&quot;]</value>
-      <webElementGuid>0c6602aa-e727-4a6e-8f12-e5bb68600b88</webElementGuid>
+      <value>id(&quot;tabview:addCuposForm:horaInicio&quot;)/div[@class=&quot;ui-selectonemenu-trigger ui-state-default ui-corner-right ui-state-hover&quot;]/span[@class=&quot;ui-icon ui-icon-triangle-1-s ui-c&quot;]</value>
+      <webElementGuid>f3c4e52c-281c-4d84-9fd5-a7ed2b1a68ba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,10 +53,26 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>eb7a61da-0a1c-4c7a-b28c-04b2daa92765</webElementGuid>
+      <webElementGuid>34a17cf6-3b74-4cb1-b414-ca5af9fd8113</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='tabview:addCuposForm:horaInicio']/div[3]/span</value>
+      <webElementGuid>a76cf598-ef6f-4a6f-bc2c-14d79697082c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//table[3]/tbody/tr/td[2]/div/div[3]/span</value>
+      <webElementGuid>5dc235a8-eb98-4dd9-9f21-324a2faf060d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>

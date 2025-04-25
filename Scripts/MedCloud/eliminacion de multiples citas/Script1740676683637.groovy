@@ -46,8 +46,8 @@ def eliminacionCita(String horaInicio, String horaFin) {
 	// Selección de cupo específico
 	seleccionarCupos.seleccionarCupoCitaPrevia(horaInicio, horaFin)
 	
-	int intentos = 3
-	boolean exito = false
+	int intentos = 3, intentos2 = 3
+	boolean exito = false, exito2 = false
 	
 	while (intentos > 0 && !exito) {
 		try {
@@ -61,14 +61,6 @@ def eliminacionCita(String horaInicio, String horaFin) {
 			WebUI.click(findTestObject('Object Repository/CambioEstadoCita/Page_MedCloud IDL/a_Cancelado'))
 			
 			WebUI.waitForElementNotVisible(findTestObject('Object Repository/elementos espontaneos/Page_MedCloud IDL/spin de carga'), 50)
-			WebUI.waitForElementPresent(findTestObject('Object Repository/CambioEstadoCita/Page_MedCloud IDL/li_Otro'), 3)
-			WebUI.waitForElementVisible(findTestObject('Object Repository/CambioEstadoCita/Page_MedCloud IDL/li_Otro'), 20)
-			
-			WebUI.click(findTestObject('Object Repository/CambioEstadoCita/Page_MedCloud IDL/li_Otro'))
-			
-			WebUI.click(findTestObject('Object Repository/CambioEstadoCita/Page_MedCloud IDL/button_Guardar'))
-			
-			WebUI.waitForElementNotVisible(findTestObject('Object Repository/elementos espontaneos/Page_MedCloud IDL/spin de carga'), 300)
 			
 			exito = true
 			
@@ -83,6 +75,34 @@ def eliminacionCita(String horaInicio, String horaFin) {
                 throw new Exception("No se pudo seleccionar el cupo ${horaInicio}-${horaFin} tras múltiples intentos.")
             }
             WebUI.delay(2)
+		}
+	}
+	
+	while (intentos2 > 0 && !exito2) {
+		
+		try {
+			
+			WebUI.waitForElementPresent(findTestObject('Object Repository/CambioEstadoCita/Page_MedCloud IDL/li_Otro'), 3)
+			WebUI.waitForElementVisible(findTestObject('Object Repository/CambioEstadoCita/Page_MedCloud IDL/li_Otro'), 20)
+			
+			WebUI.click(findTestObject('Object Repository/CambioEstadoCita/Page_MedCloud IDL/li_Otro'))
+			
+			WebUI.click(findTestObject('Object Repository/CambioEstadoCita/Page_MedCloud IDL/button_Guardar'))
+			
+			WebUI.waitForElementNotVisible(findTestObject('Object Repository/elementos espontaneos/Page_MedCloud IDL/spin de carga'), 300)
+			
+			exito2 = true
+		} catch (Exception e) {
+			//Reducir los intentos
+			intentos2--
+			
+			WebUI.comment("Error al seleccionar el estado 'cancelar'")
+			if (intentos2 == 0) {
+				String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().time)
+				WebUI.comment("No se pudo seleccionar el link tras varios intentos. Error: " + e.getMessage())
+				throw new Exception("No se pudo seleccionar el cupo ${horaInicio}-${horaFin} tras múltiples intentos.")
+			}
+			WebUI.delay(2)
 		}
 	}
 }
@@ -126,8 +146,8 @@ WebUI.navigateToUrl('https://medcloudpruebas.idl.com.co/medCloud/index.xhtml')
 //Inicio de sesion
 inicioSesion.inicioSesion()
 
-seleccionCalendario.selectDynamicDate("11")
+seleccionCalendario.selectDynamicDate("18")
 
 WebUI.delay(3)
 
-eliminarJornadaCompleta("07:00", "15:35", 5)
+eliminarJornadaCompleta("07:20", "9:10", 5)

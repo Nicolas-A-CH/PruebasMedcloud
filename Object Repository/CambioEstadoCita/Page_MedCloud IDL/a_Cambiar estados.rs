@@ -6,12 +6,12 @@
    <elementGuidId>3809401e-6b53-4dd3-b062-4734241190b2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a.ui-menuitem-link.ui-submenu-link.ui-corner-all.ui-state-hover</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='form:carrousel:0:tableMenu']/ul/li[6]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.ui-menuitem-link.ui-submenu-link.ui-corner-all.ui-state-hover</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>b3961819-d7ef-437e-9ab8-97f18491d327</webElementGuid>
+      <webElementGuid>9b9001e0-89a4-4c17-af9f-cb75186ba229</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#</value>
-      <webElementGuid>a7ff8a0b-86f7-40f3-99b3-044beb98ae23</webElementGuid>
+      <webElementGuid>a7e2a199-9384-4a0c-9977-f03adb7d0138</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>5c88a306-c821-4966-921a-54eab69e042c</webElementGuid>
+      <webElementGuid>7cce0186-361b-4288-8419-d8e6bd764582</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-menuitem-link ui-submenu-link ui-corner-all ui-state-hover</value>
-      <webElementGuid>8ffd8983-1fe2-4687-97df-21800719fb60</webElementGuid>
+      <webElementGuid>1d5df1ae-ab0e-4d8e-a5fc-40a77dd64427</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Cambiar estados</value>
-      <webElementGuid>535a9093-6c8f-4e2c-94f0-c09637bb6c88</webElementGuid>
+      <webElementGuid>f99851f8-509d-4f32-baa1-0c99ca6f2fb2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;form:carrousel:0:tableMenu&quot;)/ul[@class=&quot;ui-menu-list ui-helper-reset&quot;]/li[@class=&quot;ui-widget ui-menuitem ui-corner-all ui-menu-parent ui-menuitem-active&quot;]/a[@class=&quot;ui-menuitem-link ui-submenu-link ui-corner-all ui-state-hover&quot;]</value>
-      <webElementGuid>d5064ed8-5ac5-459b-9ad9-771f84ebe67d</webElementGuid>
+      <webElementGuid>daf0cd72-fefe-49b3-935d-542f81657d3c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/CambioEstadoCita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>824e7632-3b37-4a66-860f-5693f4a8b4e6</webElementGuid>
+      <webElementGuid>2837ce33-03f9-447a-8f84-120f857c3e0b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='form:carrousel:0:tableMenu']/ul/li[6]/a</value>
-      <webElementGuid>f74b33aa-0d5c-4f71-bf3d-da386c9bb46e</webElementGuid>
+      <webElementGuid>3d8b927b-742d-437e-baaa-052dac530c05</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Profesionales firmantes'])[1]/following::a[1]</value>
-      <webElementGuid>ad039b4d-64df-4674-ace3-8cab5a67b83d</webElementGuid>
+      <webElementGuid>dde4220a-7456-4c3f-95d7-05dd3e1e9f3c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Agregar Bono electrónico'])[1]/following::a[2]</value>
-      <webElementGuid>6e819a1c-ed75-4fd6-bf61-fe33552f5a4b</webElementGuid>
+      <webElementGuid>891ccdc5-ca5c-4eba-b6b1-2fa38438134c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Confirmado'])[1]/preceding::a[1]</value>
-      <webElementGuid>271fc3fb-0079-4deb-8901-87237c1d66a2</webElementGuid>
+      <webElementGuid>af328044-998c-4539-bbdb-ed36d4f49327</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '#')])[624]</value>
-      <webElementGuid>e1c069af-26cc-40eb-b3ba-12b0d2f9e233</webElementGuid>
+      <webElementGuid>fc88a187-1acc-4ede-a8fd-fc48a3c42516</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[103]/ul/li[6]/a</value>
-      <webElementGuid>0af87d21-600a-40c4-b098-7c08616fb8fd</webElementGuid>
+      <webElementGuid>5b449d5c-5a01-4f54-b43b-4b5d5ea28626</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +133,7 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '#' and (text() = 'Cambiar estados' or . = 'Cambiar estados')]</value>
-      <webElementGuid>4246de1a-0947-4193-ba97-d2bf82dd8426</webElementGuid>
+      <webElementGuid>9ab51f6d-c729-41a4-b02e-2274eb3bf553</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,7 +141,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='form:carrousel:0:tableMenu']/ul/li[5]/a</value>
-      <webElementGuid>6068896e-5b12-417d-a1e3-87383aca10c8</webElementGuid>
+      <webElementGuid>33aeaa86-5bef-41e0-a844-53e9b7ce893b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -149,7 +149,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '#')])[470]</value>
-      <webElementGuid>db4a83ab-c314-4e68-bab0-af9fa8dfff8f</webElementGuid>
+      <webElementGuid>24aa05bb-22ec-4443-8af6-5790ab7f8c29</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -157,6 +157,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[103]/ul/li[5]/a</value>
-      <webElementGuid>53c47dde-3069-417b-bc1b-5f377c60c59b</webElementGuid>
+      <webElementGuid>d427e10c-8d32-4db2-9a2a-29cb775d08d4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

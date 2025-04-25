@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_BOGOTAPRIMERA VEZ_ui-button-icon-left _b0ab74</name>
+   <tag></tag>
+   <elementGuidId>ad8d14e9-9173-404b-bf81-d0af77fbe819</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.ui-button-icon-left.ui-icon.ui-c.ui-icon-assignment</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='form:carrousel:0:treetableCalendar:0_0:j_idt344']/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot; Historia Clinica&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>e51ddb98-d667-4596-9e4f-5f497d78fa07</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-button-icon-left ui-icon ui-c ui-icon-assignment</value>
+      <webElementGuid>135e3d96-4f8a-4005-be6b-099e0d0580c5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;form:carrousel:0:treetableCalendar:0_0:j_idt344&quot;)/span[@class=&quot;ui-button-icon-left ui-icon ui-c ui-icon-assignment&quot;]</value>
+      <webElementGuid>b21b9db8-4e81-4083-95da-baf4813cf3a1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/CambioEstadoCita/Page_MedCloud IDL/iframe</value>
+      <webElementGuid>a18cdb75-3235-42ff-8b79-326d16cdd50b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='form:carrousel:0:treetableCalendar:0_0:j_idt344']/span</value>
+      <webElementGuid>c2b93c45-7212-4ffc-9585-d2cf71914b4d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/table/tbody/tr[2]/td/div/button/span</value>
+      <webElementGuid>c5418a16-3ab4-46b5-b6e6-0ecdfe5db154</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
+import net.bytebuddy.asm.Advice.Return
 import utils.CalcularIteraciones
 import utils.InicioSesionClass
 import utils.SelecccionarCuposClass
@@ -36,10 +37,12 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 
 // Configuración inicial
 @Field String baseIdentidad = "107236"
+String horaInicial = "07:00"
+String horaFinal = "21:00"
+String fecha = "8"
+int incrementoTiempo = 5
 
 //Intancia de class
-InicioSesionClass inicioSesion = new InicioSesionClass()
-SelectorCalendarioClass seleccionCalendario = new SelectorCalendarioClass()
 @Field SelecccionarCuposClass seleccionarCupos = new SelecccionarCuposClass()
 @Field CalcularIteraciones calculoIteracion = new CalcularIteraciones()
 
@@ -68,7 +71,6 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 	seleccionarCupos.seleccionarCupo(horaInicio, horaFin)
 	
 	// Flujo de creación de cita
-	WebUI.delay(2)
 	WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/a_Agendar'))
 	
 	int intentos3 = 0
@@ -79,7 +81,6 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 		try {
 			
 			//Esperar ventana emergente
-			WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div_NICOLAS AREVALO'), 15)
 			WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/div_NICOLAS AREVALO'), 20)
 			
 			// Configuración de tipo de cita
@@ -95,13 +96,11 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 		} catch (Exception e) {
 			intentos3++
 			println("Intento ${intentos3}: Elemento no válido, reintentando...")
-			WebUI.delay(2) // Espera antes de reintentar
+			WebUI.delay(1) // Espera antes de reintentar
 		}
 	}
 	
 	//Esperar a que la ventana del formulario cargue
-	WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewnroI_3c9080'),
-		5)
 	
 	WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewnroI_3c9080'), 15)
 	
@@ -114,20 +113,10 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 	
 	WebUI.waitForElementNotVisible(findTestObject('Object Repository/elementos espontaneos/Page_MedCloud IDL/spin de carga'), 50)
 	
-	// Verificar si los campos están autocompletados
-	def campoNombre = findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewprim_676a58')
-	WebUI.waitForElementVisible(campoNombre, 5)
-	
-	// Obtener el valor del campo de nombre
-	String valorNombre = WebUI.getAttribute(campoNombre, 'value')
-	
-	if (valorNombre?.trim()) {
-		
-		WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input fecha deseada cita'), '2025-03-11')
-		// Si el campo de nombre ya tiene un valor, el formulario está autocompletado
-		println "El formulario está autocompletado. Omitiendo el llenado de campos."
-		WebUI.delay(2) // Esperar un momento para asegurar que el sistema termine de autocompletar
-		
+	if (!verificarCampoVacio(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input__PacienteCrearFormPacienteTabViewprim_676a58'))) {
+    WebUI.setText(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/input fecha deseada cita'), '2025-03-18')
+    // Si el campo de nombre ya tiene un valor, el formulario está autocompletado
+    println "El formulario está autocompletado. Omitiendo el llenado de campos."
 	} else {
 		
 		//Seccion de Datos Basicos
@@ -171,7 +160,6 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Seleccione uno'))
 				
 				//Esperar que las opciones desplegables se muestren
-				WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Masculino'), 5)
 				
 				if (!WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Masculino'), 20)) {
 					
@@ -193,7 +181,6 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Seleccione uno_ui-icon ui-icon-triangl_fd1878'))
 				
 				//Esperar que las opciones desplegables se muestren
-				WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_SANITAS'), 5)
 				
 				if (!WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_SANITAS'), 20)) {
 					
@@ -287,8 +274,6 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 				WebUI.click(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/label_Seleccione uno_1'))
 				
 				//Esperar que las opciones desplegables se muestren
-				WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Contributivo Cotizante'), 5)
-				
 				if (!WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/li_Contributivo Cotizante'), 20)) {
 					
 					throw new Exception("El elemento 'li_SANITAS' no es visible.")
@@ -359,8 +344,6 @@ def crearCita(String horaInicio, String horaFin, String numeroIdentidad) {
 	
 	WebUI.waitForElementNotVisible(findTestObject('Object Repository/elementos espontaneos/Page_MedCloud IDL/spin de carga'), 300)
 	
-	WebUI.waitForElementPresent(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar_Resumen_Cita'),15)
-	
 	WebUI.waitForElementVisible(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar_Resumen_Cita'),25)
 	
 	WebUI.waitForElementClickable(findTestObject('Object Repository/crecion cita/Page_MedCloud IDL/span_Aceptar_Resumen_Cita'),15)
@@ -400,7 +383,9 @@ def crearJornadaCompleta(String horaInicio, String horaFin, int incrementoMinuto
 			
 			WebUI.comment("Se activo el descanzo")
 			
-			WebUI.delay(30)
+			System.gc()
+			
+			WebUI.delay(35)
 			
 			actualIteracion = 0
 		}
@@ -420,11 +405,9 @@ WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://medcloudpruebas.idl.com.co/medCloud/index.xhtml')
 
 //Inicio de sesion
-inicioSesion.inicioSesion()
+InicioSesionClass.inicioSesion()
 
-seleccionCalendario.selectDynamicDate("11")
-
-WebUI.delay(3)
+SelectorCalendarioClass.selectDynamicDate(fecha)
 
 // Crear jornada completa
-crearJornadaCompleta("07:00", "9:00", 5)
+crearJornadaCompleta(horaInicial, horaFinal, incrementoTiempo)

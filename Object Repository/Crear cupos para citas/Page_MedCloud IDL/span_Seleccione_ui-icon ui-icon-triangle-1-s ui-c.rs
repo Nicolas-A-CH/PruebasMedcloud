@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='tabview:addCuposForm:horaInicio']/div[3]/span</value>
+         <value>//div[@id='tabview:addCuposForm:tipoRangoCombo']/div[3]/span</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>076bd01a-fb0d-4fa8-9891-6fb1335d10f2</webElementGuid>
+      <webElementGuid>eed01f38-1ef9-4111-8919-2cea6a0f4a44</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,15 +37,15 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-icon ui-icon-triangle-1-s ui-c</value>
-      <webElementGuid>79617de5-df32-4918-b877-616ef881a326</webElementGuid>
+      <webElementGuid>e29131c5-ce0e-4db2-8686-c3bc62a675e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tabview:addCuposForm:horaInicio&quot;)/div[@class=&quot;ui-selectonemenu-trigger ui-state-default ui-corner-right ui-state-hover&quot;]/span[@class=&quot;ui-icon ui-icon-triangle-1-s ui-c&quot;]</value>
-      <webElementGuid>d9c53579-49bc-410d-86b3-3c7102006c6a</webElementGuid>
+      <value>id(&quot;tabview:addCuposForm:tipoRangoCombo&quot;)/div[@class=&quot;ui-selectonemenu-trigger ui-state-default ui-corner-right ui-state-hover&quot;]/span[@class=&quot;ui-icon ui-icon-triangle-1-s ui-c&quot;]</value>
+      <webElementGuid>fc900a76-f50e-4873-9087-5890f184803c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,10 +53,26 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Crear cupos para citas/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>a6d9885c-37ae-4aa3-895c-feb2d03b1f22</webElementGuid>
+      <webElementGuid>886cfd50-956f-4b88-b519-647554b5b6f1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='tabview:addCuposForm:tipoRangoCombo']/div[3]/span</value>
+      <webElementGuid>ce41d874-5f83-4d6f-a4a2-60cd35652609</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//form/div/table/tbody/tr/td[2]/div/div[3]/span</value>
+      <webElementGuid>af0012ef-61fb-4ca0-9c58-0a81958ffc13</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>

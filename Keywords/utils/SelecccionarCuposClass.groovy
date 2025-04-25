@@ -188,13 +188,14 @@ public class SelecccionarCuposClass {
 		horaFin = horaFin.replace('\u00A0', ' ').trim()
 
 		// XPath corregido: Se busca dentro del td de la fila de nivel 2
-		String xpath = "//tr[contains(@class, 'ui-node-level-2')]/td[contains(., '${horaInicio}') and .//span[contains(@id, 'divhora') and contains(., '-${horaFin}')]]"
-		WebUI.comment("XPath utilizado: " + xpath)
+		String xpathFila = "//tr[contains(@class, 'ui-node-level-2')][.//td[contains(., '${horaInicio}')] and .//span[contains(@id, 'divhora') and contains(., '${horaFin}')]]"
+		WebUI.comment("XPath utilizado: " + xpathFila)
 
-		TestObject historiaClinica = new TestObject("historiaClinica").addProperty("xpath", ConditionType.EQUALS, "//tr[contains(@class, 'ui-node-level-2') and contains(., '${horaInicio}') and .//span[contains(@id, 'divhora') and contains(., '-${horaFin}')]]//button[contains(@id, 'j_idt344')]")
+		
+		TestObject historiaClinica = new TestObject("historiaClinica").addProperty("xpath", ConditionType.EQUALS, "//tr[contains(@class, 'ui-node-level-2') and contains(., '${horaInicio}') and .//span[contains(@id, 'divhora') and contains(., '-${horaFin}')]]//button[@title='Historia Clinica' and contains(@class, 'ui-button')]")
 
 		// Crear TestObject dinámico
-		TestObject filaCupo = new TestObject("filaCupo").addProperty("xpath", ConditionType.EQUALS, xpath)
+		TestObject filaCupo = new TestObject("filaCupo").addProperty("xpath", ConditionType.EQUALS, xpathFila)
 
 		int intentos = 3
 		boolean exito = false
@@ -203,17 +204,22 @@ public class SelecccionarCuposClass {
 
 			try {
 				// Cambiar al contexto del iframe en cada intento
-				WebUI.switchToFrame(iframe, 10)
+				WebUI.switchToDefaultContent()
+	            WebUI.waitForElementPresent(iframe, 10)
+	            WebUI.switchToFrame(iframe, 10)
+			
 				ocultarEncabezado()
 
 				// Esperar a que el elemento esté presente y sea visible
 				WebUI.waitForElementPresent(filaCupo, 10)
-				WebUI.waitForElementVisible(filaCupo, 10)
+				WebUI.waitForElementVisible(filaCupo, 10, FailureHandling.STOP_ON_FAILURE)
+				
+				WebUI.comment("Paso completado: confirmar la existencia de la fila")
 
 				List<WebElement> elementos = WebUiCommonHelper.findWebElements(filaCupo, 5)
 
 				if (elementos.size() == 0) {
-					throw new Exception("No se encontraron elementos para el XPath: " + xpath)
+					throw new Exception("No se encontraron elementos para el XPath: " + xpathFila)
 				}
 
 				// Desplazar la página hasta el elemento usando JavaScript
@@ -222,11 +228,18 @@ public class SelecccionarCuposClass {
 				WebUI.delay(2) // Pequeña pausa para asegurar que el desplazamiento se complete
 
 				// Hacer clic después de asegurar que está en vista
-				WebUI.waitForElementClickable(filaCupo, 5)
+				WebUI.waitForElementClickable(filaCupo, 5, FailureHandling.STOP_ON_FAILURE)
 				WebUI.click(filaCupo)
-				WebUI.waitForElementNotVisible(spinner, 20)
+				
+				WebUI.switchToDefaultContent()
+	            WebUI.waitForElementNotVisible(spinner, 20)
+	            WebUI.switchToFrame(iframe, 5)
+				
 				WebUI.click(historiaClinica)
-				WebUI.waitForElementNotVisible(spinner, 20)
+				
+				WebUI.switchToDefaultContent()
+	            WebUI.waitForElementNotVisible(spinner, 20)
+	            WebUI.switchToFrame(iframe, 5)
 
 				WebUI.switchToDefaultContent()
 

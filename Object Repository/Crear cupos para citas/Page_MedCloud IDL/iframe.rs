@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>iframe</value>
-      <webElementGuid>6904258d-1d08-423c-8792-ca34891e04c0</webElementGuid>
+      <webElementGuid>e8ce4801-868d-4be4-90d4-fad0468a5ec7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>src</name>
       <type>Main</type>
       <value>validaIngreso.xhtml</value>
-      <webElementGuid>4dd91c1f-121e-440e-b30b-46ef26574a1e</webElementGuid>
+      <webElementGuid>9f837096-54f3-4865-b124-d1846d1479ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/iframe[1]</value>
-      <webElementGuid>7f0474fc-9446-4f84-ac2b-5db580fce73e</webElementGuid>
+      <webElementGuid>396dbcc7-2841-45ea-bd34-a441f4e881b7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//iframe</value>
-      <webElementGuid>9b87d815-0fb7-4ed9-9bfe-539ea2542356</webElementGuid>
+      <webElementGuid>17cb6395-979c-4e6a-860b-11d0a4e03cf2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,6 +61,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//iframe[@src = 'validaIngreso.xhtml']</value>
-      <webElementGuid>5a439c6c-263d-4cf1-b63b-4ed16122d54a</webElementGuid>
+      <webElementGuid>f1819ac7-26b1-48d7-a0cf-99c6e44be351</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

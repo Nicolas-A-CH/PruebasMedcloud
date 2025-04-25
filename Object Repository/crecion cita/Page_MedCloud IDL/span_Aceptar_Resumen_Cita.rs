@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='datosCitaForm:j_idt1225']</value>
+         <value>//form[@id='datosCitaForm']//button[normalize-space(.)='Aceptar']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>0a122a29-8af2-4f3b-b1db-a0f370879f0b</webElementGuid>
+      <webElementGuid>6cb9fd04-0057-470a-aae5-38afb4d90f11</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-button-text ui-c</value>
-      <webElementGuid>3be0c185-b37a-4b0e-b00b-e4a6cbe55e13</webElementGuid>
+      <webElementGuid>f6fc7896-ce55-42ba-8c2d-e09d3064d26d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Aceptar</value>
-      <webElementGuid>d4cfc75c-1802-449e-827e-ec51d9cd1a21</webElementGuid>
+      <webElementGuid>59cc3759-58d4-46f8-929c-4a18acf99de3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;datosCitaForm:j_idt1066&quot;)/span[@class=&quot;ui-button-text ui-c&quot;]</value>
-      <webElementGuid>22932e12-9f80-461f-9e4e-bffcff1c691a</webElementGuid>
+      <webElementGuid>fa1ef19a-5b04-43b5-bdd1-0f3127a51ae9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/crecion cita/Page_MedCloud IDL/iframe</value>
-      <webElementGuid>613e84a9-c469-4939-97d4-d1bf120a00b1</webElementGuid>
+      <webElementGuid>2c5c620b-7209-4c3d-93b2-d54b9e4d8252</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//*[@id=&quot;datosCitaForm:j_idt1095&quot;]</value>
-      <webElementGuid>f436aa53-d6ca-4090-8ef0-4e7dea23c912</webElementGuid>
+      <webElementGuid>09416143-4ac6-41f4-a322-1e70f91a38cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='leerle las Recomendaciones al Paciente'])[1]/following::span[1]</value>
-      <webElementGuid>eeb792cb-c8ca-4560-bdf1-fabb739289b1</webElementGuid>
+      <webElementGuid>b0e3ad64-3c40-4695-ab50-563d14742d21</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='LUIS NICOLAS AREVALO CHIQUIZA'])[1]/following::span[3]</value>
-      <webElementGuid>a87568c3-2301-446f-a2c0-0fd27cdf4ba1</webElementGuid>
+      <webElementGuid>7aedd643-bfd2-4e92-9ff5-6fc505ee9c25</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='El cupo ya ha sido usado'])[1]/preceding::span[3]</value>
-      <webElementGuid>034af4a4-6dd6-4cad-8166-51c591e57d14</webElementGuid>
+      <webElementGuid>9f522781-df86-4bcf-8016-781f9cf6e283</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Aceptar'])[5]/preceding::span[3]</value>
-      <webElementGuid>90cff90d-13c2-4f86-aae3-1aa1c929bc63</webElementGuid>
+      <webElementGuid>5f84469e-e2fb-454c-94d5-594c4fb95fd3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//center[2]/button/span</value>
-      <webElementGuid>b5d4264b-4b11-4ab8-8a70-c980cbac9157</webElementGuid>
+      <webElementGuid>c20be66d-f06d-43f1-92e9-a292437c69b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +117,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Aceptar' or . = 'Aceptar')]</value>
-      <webElementGuid>b28d4a58-482e-4096-8f4c-516d0030e7b8</webElementGuid>
+      <webElementGuid>6274b908-2204-4e35-95c2-643ac104a093</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
